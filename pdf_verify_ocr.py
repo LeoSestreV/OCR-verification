@@ -4,45 +4,41 @@ pdf_verify_ocr.py — Script de vérification OCR pour volumes de biographies na
 
 Ce script :
 1. Extrait le texte de chaque PDF via PyMuPDF (extraction de base).
-2. Envoie le PDF à l'API Mistral OCR pour une transcription haute précision.
+2. Effectue une reconnaissance OCR via PaddleOCR sur chaque page du PDF.
 3. Compare les deux résultats terme à terme.
 4. Génère un fichier d'erreurs nommé par le nombre de termes non reconnus.
 
 Dossiers utilisés :
-    /source_pdf/   — PDF originaux
+    /source_pdf/   — PDF originaux (par défaut : BioPDF/)
     /output_txt/   — Textes issus de l'extraction de base (PyMuPDF)
-    /ocr_mistral/  — Résultats complets de Mistral OCR
+    /ocr_paddle/   — Résultats complets de PaddleOCR
     /erreurs/      — Fichiers nommés par le nombre d'erreurs
 
 Utilisation :
-    export MISTRAL_API_KEY="votre_clé"
-    python pdf_verify_ocr.py [--source SOURCE] [--seuil 0.75]
+    python pdf_verify_ocr.py
 
 Dépendances :
     pip install -r requirements.txt
 """
 
-import os
-import sys
-import argparse
-import base64
 import re
+import sys
 import unicodedata
 from pathlib import Path
 from difflib import SequenceMatcher
 
 import fitz  # PyMuPDF
-from mistralai import Mistral
+from paddleocr import PaddleOCR
 from tqdm import tqdm
 
 
 # ---------------------------------------------------------------------------
-# Paramètres par défaut
+# Paramètres
 # ---------------------------------------------------------------------------
 SEUIL_SIMILARITE = 0.75  # En dessous de ce seuil, le terme est considéré non reconnu
-DOSSIER_SOURCE = "source_pdf"
+DOSSIER_SOURCE = "BioPDF"  # Dossier contenant les PDF originaux
 DOSSIER_OUTPUT = "output_txt"
-DOSSIER_MISTRAL = "ocr_mistral"
+DOSSIER_OCR = "ocr_paddle"
 DOSSIER_ERREURS = "erreurs"
 
 
@@ -52,16 +48,13 @@ DOSSIER_ERREURS = "erreurs"
 
 def creer_dossiers(racine: Path) -> None:
     """Crée les dossiers de sortie s'ils n'existent pas."""
-    for nom in [DOSSIER_SOURCE, DOSSIER_OUTPUT, DOSSIER_MISTRAL, DOSSIER_ERREURS]:
+    for nom in [DOSSIER_OUTPUT, DOSSIER_OCR, DOSSIER_ERREURS]:
         (racine / nom).mkdir(parents=True, exist_ok=True)
 
 
 def normaliser_texte(texte: str) -> str:
-    """Normalise le texte : minuscules, suppression des accents parasites,
-    remplacement des ligatures et nettoyage des caractères spéciaux."""
-    # Minuscules
+    """Normalise le texte : minuscules et normalisation Unicode."""
     texte = texte.lower()
-    # Normalisation Unicode (décomposition canonique)
     texte = unicodedata.normalize("NFC", texte)
     return texte
 
@@ -103,36 +96,58 @@ def extraire_texte_pymupdf(chemin_pdf: Path) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Traitement Mistral OCR
+# Traitement PaddleOCR
 # ---------------------------------------------------------------------------
 
-def transcrire_mistral_ocr(client: Mistral, chemin_pdf: Path) -> str:
-    """Envoie un PDF à l'API Mistral OCR et retourne la transcription complète.
+def transcrire_paddle_ocr(ocr: PaddleOCR, chemin_pdf: Path) -> str:
+    """Convertit chaque page du PDF en image puis applique PaddleOCR.
 
-    Le PDF est encodé en base64 et envoyé via l'endpoint OCR de Mistral.
+    Utilise PyMuPDF pour convertir les pages en images (pixmap) puis
+    PaddleOCR pour la reconnaissance de texte sur chaque image.
+
+    Retourne le texte complet reconnu par PaddleOCR.
     """
-    # Lecture et encodage du PDF en base64
-    contenu_pdf = chemin_pdf.read_bytes()
-    pdf_base64 = base64.standard_b64encode(contenu_pdf).decode("utf-8")
-
-    # Appel à l'API Mistral OCR
     try:
-        resultat_ocr = client.ocr.process(
-            model="mistral-ocr-latest",
-            document={
-                "type": "document_url",
-                "document_url": f"data:application/pdf;base64,{pdf_base64}",
-            },
-        )
+        doc = fitz.open(str(chemin_pdf))
     except Exception as e:
-        print(f"  [ERREUR] Mistral OCR a échoué pour '{chemin_pdf.name}' : {e}")
+        print(f"  [ERREUR] Impossible d'ouvrir '{chemin_pdf.name}' pour OCR : {e}")
         return ""
 
-    # Extraction du texte depuis les pages du résultat OCR
-    texte_pages = []
-    for page in resultat_ocr.pages:
-        texte_pages.append(page.markdown)
-    return "\n".join(texte_pages)
+    texte_complet = []
+    for num_page in range(len(doc)):
+        try:
+            page = doc[num_page]
+            # Conversion de la page en image haute résolution (300 DPI)
+            matrice = fitz.Matrix(300 / 72, 300 / 72)
+            pixmap = page.get_pixmap(matrix=matrice)
+
+            # Sauvegarde temporaire de l'image en mémoire (format PNG en bytes)
+            img_bytes = pixmap.tobytes("png")
+
+            # Écriture temporaire sur disque (PaddleOCR nécessite un chemin ou un array numpy)
+            import numpy as np
+            from PIL import Image
+            import io
+            img = Image.open(io.BytesIO(img_bytes))
+            img_array = np.array(img)
+
+            # Exécution de PaddleOCR sur l'image
+            resultat = ocr.ocr(img_array, cls=True)
+
+            # Extraction du texte reconnu
+            if resultat and resultat[0]:
+                lignes_page = []
+                for ligne in resultat[0]:
+                    texte_ligne = ligne[1][0]  # (coordonnées, (texte, confiance))
+                    lignes_page.append(texte_ligne)
+                texte_complet.append("\n".join(lignes_page))
+
+        except Exception as e:
+            print(f"  [AVERTISSEMENT] OCR échoué page {num_page + 1} "
+                  f"de '{chemin_pdf.name}' : {e}")
+
+    doc.close()
+    return "\n".join(texte_complet)
 
 
 # ---------------------------------------------------------------------------
@@ -141,7 +156,7 @@ def transcrire_mistral_ocr(client: Mistral, chemin_pdf: Path) -> str:
 
 def comparer_tokens(tokens_base: list[str], tokens_ocr: list[str],
                     seuil: float) -> list[str]:
-    """Compare les tokens de l'extraction de base avec ceux de Mistral OCR.
+    """Compare les tokens de l'extraction de base avec ceux de PaddleOCR.
 
     Pour chaque token de l'extraction de base, on cherche le meilleur
     correspondant parmi les tokens OCR dans une fenêtre glissante. Si la
@@ -160,7 +175,6 @@ def comparer_tokens(tokens_base: list[str], tokens_ocr: list[str],
     for token_base in tokens_base:
         # Vérification rapide : le mot existe-t-il exactement dans l'OCR ?
         if token_base in ensemble_ocr:
-            # Avancer l'index OCR si possible
             try:
                 pos = tokens_ocr.index(token_base, max(0, idx_ocr - taille_fenetre))
                 idx_ocr = pos + 1
@@ -195,9 +209,9 @@ def comparer_tokens(tokens_base: list[str], tokens_ocr: list[str],
 # Traitement principal d'un PDF
 # ---------------------------------------------------------------------------
 
-def traiter_pdf(chemin_pdf: Path, racine: Path, client: Mistral,
+def traiter_pdf(chemin_pdf: Path, racine: Path, ocr: PaddleOCR,
                 seuil: float) -> int:
-    """Traite un seul PDF : extraction, OCR Mistral, comparaison, erreurs.
+    """Traite un seul PDF : extraction, PaddleOCR, comparaison, erreurs.
 
     Retourne le nombre de termes non reconnus.
     """
@@ -214,15 +228,15 @@ def traiter_pdf(chemin_pdf: Path, racine: Path, client: Mistral,
     chemin_output.write_text(texte_base, encoding="utf-8")
     print(f"  [1/4] Sauvegardé → {chemin_output.name}")
 
-    # --- Étape 2 : Mistral OCR ---
-    print(f"  [2/4] Transcription via Mistral OCR...")
-    texte_ocr = transcrire_mistral_ocr(client, chemin_pdf)
+    # --- Étape 2 : PaddleOCR ---
+    print(f"  [2/4] Transcription via PaddleOCR...")
+    texte_ocr = transcrire_paddle_ocr(ocr, chemin_pdf)
     if not texte_ocr.strip():
-        print(f"  [AVERTISSEMENT] Mistral OCR n'a retourné aucun texte pour "
+        print(f"  [AVERTISSEMENT] PaddleOCR n'a retourné aucun texte pour "
               f"'{chemin_pdf.name}'.")
 
     # Sauvegarde du résultat OCR
-    chemin_ocr = racine / DOSSIER_MISTRAL / f"{nom_base}.txt"
+    chemin_ocr = racine / DOSSIER_OCR / f"{nom_base}.txt"
     chemin_ocr.write_text(texte_ocr, encoding="utf-8")
     print(f"  [2/4] Sauvegardé → {chemin_ocr.name}")
 
@@ -272,41 +286,17 @@ def traiter_pdf(chemin_pdf: Path, racine: Path, client: Mistral,
 # ---------------------------------------------------------------------------
 
 def main():
-    """Fonction principale : parse les arguments, initialise Mistral et traite
-    chaque PDF du dossier source."""
-
-    # --- Arguments en ligne de commande ---
-    parser = argparse.ArgumentParser(
-        description="Vérification OCR de volumes PDF via Mistral OCR."
-    )
-    parser.add_argument(
-        "--source", type=str, default=DOSSIER_SOURCE,
-        help=f"Dossier contenant les PDF source (défaut : {DOSSIER_SOURCE})"
-    )
-    parser.add_argument(
-        "--seuil", type=float, default=SEUIL_SIMILARITE,
-        help=f"Seuil de similarité pour la comparaison (défaut : {SEUIL_SIMILARITE})"
-    )
-    args = parser.parse_args()
+    """Fonction principale : initialise PaddleOCR et traite chaque PDF
+    du dossier source."""
 
     # --- Répertoire racine du projet ---
     racine = Path(__file__).resolve().parent
 
-    # --- Vérification de la clé API ---
-    cle_api = os.environ.get("MISTRAL_API_KEY")
-    if not cle_api:
-        print("[ERREUR] La variable d'environnement MISTRAL_API_KEY n'est pas définie.")
-        print("  → export MISTRAL_API_KEY=\"votre_clé_api\"")
-        sys.exit(1)
-
-    # --- Initialisation du client Mistral ---
-    client = Mistral(api_key=cle_api)
-
-    # --- Création des dossiers ---
+    # --- Création des dossiers de sortie ---
     creer_dossiers(racine)
 
     # --- Collecte des PDF ---
-    dossier_source = racine / args.source
+    dossier_source = racine / DOSSIER_SOURCE
     if not dossier_source.exists():
         print(f"[ERREUR] Le dossier source '{dossier_source}' n'existe pas.")
         sys.exit(1)
@@ -317,16 +307,21 @@ def main():
         sys.exit(0)
 
     print(f"[INFO] {len(fichiers_pdf)} fichier(s) PDF trouvé(s) dans '{dossier_source}'.")
-    print(f"[INFO] Seuil de similarité : {args.seuil}")
+    print(f"[INFO] Seuil de similarité : {SEUIL_SIMILARITE}")
     print(f"{'=' * 70}")
+
+    # --- Initialisation de PaddleOCR ---
+    # lang='fr' pour le français, show_log=False pour éviter le bruit dans la console
+    print("[INFO] Initialisation de PaddleOCR (modèle français)...")
+    ocr = PaddleOCR(use_angle_cls=True, lang="fr", show_log=False)
 
     # --- Traitement de chaque PDF avec barre de progression ---
     total_erreurs = 0
     resultats = {}
 
     for chemin_pdf in tqdm(fichiers_pdf, desc="Traitement des PDF", unit="PDF"):
-        print(f"\n📄 Traitement de : {chemin_pdf.name}")
-        nb_erreurs = traiter_pdf(chemin_pdf, racine, client, args.seuil)
+        print(f"\n Traitement de : {chemin_pdf.name}")
+        nb_erreurs = traiter_pdf(chemin_pdf, racine, ocr, SEUIL_SIMILARITE)
         total_erreurs += nb_erreurs
         resultats[chemin_pdf.name] = nb_erreurs
 
@@ -336,8 +331,8 @@ def main():
     print(f"[RÉSUMÉ] Total des termes non reconnus : {total_erreurs}")
     print(f"\nDétail par fichier :")
     for nom, nb in resultats.items():
-        statut = "✓" if nb == 0 else f"✗ {nb} erreur(s)"
-        print(f"  {nom} → {statut}")
+        statut = "OK" if nb == 0 else f"{nb} erreur(s)"
+        print(f"  {nom} -> {statut}")
 
 
 if __name__ == "__main__":
