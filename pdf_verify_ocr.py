@@ -90,6 +90,16 @@ def supprimer_accents(texte: str) -> str:
 
 
 _RE_MOTS = re.compile(r"[\w]+", re.UNICODE)
+_RE_MARKDOWN = re.compile(r"!\[.*?\]\(.*?\)")  # images markdown ![alt](url)
+
+
+def texte_continu(texte: str) -> str:
+    """Convertit un texte (brut ou markdown) en flux continu sans sauts de ligne."""
+    texte = _RE_MARKDOWN.sub("", texte)           # retirer les images markdown
+    texte = re.sub(r"^#+\s*", "", texte, flags=re.MULTILINE)  # retirer les titres #
+    texte = re.sub(r"\n+", " ", texte)             # sauts de ligne -> espaces
+    texte = re.sub(r" {2,}", " ", texte)           # espaces multiples -> un seul
+    return texte.strip()
 
 
 def tokeniser(texte: str) -> list[str]:
@@ -128,7 +138,7 @@ def extraire_texte(chemin_pdf: Path) -> str:
             logger.warning("Page ignorée dans '%s' : %s", chemin_pdf.name, exc)
 
     doc.close()
-    return "\n".join(pages)
+    return texte_continu("\n".join(pages))
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -152,7 +162,7 @@ def ocr_pdf(client: Mistral, chemin_pdf: Path, modele: str) -> str:
         logger.error("Mistral OCR échoué pour '%s' : %s", chemin_pdf.name, exc)
         return ""
 
-    return "\n".join(page.markdown for page in response.pages)
+    return texte_continu("\n".join(page.markdown for page in response.pages))
 
 
 # ═══════════════════════════════════════════════════════════════════════════
