@@ -1,53 +1,33 @@
 """
-pdf_verify_ocr.py — Vérification OCR de documents PDF.
+pdf_verify_ocr.py — Vérification OCR de documents PDF via Mistral OCR.
 
 Compare l'extraction textuelle embarquée (PyMuPDF) avec une reconnaissance
-optique (PaddleOCR) pour identifier les termes mal reconnus.
+optique (Mistral OCR) pour identifier les termes mal reconnus.
 
 Usage :
-    python pdf_verify_ocr.py                          # Traite tous les PDF
-    python pdf_verify_ocr.py --source dossier/        # Source personnalisée
-    python pdf_verify_ocr.py --limit 3                # Limite à N fichiers
-    python pdf_verify_ocr.py --seuil 0.80 --dpi 300   # Paramètres ajustés
-    python pdf_verify_ocr.py --no-gpu                 # Forcer le CPU
+    python pdf_verify_ocr.py
+    python pdf_verify_ocr.py --source dossier/
+    python pdf_verify_ocr.py --limit 3 --seuil 0.80
+    python pdf_verify_ocr.py --api-key sk-xxx
 """
 
 import argparse
-import io
+import base64
 import json
 import logging
-import os
 import re
 import sys
 import time
 import unicodedata
-import warnings
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
 from difflib import SequenceMatcher
 from typing import Optional
 
-# ── Suppression du bruit des bibliothèques tierces ──────────────────────────
-os.environ["PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK"] = "True"
-os.environ["FLAGS_allocator_strategy"] = "naive_best_fit"
-warnings.filterwarnings("ignore", category=UserWarning, module="requests")
-
 import fitz  # PyMuPDF
-import numpy as np
-from PIL import Image
-
-try:
-    import paddle
-    paddle.set_flags({"FLAGS_enable_pir_api": 0})
-except ImportError:
-    pass
-
-from paddleocr import PaddleOCR
+from mistralai.client import Mistral
 from tqdm import tqdm
 
-logging.getLogger("ppocr").setLevel(logging.ERROR)
-
-# ── Logger du script ────────────────────────────────────────────────────────
 logger = logging.getLogger("pdf_verify_ocr")
 
 
@@ -60,15 +40,12 @@ class Config:
     """Configuration centralisée — aucune valeur hardcodée dans le code."""
     source: str = "BioPDF"
     output_txt: str = "output_txt"
-    output_ocr: str = "ocr_paddle"
+    output_ocr: str = "ocr_mistral"
     output_erreurs: str = "erreurs"
     seuil: float = 0.75
-    longueur_min: int = 3
-    dpi: int = 200
-    langue_ocr: str = "fr"
-    use_gpu: bool = True
-    use_angle_cls: bool = True
     taille_fenetre: int = 15
+    modele_ocr: str = "mistral-ocr-latest"
+    api_key: Optional[str] = None
     limit: Optional[int] = None
     verbose: bool = False
 
@@ -81,18 +58,16 @@ class Config:
             output_ocr=args.output_ocr,
             output_erreurs=args.output_erreurs,
             seuil=args.seuil,
-            longueur_min=args.longueur_min,
-            dpi=args.dpi,
-            langue_ocr=args.langue,
-            use_gpu=not args.no_gpu,
             taille_fenetre=args.fenetre,
+            modele_ocr=args.modele,
+            api_key=args.api_key,
             limit=args.limit,
             verbose=args.verbose,
         )
 
 
 # ═══════════════════════════════════════════════════════════════════════════
-# Fonctions de normalisation de texte
+# Normalisation de texte
 # ═══════════════════════════════════════════════════════════════════════════
 
 def supprimer_accents(texte: str) -> str:
@@ -131,10 +106,7 @@ def extraire_texte(chemin_pdf: Path) -> str:
     for page in doc:
         try:
             blocs = page.get_text("blocks")
-            # type 0 = texte, type 1 = image
             blocs_texte = [b for b in blocs if b[6] == 0]
-            # Regrouper les blocs sur la même bande verticale (~10pt)
-            # puis trier de gauche à droite
             blocs_texte.sort(key=lambda b: (round(b[1] / 10) * 10, b[0]))
             pages.append(
                 " ".join(b[4].strip() for b in blocs_texte if b[4].strip())
@@ -147,37 +119,27 @@ def extraire_texte(chemin_pdf: Path) -> str:
 
 
 # ═══════════════════════════════════════════════════════════════════════════
-# OCR via PaddleOCR
+# OCR via Mistral OCR
 # ═══════════════════════════════════════════════════════════════════════════
 
-def ocr_pdf(moteur: PaddleOCR, chemin_pdf: Path, dpi: int) -> str:
-    """Convertit chaque page du PDF en image puis lance PaddleOCR."""
+def ocr_pdf(client: Mistral, chemin_pdf: Path, modele: str) -> str:
+    """Envoie le PDF à l'API Mistral OCR et retourne le texte reconnu."""
+    pdf_bytes = chemin_pdf.read_bytes()
+    base64_pdf = base64.standard_b64encode(pdf_bytes).decode("utf-8")
+
     try:
-        doc = fitz.open(str(chemin_pdf))
+        response = client.ocr.process(
+            model=modele,
+            document={
+                "type": "document_url",
+                "document_url": f"data:application/pdf;base64,{base64_pdf}",
+            },
+        )
     except Exception as exc:
-        logger.error("OCR — impossible d'ouvrir '%s' : %s", chemin_pdf.name, exc)
+        logger.error("Mistral OCR échoué pour '%s' : %s", chemin_pdf.name, exc)
         return ""
 
-    scale = dpi / 72
-    pages = []
-
-    for idx in range(len(doc)):
-        try:
-            pixmap = doc[idx].get_pixmap(matrix=fitz.Matrix(scale, scale))
-            img = Image.open(io.BytesIO(pixmap.tobytes("png")))
-            resultat = moteur.ocr(np.array(img), cls=True)
-            del pixmap
-            img.close()
-
-            if resultat and resultat[0]:
-                pages.append(
-                    " ".join(ligne[1][0] for ligne in resultat[0])
-                )
-        except Exception as exc:
-            logger.warning("OCR échoué p.%d de '%s' : %s", idx + 1, chemin_pdf.name, exc)
-
-    doc.close()
-    return "\n".join(pages)
+    return "\n".join(page.markdown for page in response.pages)
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -194,9 +156,8 @@ class ResultatComparaison:
 
 
 def comparer(texte_base: str, texte_ocr: str, cfg: Config) -> ResultatComparaison:
-    """Compare les tokens (sans accents) et retourne les termes non reconnus."""
+    """Compare tous les tokens (sans accents) et retourne les termes non reconnus."""
     tokens_orig = tokeniser(texte_base)
-    tokens_norm = tokeniser_normalise(texte_base)
     tokens_ocr = tokeniser_normalise(texte_ocr)
 
     if not tokens_orig:
@@ -206,8 +167,9 @@ def comparer(texte_base: str, texte_ocr: str, cfg: Config) -> ResultatComparaiso
     idx_ocr = 0
     erreurs = []
 
-    for i, tok in enumerate(tokens_norm):
-        if len(tok) < cfg.longueur_min or tok.isdigit():
+    for mot_orig in tokens_orig:
+        tok = supprimer_accents(mot_orig)
+        if tok.isdigit():
             continue
 
         # Recherche exacte (rapide)
@@ -225,13 +187,13 @@ def comparer(texte_base: str, texte_ocr: str, cfg: Config) -> ResultatComparaiso
         fenetre = tokens_ocr[debut:fin]
 
         if not fenetre:
-            erreurs.append(tokens_orig[i])
+            erreurs.append(mot_orig)
             continue
 
         meilleure = max(SequenceMatcher(None, tok, t).ratio() for t in fenetre)
 
         if meilleure < cfg.seuil:
-            erreurs.append(tokens_orig[i])
+            erreurs.append(mot_orig)
         else:
             for j, t in enumerate(fenetre):
                 if SequenceMatcher(None, tok, t).ratio() == meilleure:
@@ -268,7 +230,7 @@ class ResultatPDF:
     duree_sec: float
 
 
-def traiter_pdf(chemin_pdf: Path, racine: Path, moteur: PaddleOCR,
+def traiter_pdf(chemin_pdf: Path, racine: Path, client: Mistral,
                 cfg: Config) -> ResultatPDF:
     """Pipeline complet : extraction -> OCR -> comparaison -> rapport."""
     debut = time.time()
@@ -278,9 +240,9 @@ def traiter_pdf(chemin_pdf: Path, racine: Path, moteur: PaddleOCR,
     texte_base = extraire_texte(chemin_pdf)
     (racine / cfg.output_txt / f"{nom}.txt").write_text(texte_base, encoding="utf-8")
 
-    # 2. OCR
-    logger.info("  OCR de %s...", chemin_pdf.name)
-    texte_ocr = ocr_pdf(moteur, chemin_pdf, cfg.dpi)
+    # 2. OCR Mistral
+    logger.info("  OCR Mistral de %s...", chemin_pdf.name)
+    texte_ocr = ocr_pdf(client, chemin_pdf, cfg.modele_ocr)
     (racine / cfg.output_ocr / f"{nom}.txt").write_text(texte_ocr, encoding="utf-8")
 
     # 3. Comparaison
@@ -297,8 +259,7 @@ def traiter_pdf(chemin_pdf: Path, racine: Path, moteur: PaddleOCR,
             f"# Tokens analysés : {res.total_tokens}\n"
             f"# Occurrences non reconnues : {res.nb_erreurs}\n"
             f"# Termes uniques non reconnus : {res.nb_uniques}\n"
-            f"# Seuil : {cfg.seuil} | Min car. : {cfg.longueur_min} | "
-            f"DPI : {cfg.dpi}\n"
+            f"# Seuil : {cfg.seuil} | Modèle : {cfg.modele_ocr}\n"
             f"{'=' * 50}\n"
         )
         chemin_err.write_text(en_tete + "\n".join(res.termes_uniques), encoding="utf-8")
@@ -319,29 +280,25 @@ def traiter_pdf(chemin_pdf: Path, racine: Path, moteur: PaddleOCR,
 
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
-        description="Vérification OCR de documents PDF.",
+        description="Vérification OCR de documents PDF via Mistral OCR.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     p.add_argument("--source", default="BioPDF",
                     help="Dossier contenant les PDF source")
     p.add_argument("--output-txt", default="output_txt",
                     help="Dossier de sortie pour l'extraction textuelle")
-    p.add_argument("--output-ocr", default="ocr_paddle",
+    p.add_argument("--output-ocr", default="ocr_mistral",
                     help="Dossier de sortie pour les résultats OCR")
     p.add_argument("--output-erreurs", default="erreurs",
                     help="Dossier de sortie pour les rapports d'erreurs")
     p.add_argument("--seuil", type=float, default=0.75,
                     help="Seuil de similarité (0.0 à 1.0)")
-    p.add_argument("--longueur-min", type=int, default=3,
-                    help="Longueur minimale des mots à comparer")
-    p.add_argument("--dpi", type=int, default=200,
-                    help="Résolution pour la conversion page -> image")
-    p.add_argument("--langue", default="fr",
-                    help="Langue pour PaddleOCR")
-    p.add_argument("--no-gpu", action="store_true",
-                    help="Forcer l'utilisation du CPU")
     p.add_argument("--fenetre", type=int, default=15,
                     help="Taille de la fenêtre glissante de comparaison")
+    p.add_argument("--modele", default="mistral-ocr-latest",
+                    help="Modèle Mistral OCR à utiliser")
+    p.add_argument("--api-key", default=None,
+                    help="Clé API Mistral (sinon utilise MISTRAL_API_KEY)")
     p.add_argument("--limit", type=int, default=None,
                     help="Limiter le traitement à N fichiers PDF")
     p.add_argument("--verbose", "-v", action="store_true",
@@ -353,7 +310,6 @@ def main() -> None:
     args = build_parser().parse_args()
     cfg = Config.from_args(args)
 
-    # Logging
     logging.basicConfig(
         level=logging.DEBUG if cfg.verbose else logging.INFO,
         format="%(levelname)s | %(message)s",
@@ -379,21 +335,21 @@ def main() -> None:
     if cfg.limit:
         fichiers = fichiers[:cfg.limit]
 
-    logger.info("%d PDF à traiter | seuil=%.2f | min_car=%d | dpi=%d | gpu=%s",
-                len(fichiers), cfg.seuil, cfg.longueur_min, cfg.dpi, cfg.use_gpu)
+    logger.info("%d PDF à traiter | seuil=%.2f | modèle=%s",
+                len(fichiers), cfg.seuil, cfg.modele_ocr)
 
-    # Initialisation PaddleOCR
-    moteur = PaddleOCR(
-        use_angle_cls=cfg.use_angle_cls,
-        lang=cfg.langue_ocr,
-        use_gpu=cfg.use_gpu,
-        show_log=False,
-    )
+    # Initialisation client Mistral
+    import os
+    api_key = cfg.api_key or os.environ.get("MISTRAL_API_KEY")
+    if not api_key:
+        logger.error("Clé API Mistral requise. Utilisez --api-key ou MISTRAL_API_KEY.")
+        sys.exit(1)
+    client = Mistral(api_key=api_key)
 
     # Traitement
     resultats: list[ResultatPDF] = []
     for pdf in tqdm(fichiers, desc="Traitement", unit="PDF"):
-        res = traiter_pdf(pdf, racine, moteur, cfg)
+        res = traiter_pdf(pdf, racine, client, cfg)
         resultats.append(res)
         logger.info("  %s : %d erreurs (%d uniques) en %.1fs",
                      res.fichier, res.nb_erreurs, res.nb_uniques, res.duree_sec)
@@ -414,7 +370,7 @@ def main() -> None:
 
     # Sauvegarde du résumé JSON
     resume = {
-        "config": asdict(cfg),
+        "config": {k: v for k, v in asdict(cfg).items() if k != "api_key"},
         "resultats": [asdict(r) for r in resultats],
         "total_erreurs": total_err,
         "total_tokens": total_tok,
