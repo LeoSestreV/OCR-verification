@@ -15,6 +15,7 @@ import argparse
 import base64
 import json
 import logging
+import os
 import re
 import sys
 import time
@@ -27,6 +28,18 @@ from typing import Optional
 import fitz  # PyMuPDF
 from mistralai.client import Mistral
 from tqdm import tqdm
+
+
+def charger_env(chemin: Path) -> None:
+    """Charge les variables depuis un fichier .env (clé=valeur)."""
+    if not chemin.exists():
+        return
+    for ligne in chemin.read_text(encoding="utf-8").splitlines():
+        ligne = ligne.strip()
+        if not ligne or ligne.startswith("#") or "=" not in ligne:
+            continue
+        cle, valeur = ligne.split("=", 1)
+        os.environ.setdefault(cle.strip(), valeur.strip())
 
 logger = logging.getLogger("pdf_verify_ocr")
 
@@ -338,8 +351,10 @@ def main() -> None:
     logger.info("%d PDF à traiter | seuil=%.2f | modèle=%s",
                 len(fichiers), cfg.seuil, cfg.modele_ocr)
 
+    # Chargement du fichier .env
+    charger_env(racine / ".env")
+
     # Initialisation client Mistral
-    import os
     api_key = cfg.api_key or os.environ.get("MISTRAL_API_KEY")
     if not api_key:
         logger.error("Clé API Mistral requise. Utilisez --api-key ou MISTRAL_API_KEY.")
