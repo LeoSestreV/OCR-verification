@@ -100,10 +100,10 @@ def texte_continu(texte: str) -> str:
     texte = _RE_MARKDOWN.sub("", texte)
     # Retirer les titres markdown (# ## ###)
     texte = re.sub(r"^#+\s*", "", texte, flags=re.MULTILINE)
-    # Rejoindre les mots coupés par un tiret en fin de ligne : "rem-\nplacement" -> "remplacement"
+    # Rejoindre les mots coupés par un tiret en fin de ligne (césure syllabique)
+    # "rem-\nplacement" -> "remplacement"
+    # Note : les mots composés inline (beaux-arts) ne sont pas affectés car sans \n
     texte = re.sub(r"(\w)-\s*\n\s*(\w)", r"\1\2", texte)
-    # Rejoindre les mots coupés par un tiret + espace (après mise en continu) : "rem- placement"
-    texte = re.sub(r"(\w)- (\w)", r"\1\2", texte)
     # Sauts de ligne -> espaces
     texte = re.sub(r"\n+", " ", texte)
     # Retirer les lettres grecques parasites (artefacts d'extraction)
@@ -129,7 +129,8 @@ def tokeniser_normalise(texte: str) -> list[str]:
 
 def nettoyer_bloc(texte: str) -> str:
     """Nettoie le texte brut d'un bloc PyMuPDF."""
-    # Rejoindre les mots coupés par un tiret en fin de ligne dans le bloc
+    # Rejoindre les mots coupés par un tiret en fin de ligne (césure syllabique)
+    # "rem-\nplacement" -> "remplacement"
     texte = re.sub(r"(\w)-\s*\n\s*(\w)", r"\1\2", texte)
     # Remplacer les sauts de ligne restants par des espaces
     texte = texte.replace("\n", " ")
