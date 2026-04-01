@@ -90,15 +90,26 @@ def supprimer_accents(texte: str) -> str:
 
 
 _RE_MOTS = re.compile(r"[\w]+", re.UNICODE)
-_RE_MARKDOWN = re.compile(r"!\[.*?\]\(.*?\)")  # images markdown ![alt](url)
+_RE_MARKDOWN = re.compile(r"!\[.*?\]\(.*?\)")
+_RE_GREEK = re.compile(r"[\u0370-\u03FF\u1F00-\u1FFF]+")
 
 
 def texte_continu(texte: str) -> str:
-    """Convertit un texte (brut ou markdown) en flux continu sans sauts de ligne."""
-    texte = _RE_MARKDOWN.sub("", texte)           # retirer les images markdown
-    texte = re.sub(r"^#+\s*", "", texte, flags=re.MULTILINE)  # retirer les titres #
-    texte = re.sub(r"\n+", " ", texte)             # sauts de ligne -> espaces
-    texte = re.sub(r" {2,}", " ", texte)           # espaces multiples -> un seul
+    """Convertit un texte (brut ou markdown) en flux continu propre."""
+    # Retirer les images markdown ![alt](url)
+    texte = _RE_MARKDOWN.sub("", texte)
+    # Retirer les titres markdown (# ## ###)
+    texte = re.sub(r"^#+\s*", "", texte, flags=re.MULTILINE)
+    # Rejoindre les mots coupés par un tiret en fin de ligne : "rem-\nplacement" -> "remplacement"
+    texte = re.sub(r"(\w)-\s*\n\s*(\w)", r"\1\2", texte)
+    # Rejoindre les mots coupés par un tiret + espace (après mise en continu) : "rem- placement"
+    texte = re.sub(r"(\w)- (\w)", r"\1\2", texte)
+    # Sauts de ligne -> espaces
+    texte = re.sub(r"\n+", " ", texte)
+    # Retirer les lettres grecques parasites (artefacts d'extraction)
+    texte = _RE_GREEK.sub("", texte)
+    # Espaces multiples -> un seul
+    texte = re.sub(r" {2,}", " ", texte)
     return texte.strip()
 
 
@@ -116,6 +127,22 @@ def tokeniser_normalise(texte: str) -> list[str]:
 # Extraction PyMuPDF — texte continu (anti-colonnes)
 # ═══════════════════════════════════════════════════════════════════════════
 
+def nettoyer_bloc(texte: str) -> str:
+    """Nettoie le texte brut d'un bloc PyMuPDF."""
+    # Rejoindre les mots coupés par un tiret en fin de ligne dans le bloc
+    texte = re.sub(r"(\w)-\s*\n\s*(\w)", r"\1\2", texte)
+    # Remplacer les sauts de ligne restants par des espaces
+    texte = texte.replace("\n", " ")
+    # Lettres isolées espacées (chiffres romains) : "V I I I" -> "VIII"
+    # Détecte les suites de lettres majuscules isolées séparées par des espaces
+    texte = re.sub(
+        r"\b([A-Z])((?:\s[A-Z]){2,})\b",
+        lambda m: m.group(0).replace(" ", ""),
+        texte,
+    )
+    return texte.strip()
+
+
 def extraire_texte(chemin_pdf: Path) -> str:
     """Extrait le texte intégré au PDF en réordonnant les blocs pour
     produire un flux continu (évite le découpage en colonnes)."""
@@ -131,14 +158,13 @@ def extraire_texte(chemin_pdf: Path) -> str:
             blocs = page.get_text("blocks")
             blocs_texte = [b for b in blocs if b[6] == 0]
             blocs_texte.sort(key=lambda b: (round(b[1] / 10) * 10, b[0]))
-            pages.append(
-                " ".join(b[4].strip() for b in blocs_texte if b[4].strip())
-            )
+            textes = [nettoyer_bloc(b[4]) for b in blocs_texte]
+            pages.append(" ".join(t for t in textes if t))
         except Exception as exc:
             logger.warning("Page ignorée dans '%s' : %s", chemin_pdf.name, exc)
 
     doc.close()
-    return texte_continu("\n".join(pages))
+    return texte_continu(" ".join(pages))
 
 
 # ═══════════════════════════════════════════════════════════════════════════
