@@ -11,8 +11,11 @@ Usage :
     python pdf_verify_ocr.py --api-key sk-xxx
 """
 
+from __future__ import annotations
+
 import argparse
 import base64
+import bisect
 import json
 import logging
 import os
@@ -21,6 +24,7 @@ import sys
 import time
 import unicodedata
 from dataclasses import dataclass, field, asdict
+from functools import lru_cache
 from pathlib import Path
 from difflib import SequenceMatcher
 from typing import Optional
@@ -28,6 +32,8 @@ from typing import Optional
 import fitz  # PyMuPDF
 from mistralai.client import Mistral
 from tqdm import tqdm
+
+logger = logging.getLogger("pdf_verify_ocr")
 
 
 def charger_env(chemin: Path) -> None:
@@ -41,14 +47,12 @@ def charger_env(chemin: Path) -> None:
         cle, valeur = ligne.split("=", 1)
         os.environ.setdefault(cle.strip(), valeur.strip())
 
-logger = logging.getLogger("pdf_verify_ocr")
-
 
 # ═══════════════════════════════════════════════════════════════════════════
 # Configuration
 # ═══════════════════════════════════════════════════════════════════════════
 
-@dataclass
+@dataclass(slots=True)
 class Config:
     """Configuration centralisée — aucune valeur hardcodée dans le code."""
     source: str = "BioPDF"
@@ -63,7 +67,7 @@ class Config:
     verbose: bool = False
 
     @classmethod
-    def from_args(cls, args: argparse.Namespace) -> "Config":
+    def from_args(cls, args: argparse.Namespace) -> Config:
         """Construit une Config depuis les arguments CLI."""
         return cls(
             source=args.source,
@@ -83,33 +87,37 @@ class Config:
 # Normalisation de texte
 # ═══════════════════════════════════════════════════════════════════════════
 
+@lru_cache(maxsize=65536)
 def supprimer_accents(texte: str) -> str:
-    """Supprime les diacritiques : 'célèbre' -> 'celebre'."""
+    """Supprime les diacritiques : 'célèbre' -> 'celebre'.
+
+    Résultats mis en cache (LRU) — les mêmes tokens reviennent souvent.
+    """
     nfkd = unicodedata.normalize("NFKD", texte)
     return "".join(c for c in nfkd if not unicodedata.combining(c))
 
 
-_RE_MOTS = re.compile(r"[\w]+", re.UNICODE)
-_RE_MARKDOWN = re.compile(r"!\[.*?\]\(.*?\)")
+# Patterns pré-compilés (évite la recompilation à chaque appel)
+_RE_MOTS = re.compile(r"\w+", re.UNICODE)
+_RE_MARKDOWN_IMG = re.compile(r"!\[.*?\]\(.*?\)")
+_RE_MARKDOWN_HDR = re.compile(r"^#+\s*", re.MULTILINE)
+_RE_HYPHEN_BREAK = re.compile(r"(\w)-\s*\n\s*(\w)")
+_RE_NEWLINES = re.compile(r"\n+")
 _RE_GREEK = re.compile(r"[\u0370-\u03FF\u1F00-\u1FFF]+")
+_RE_MULTI_SPACES = re.compile(r" {2,}")
+_RE_ROMAN_SPACED = re.compile(r"\b([A-Z])((?:\s[A-Z]){2,})\b")
 
 
 def texte_continu(texte: str) -> str:
     """Convertit un texte (brut ou markdown) en flux continu propre."""
-    # Retirer les images markdown ![alt](url)
-    texte = _RE_MARKDOWN.sub("", texte)
-    # Retirer les titres markdown (# ## ###)
-    texte = re.sub(r"^#+\s*", "", texte, flags=re.MULTILINE)
-    # Rejoindre les mots coupés par un tiret en fin de ligne (césure syllabique)
-    # "rem-\nplacement" -> "remplacement"
-    # Note : les mots composés inline (beaux-arts) ne sont pas affectés car sans \n
-    texte = re.sub(r"(\w)-\s*\n\s*(\w)", r"\1\2", texte)
-    # Sauts de ligne -> espaces
-    texte = re.sub(r"\n+", " ", texte)
-    # Retirer les lettres grecques parasites (artefacts d'extraction)
+    texte = _RE_MARKDOWN_IMG.sub("", texte)
+    texte = _RE_MARKDOWN_HDR.sub("", texte)
+    # Césure syllabique : "rem-\nplacement" -> "remplacement"
+    # Les mots composés inline (beaux-arts) ne sont pas affectés (pas de \n)
+    texte = _RE_HYPHEN_BREAK.sub(r"\1\2", texte)
+    texte = _RE_NEWLINES.sub(" ", texte)
     texte = _RE_GREEK.sub("", texte)
-    # Espaces multiples -> un seul
-    texte = re.sub(r" {2,}", " ", texte)
+    texte = _RE_MULTI_SPACES.sub(" ", texte)
     return texte.strip()
 
 
@@ -129,18 +137,11 @@ def tokeniser_normalise(texte: str) -> list[str]:
 
 def nettoyer_bloc(texte: str) -> str:
     """Nettoie le texte brut d'un bloc PyMuPDF."""
-    # Rejoindre les mots coupés par un tiret en fin de ligne (césure syllabique)
-    # "rem-\nplacement" -> "remplacement"
-    texte = re.sub(r"(\w)-\s*\n\s*(\w)", r"\1\2", texte)
-    # Remplacer les sauts de ligne restants par des espaces
+    # Césure syllabique : "rem-\nplacement" -> "remplacement"
+    texte = _RE_HYPHEN_BREAK.sub(r"\1\2", texte)
     texte = texte.replace("\n", " ")
     # Lettres isolées espacées (chiffres romains) : "V I I I" -> "VIII"
-    # Détecte les suites de lettres majuscules isolées séparées par des espaces
-    texte = re.sub(
-        r"\b([A-Z])((?:\s[A-Z]){2,})\b",
-        lambda m: m.group(0).replace(" ", ""),
-        texte,
-    )
+    texte = _RE_ROMAN_SPACED.sub(lambda m: m.group(0).replace(" ", ""), texte)
     return texte.strip()
 
 
@@ -154,17 +155,19 @@ def extraire_texte(chemin_pdf: Path) -> str:
         return ""
 
     pages = []
-    for page in doc:
-        try:
-            blocs = page.get_text("blocks")
-            blocs_texte = [b for b in blocs if b[6] == 0]
-            blocs_texte.sort(key=lambda b: (round(b[1] / 10) * 10, b[0]))
-            textes = [nettoyer_bloc(b[4]) for b in blocs_texte]
-            pages.append(" ".join(t for t in textes if t))
-        except Exception as exc:
-            logger.warning("Page ignorée dans '%s' : %s", chemin_pdf.name, exc)
+    try:
+        for page in doc:
+            try:
+                blocs = page.get_text("blocks")
+                blocs_texte = [b for b in blocs if b[6] == 0]
+                blocs_texte.sort(key=lambda b: (round(b[1] / 10) * 10, b[0]))
+                textes = [nettoyer_bloc(b[4]) for b in blocs_texte]
+                pages.append(" ".join(t for t in textes if t))
+            except Exception as exc:
+                logger.warning("Page ignorée dans '%s' : %s", chemin_pdf.name, exc)
+    finally:
+        doc.close()
 
-    doc.close()
     return texte_continu(" ".join(pages))
 
 
@@ -196,13 +199,43 @@ def ocr_pdf(client: Mistral, chemin_pdf: Path, modele: str) -> str:
 # Comparaison des tokens
 # ═══════════════════════════════════════════════════════════════════════════
 
-@dataclass
+@dataclass(slots=True)
 class ResultatComparaison:
     """Résultat de la comparaison entre extraction de base et OCR."""
     total_tokens: int = 0
     nb_erreurs: int = 0
     nb_uniques: int = 0
     termes_uniques: list[str] = field(default_factory=list)
+
+
+def _construire_index(tokens: list[str]) -> dict[str, list[int]]:
+    """Construit un index inversé {token: [positions]} pour recherche O(1)."""
+    index: dict[str, list[int]] = {}
+    for i, tok in enumerate(tokens):
+        index.setdefault(tok, []).append(i)
+    return index
+
+
+def _chercher_position(index: dict[str, list[int]], tok: str,
+                       cible: int, fenetre: int) -> int | None:
+    """Trouve la position la plus proche de `cible` dans la fenêtre via l'index."""
+    positions = index.get(tok)
+    if not positions:
+        return None
+    borne_min = max(0, cible - fenetre)
+    borne_max = cible + fenetre
+    # Recherche binaire de la position la plus proche
+    i = bisect.bisect_left(positions, borne_min)
+    meilleure = None
+    meilleure_dist = fenetre + 1
+    for j in range(max(0, i - 1), min(len(positions), i + 2)):
+        pos = positions[j]
+        if borne_min <= pos <= borne_max:
+            dist = abs(pos - cible)
+            if dist < meilleure_dist:
+                meilleure_dist = dist
+                meilleure = pos
+    return meilleure
 
 
 def comparer(texte_base: str, texte_ocr: str, cfg: Config) -> ResultatComparaison:
@@ -214,45 +247,51 @@ def comparer(texte_base: str, texte_ocr: str, cfg: Config) -> ResultatComparaiso
         return ResultatComparaison()
 
     ensemble_ocr = set(tokens_ocr)
+    index_ocr = _construire_index(tokens_ocr)
     idx_ocr = 0
-    erreurs = []
+    erreurs: list[str] = []
+    seuil = cfg.seuil
+    taille_f = cfg.taille_fenetre
 
     for mot_orig in tokens_orig:
         tok = supprimer_accents(mot_orig)
         if tok.isdigit():
             continue
 
-        # Recherche exacte (rapide)
+        # Recherche exacte — le token existe quelque part dans l'OCR
         if tok in ensemble_ocr:
-            try:
-                pos = tokens_ocr.index(tok, max(0, idx_ocr - cfg.taille_fenetre))
+            # Mettre à jour la position via index (best-effort)
+            pos = _chercher_position(index_ocr, tok, idx_ocr, taille_f)
+            if pos is not None:
                 idx_ocr = pos + 1
-            except ValueError:
-                pass
             continue
 
-        # Recherche floue dans une fenêtre
-        debut = max(0, idx_ocr - cfg.taille_fenetre)
-        fin = min(len(tokens_ocr), idx_ocr + cfg.taille_fenetre)
+        # Recherche floue dans une fenêtre glissante
+        debut = max(0, idx_ocr - taille_f)
+        fin = min(len(tokens_ocr), idx_ocr + taille_f)
         fenetre = tokens_ocr[debut:fin]
 
         if not fenetre:
             erreurs.append(mot_orig)
             continue
 
-        meilleure = max(SequenceMatcher(None, tok, t).ratio() for t in fenetre)
+        # Un seul passage : trouver le meilleur score ET sa position
+        meilleur_score = 0.0
+        meilleur_pos = debut
+        for j, t in enumerate(fenetre):
+            score = SequenceMatcher(None, tok, t).ratio()
+            if score > meilleur_score:
+                meilleur_score = score
+                meilleur_pos = debut + j
 
-        if meilleure < cfg.seuil:
+        if meilleur_score < seuil:
             erreurs.append(mot_orig)
         else:
-            for j, t in enumerate(fenetre):
-                if SequenceMatcher(None, tok, t).ratio() == meilleure:
-                    idx_ocr = debut + j + 1
-                    break
+            idx_ocr = meilleur_pos + 1
 
     # Dédoublonner en gardant l'ordre
-    vus = set()
-    uniques = []
+    vus: set[str] = set()
+    uniques: list[str] = []
     for t in erreurs:
         if t not in vus:
             vus.add(t)
@@ -270,7 +309,7 @@ def comparer(texte_base: str, texte_ocr: str, cfg: Config) -> ResultatComparaiso
 # Traitement d'un fichier PDF
 # ═══════════════════════════════════════════════════════════════════════════
 
-@dataclass
+@dataclass(slots=True)
 class ResultatPDF:
     """Résultat du traitement complet d'un PDF."""
     fichier: str
@@ -368,7 +407,7 @@ def main() -> None:
     racine = Path(__file__).resolve().parent
 
     # Création des dossiers de sortie
-    for d in [cfg.output_txt, cfg.output_ocr, cfg.output_erreurs]:
+    for d in (cfg.output_txt, cfg.output_ocr, cfg.output_erreurs):
         (racine / d).mkdir(parents=True, exist_ok=True)
 
     # Collecte des PDF
