@@ -1,0 +1,1408 @@
+==========================================================================================
+RÉSIDUS INCOMPRESSIBLES DE BRUIT — INVENTAIRE COMPLET
+==========================================================================================
+Date : 2026-04-02
+Critère : mots de 4+ lettres sans aucune voyelle (hors chiffres romains)
+Volumes analysés : 42
+
+Total extraction (output_txt) : 991 mots parasites
+Total OCR (ocr_mistral)       : 228 mots parasites
+==========================================================================================
+
+##########################################################################################
+# SECTION 1 : EXTRACTION PyMuPDF (output_txt/) — 991 résidus
+# Source du bruit : texte embarqué dans le PDF (encodage dégradé, scans anciens)
+##########################################################################################
+
+
+--- BiographieNationale_Volume1 (42 résidus) ---
+  [Pcrtz]  contexte : «. — Thiclmar, M. Citron, apud Pcrtz, Scriptorum III. — Krnnlz, Me»
+  [Krnnlz]  contexte : «apud Pcrtz, Scriptorum III. — Krnnlz, Metropolis et Cltrytrœus Sax»
+  [nlcvn]  contexte : « au bon due Henri FUI. Cil in'nlcvn cl nom Et me fist mon mustier»
+  [Bclg]  contexte : «lgicœ, p. 709. —Koppens, Bibl.Bclg.,t. Il, p. 1 1 U . ADORNES (J»
+  [Bclq]  contexte : «e Saint-Gcnois. l'nppens, RM. Bclq., t. I, p. 21. — Kabricius, R»
+  [ccncn]  contexte : «uasclicn eenen grondcigenucr, ccncn boer en ecnen koopman in vret»
+  [Sncrs]  contexte : «Akers, dat gewonnen was, Ende Sncrs, die goede stede. En es Frans»
+  [XVlì]  contexte : «en, .XIII. hondert jaer ende .XVlì. La Société litteraire de Lei»
+  [Vcrd]  contexte : «de Noue. Bercarii Hisl. Epis. Vcrd. — Alberici Chron. an. 1131. »
+  [Brnbnnl]  contexte : «ndances. Bulkcns, Trophées de Brnbnnl, I. I, pp. 2C7 et 279. — De H»
+  [rjcxrk]  contexte : «'-olii iu de lïydragcn tot de rjcxrk. der cvnng. lutli. Kerl, in N»
+  [cvnng]  contexte : « lïydragcn tot de rjcxrk. der cvnng. lutli. Kerl, in Ncderl. — Do»
+  [Gcrm]  contexte : « t. I, p. 51. — Perlz, Monmn. Gcrm. hislor. l.cg., t. I ; Script»
+  [MBCXL]  contexte : «t 't jaer MCCXX tot den jaere MBCXL, wtghegeven, gheaccordeert en»
+  [Bclg]  contexte : « p. 116. — Sweerlius, Allienœ Bclg., p. 129. — Foppens, Bibl. Bc»
+  [Bclg]  contexte : «lg., p. 129. — Foppens, Bibl. Bclg., t. I., p. 66. — Histoire LU»
+  [plqn]  contexte : «ras de terre, qui, d'après le plqn d'Appelmans, devaient support»
+  [Hcnncbcrt]  contexte : «availlait entre les années F. Hcnncbcrt. ARDENNE (Remacle D') ou REMA»
+  [VLVT]  contexte : «euvcnscli Gcnootschap : TÏDEH VLVT; 18Si. Plusieurs (5) Vuirp. 1»
+  [Lcvcns]  contexte : «B™> de Saint-Génois. Krainni, Lcvcns en Werke« der hollandschc en »
+  [Chcv]  contexte : «mmencement du siècle Suivant. Chcv. L. de Burburc. ARNOULD, abbé»
+  [Lcns]  contexte : «nd quelquefois avec ArnouM de Lcns ou LCIIMCUS, mcdcciuel mathém»
+  [Cbcv]  contexte : «écrivain manquent absolument. Cbcv. L. dcBurburc. ARRIGO (Nicola»
+  [csld]  contexte : «apports (I) Son véritable nom csld'Assoiilcville ; c"csl uinsi q»
+  [cldls]  contexte : «s, et ce sont li capitle dont cldls livres parolle. Ce livre renf»
+  [cltrc]  contexte : « conocen por hechura de (2) l.cltrc d'Aytona au roi, du 7 mars 16»
+  [Lcllrcd]  contexte : «cidos, hecharán la culpa, (4) Lcllrcd'Aytona nu comte-duc, du 19 fé»
+  [Htrc]  contexte : «que pucila suplir su [alla (I.Htrc(lu20 iioùl tfiô'i, aux Archiv»
+  [Dclg]  contexte : «. 940. — (ihesquière, AcI.SS. Dclg., t. III,pp.452-455, 685-G85.»
+  [Brltz]  contexte : «rabant indique celle de 1627. Brltz. Foppens, Bibliotheca belgica»
+  [scnlp]  contexte : «écussons et signé: MART. BAES scnlp. a° 1610; un titre-frontispic»
+  [tnns]  contexte : «e de Saint-Quentin : Par lonc tnns ai esté tristes et mus, Mais »
+  [Chrkt]  contexte : «stampes, on distingue : Jésus-Chrkt entre saint Pierre d'Alcantar»
+  [SCKZ]  contexte : «UNIES del. —BERNARD DE BALEN,,SCKZ/>. On cite encore de ses esta»
+  [dpnt]  contexte : « il fit construire une église dpnt le frontispice était soutenu »
+  [Chcv]  contexte : «nt le talent le plus eminent. Chcv. L. deBurburc. BARBITONSORIS »
+  [Hnrbc]  contexte : «, près de Confliiiis ; Sainle-Hnrbc'à Cologne ; Sainle-.Maric, pr»
+  [Pctlcl]  contexte : « près de Wesel; SainlSixtc, à Pctlcl Mir la Moselle; Notre-Dame, p»
+  [Twccdc]  contexte : « in Engeland. — \V. Te Walcr, Twccdc eeutogett/dr van de qeloofs-b»
+  [Hcnncbcn]  contexte : «possédons point de traces. F. Hcnncbcn. OD a attribué la qualificati»
+  [MBCC]  contexte : «Van Baurscheit ad vivum F. A. MBCC. Le modèle avait donc dix-sep»
+  [Chrv]  contexte : «aurscheit mourut célibataire. Chrv. L. de Burbure. baron), homme»
+
+--- BiographieNationale_Volume10 (28 résidus) ---
+  [Plll]  contexte : «post Verbi Incarnationem M.D. Plll.priùs Coloniœedilum, nunc ob »
+  [Fcrd]  contexte : « dans le chant de l'Unicorne. Fcrd. i-oise. Trouvères cambrésien»
+  [snnt]  contexte : «ment. munia et maffis confina snnt nohiss primo nota; et finit p»
+  [FVLGVR]  contexte : «S, VT RELGIO OSTENDERETVR. VT FVLGVR LVXIT. ET MOX EXTINCTVS EST. »
+  [SVNT]  contexte : «MNIA, ETIAM BREVIA, CVM LONGA SVNT. . FVNERI TAMEN SVO SVPERSTES»
+  [FRVCTVM]  contexte : «N1TVS EST. ECCLESIA IN TERRIS FRVCTVM CAPIET, HVIC OPERI ARDVO ET P»
+  [ndns]  contexte : «icus, 1665, in-12. — 4. Rever"ndns adm. P. Matthias Hanzeur ord.»
+  [Wllrth]  contexte : «son frère céda tous Ch. Piot. Wllrth-Paquet, dans les publications»
+  [ttnd]  contexte : «er. Johann,Graf von Lnxembnrg ttnd Kb'nig l'on Bahmcn, ti vol. i»
+  [flls]  contexte : «d oncle. Jean était le second flls de Siger 1er (Sohier, Zeger) »
+  [xxxn]  contexte : «rd au nombre de xxiv, puis de xxxn ; il reconnut aux corporation»
+  [nbcrgh]  contexte : «angue françoise. Emile van An-nbcrgh. « une couronne et un chapel »
+  [pnbl]  contexte : «ns, l'an 1477 (Ms de la Bibl. pnbl. de Tournai, pet. in-fol., su»
+  [Btbl]  contexte : «asti Acad., p. 90. — Foppens, Btbl. belg., t. 1". p. 577. — Harl»
+  [hvjns]  contexte : «sitate Lovaniensi à convertie hvjns mheriœ ad cœlestent jucundita»
+  [NCTB]  contexte : «le d'un maître éprouvé. Félix NCTB. Valère André, Collegii iril.»
+  [plcst]  contexte : « le puisse eslever; Mais s'il plcst Dieu le roi manant Que je tru»
+  [dnns]  contexte : «de la Hesbaye (1). Jean entra dnns l'ordre des Carmes et poussa »
+  [Dcbl]  contexte : «ces et extraits de wss. de la Dcbl. rog., V, 103,106. il», 120. »
+  [Vftn]  contexte : «oésie et à la peinture. Emile Vftn Arenber(ïli Paquot, Mtm. lilt»
+  [kntv]  contexte : «ex SacrdScripiurd locupletata.kntv., 1657, in-8°, fig.—2. Nuptiœ»
+  [Fcrd]  contexte : «en Europe depuis 1450 jusqu'à Fcrd. Loise. 1500, par le P. Keren»
+  [lSTJ]  contexte : «ires sur les troubles de Gand[lSTJ 1S79), publiés par Kervyn de »
+  [Dclft]  contexte : «rier 1398, il avait épousé, a Dclft. en premières noces, Français»
+  [crgh]  contexte : « en 1 4 8 3 . Emii« v »An.-ni.crgh. Piron, Levensbeschryriiigeii»
+  [lsch]  contexte : «eproinpla), laiynich-nederlan/lsch woordenboek der XVIIe eeuw, u»
+  [kntv]  contexte : «n'œuvre Ursitlo,consulielecto.kntv., 1542,in-12. — 4. Geldro-Gal»
+  [Rttbrns]  contexte : «des estampes, gravées d après Rttbrns. — Préfaces du Trésor des lab»
+
+--- BiographieNationale_Volume11 (34 résidus) ---
+  [MJDLVl]  contexte : «du ciel, courant lan de grace MJDLVl, faicte et calculée sur le me»
+  [Bcrgmnns]  contexte : «, dit-elle, ils sont là! Paul Bcrgmnns. [F. Dellmsse], Annuaire dram»
+  [xxjc]  contexte : «spassa, l'an » xiiii" xcv, le xxjc d'octobre. « Les statues eu p»
+  [Grnt]  contexte : «e nederduytsche schryucrs van Grnt. —Yander Haeghen, Bibliograph»
+  [brnns]  contexte : «um Regium, sire Regum Navarrœ brnns séries, etc.; seconde suite, »
+  [Fcrd]  contexte : «e. Paris, Janet, 1841; in-4°. Fcrd, Loise. LAMBILLOTTE (le P. Lo»
+  [hmnrncs]  contexte : « Courlrai/. — Bit graphie des hmnrncs remarquables de la Flandre oc»
+  [Fcrd]  contexte : «œli, seu actus amoris divini. Fcrd. Loise. Christi dileclionem. »
+  [bclg]  contexte : «1, p. 211. — Swecrlius, Atli. bclg., p. -190. — l>h. Klssius, En»
+  [bclg]  contexte : «., p. 278. — Sweerlius, A th. bclg., p. 190. — Foppens, Bibl. be»
+  [pcrj]  contexte : «n œuvre en propageant sa foi. pcrj. IMM. lias Landelinus sedes e»
+  [Hcrstnl]  contexte : «ue, sous le rùgnc de l'epin d'Hcrstnl, elle bâtit à Bilspn, sur le »
+  [Brrgmnns]  contexte : «asterman, 1876; in-12. p o u| Brrgmnns. Emile Van Arenhergli. Sweert»
+  [Jlnn]  contexte : «bliothecœ Getnert. — l'nquot, Jlnn., t. 1er, p. 08. - C..-J. Vos»
+  [Gnnd]  contexte : «de cette décision, il resta à Gnnd ; il consacra les loisirs "de»
+  [Znch]  contexte : «ium introductio. Middelbourg, Znch. Roman, * LANSBERGE (Pierre V»
+  [tcmps]  contexte : «.— 1'amphlets el broclmres du tcmps reedites par Capitaine et dc »
+  [bclg]  contexte : «III, p. 183. - Foppens, Dibl. bclg,, 1.11. 383 LA SERNA SANTANDE»
+  [Nmtv]  contexte : « (Michaud), t. LXX, p. 396. — Nmtv. biogr. gènér. (DidotHoefer),»
+  [Fcrd]  contexte : «e qui est resté en manuscrit. Fcrd. Loi«e. Fr. Fétis, Biographie»
+  [plvs]  contexte : «ssi composées de nouveav ; la plvs part sur les airs mondains et»
+  [plvs]  contexte : «part sur les airs mondains et plvs commons, qui seruent avssi de»
+  [mchzrl]  contexte : «liophile belge, I. XV. — A. V'mchzrl,.Mémoires de l'asquier de la »
+  [Fcrd]  contexte : « de Hainaut. Tournai, D. Cas- Fcrd. Loiso. Communication de M. l»
+  [Crtr]  contexte : «-8". — 7. Essai sur la 593 TE Crtr.O — 1.K r.OISPF.l.TF.R 594 la»
+  [Pnnl]  contexte : « plaça dans l'église de Saint-Pnnl, ainsi qu'un modèle en petit »
+  [LXXF]  contexte : «R). Féliciter. A. D. M. CCCC. LXXF. La seconde partie commence a»
+  [LXXF]  contexte : «ter absolutus. A. D. M. CCCC. LXXF. sub Kal. F. Septembr. — 3. N»
+  [CCCCXLPJ]  contexte : « fondeur à Tourna]/, l'an mil CCCCXLPJ. — 3. Le baptistère de l'égli»
+  [Gnnd]  contexte : « de cette dernière com- mune. Gnnd, L. Hebbelynck, 1857; in-8°.'»
+  [Fcrd]  contexte : «ed Prouinces, note madedfree. Fcrd. Loiso. Vander Haeghen, Arnol»
+  [mcrlcllcs]  contexte : «u sautoir d'or chargé de cinq mcrlcllcs de sable. 891 LE PRÉVOST — LE»
+  [Dtcl]  contexte : «res, t. XXIX, p. 31. — Bayle, Dtcl. In st. et crit., t. II, p. 1»
+  [gmnns]  contexte : «ndit à Bruxelles, en Paul Uei'gmnns. J.-Fr. Foppens, Bibliothecu »
+
+--- BiographieNationale_Volume12 (16 résidus) ---
+  [MDCCXXXF]  contexte : «e pays d'Hainau, escrittes en MDCCXXXF à Mons. In-fol. de 363 ff., p»
+  [Bcrgmflns]  contexte : «s, son véritable auteur. Paul Bcrgmflns. Roquefort, De l'État de la p»
+  [Dmrt]  contexte : «es sous les noms de Liberila (Dmrt.) et Libertella (Desm.). On p»
+  [Fcrd]  contexte : «nom commence par LI, voir LE. Fcrd. Loise. LIBOY (Louis-François»
+  [cnmlc]  contexte : «d., .1 lu mémoire de. .1.-1'. cnmlc tir Liclilerrelde 18113). — J»
+  [mnns]  contexte : «d., 1838), p. 1!)3. Paul Iler^mnns. LIEBAERT (Aimé-Fidèle-Marie-»
+  [lljllt]  contexte : «TIS LU OIIH1STI ANNO M.D.XCIX lljllt. JAN. On publia après sa mort»
+  [FDSCH]  contexte : «GIUS (Gilbert), médecin. Voir FDSCH. siles des Pays-Bas [Ibid., p»
+  [Bclg]  contexte : «. ' cour, de l'Acad. roij. de Bclg., 1820), p. 332. — Journal de»
+  [stmt]  contexte : «Suriiim sex tomis cowprehensœ stmt, et mine restriclis verborum »
+  [bclq]  contexte : «II, p. 357. — Foppens, Ilibl. bclq., t. I, p. 270. — Sweertiua, »
+  [Blbl]  contexte : «académie!, p. 2S6. — Foppens, Blbl. bclyica.—Paquol, Mémoires, I»
+  [Pnbl]  contexte : «ur les troubles des Pays-Bas (Pnbl. de la Soc. d'hist. de Belg.)»
+  [snnt]  contexte : «, et in quinque tomos digesta snnt, cura et studio G. V. V. Anve»
+  [Fcrd]  contexte : «ch, Hujus ecclesiœ Decamu XL, Fcrd. Loise. Paquot, Mémoires. — B»
+  [Fcrd]  contexte : « en français par P. Duchesne. Fcrd. Loue. De Theux, Bibliographi»
+
+--- BiographieNationale_Volume13 (37 résidus) ---
+  [hggb]  contexte : «mgeschickt ward (Ayrer, Bram. hggb. v. v. Keller, IV, n° 40). 3.»
+  [Schön]  contexte : «lzwedel, et peutêtre par Chr. Schön. La pièce fut jouée en 1566 p»
+  [hggb]  contexte : «ulielmus Gnapheus, Acolastus, hggb. von J. Boite. Berlin, 1891. »
+  [Lxxxvn]  contexte : «de la province de Liège (p. à Lxxxvn). Il aurait voulu fonder à Br»
+  [Fcrd]  contexte : «stdagett van de Mysterien van Fcrd. Loise. P. Sommervogel, Bibli»
+  [bclg]  contexte : «. 224, v». — Slrada, de hello bclg., -1733, 1.1. p. 8 et 9. — Sc»
+  [Fcrd]  contexte : «t,jesuit. Gand, s. d.; in-8». Fcrd. Loise. C. Sommcrvogel, Bibli»
+  [Vnmlcr]  contexte : «hior Kriesstein, 1540. Edmond Vnmlcr Strncten. Les sources citées.»
+  [Hrttsscls]  contexte : «courts of England, France and Hrttsscls, from the ijeur luU'2 (o 1617»
+  [hclt]  contexte : «enboek. — Valero André, Bibl. hclt/., p. 740. — Foppens, Uibl. b»
+  [DXLF]  contexte : «imprimeur de mùsicque. Lan M. DXLF. Au mois de Julet. Voici les »
+  [bclr]  contexte : «, Introduction. — Bibliotheca bclr/ica (Gand, 18801890), t. XVII»
+  [bclg]  contexte : «d. claris. — Sweertius, A th. bclg. — Foppens, Bibl. bclg. —Paqu»
+  [bclg]  contexte : « A th. bclg. — Foppens, Bibl. bclg. —Paquot, Mon. — \Villems, Ve»
+  [Vmjs]  contexte : «r à l'histoire littéraire des Vmjs-U(is (1703-1770), t. IV, p. 1»
+  [Hcnrnrd]  contexte : «ys-Bas le même traitement. P. Hcnrnrd. Coirespondance de Philippe I»
+  [xxxn]  contexte : «. académique, 1786; in-8°, de xxxn-284 pages. Dans ce travail, M»
+  [hìnc]  contexte : «de la prestation des serments hìnc inde ensuivis, les xxie et xx»
+  [Fcrd]  contexte : «s dans des revues liégeoises. Fcrd. Loisc. C. Sommervogel, Bibli»
+  [crct]  contexte : «, t. IV et V. — Memoires de l.crct. — lialthasar, Histoire de la»
+  [Fcnl]  contexte : «te dernière charge. Enfin, le Fcnl. Loisc. C. Sommervogel, Bibli»
+  [Fcrd]  contexte : «nier de Dave, un officier (1) Fcrd. Henaux, Histoire de Liiijc, »
+  [flls]  contexte : « causait sa guerre contre son flls Guillaume, qu'elle n'avait co»
+  [CLxn]  contexte : «ance de Philippe II, t. I, p. CLxn. 663 MARGUERITE DE PARME 664 »
+  [Söltl]  contexte : «raten... Emile de Borcbgrave. Söltl, Ludwig der Sirenge. Nürnberg»
+  [Lcvcn]  contexte : « Junii, t. III, p. 649. — Het Lcvcn van de salige maeget aide mac»
+  [Flnn]  contexte : «ut le Braband et le residu de Flnn- « dres « qui n'était pas enc»
+  [Ncdcrl]  contexte : «ingen van de mantschappii der Ncdcrl. Letterkunde te Leiden, 1807)»
+  [Gnnd]  contexte : «voor elcketi dagh van 'tjaer. Gnnd, Tournai, né à Arras en 1541,»
+  [Gnnd]  contexte : « de Bodtsrhap tan Maria, etc. Gnnd, J. Bton, 1710, iu-8>. — Een »
+  [klnnstcT]  contexte : «eelhot'. Geschiedenis van bel klnnstcT der paters Eremylen A mjttsty»
+  [ntsl]  contexte : «veur distingué. Ces jeunes El ntsl Mnllhieu. Du Ouesne, De origi»
+  [Nnmnr]  contexte : «oseph-Ghislain-Philibert), de Nnmnr. Malgré l'avis favorable que »
+  [xxxvj]  contexte : «iabit de chanoine regulier. A xxxvj personnaiges dont les MARTINE»
+  [Lmrt]  contexte : «ques mots sur VAlsine pallida Lmrt. (1872). Il publia, avec la c»
+  [Fcrd]  contexte : «ation à effectuer au beffroi. Fcrd. Loise. C. Sommervogel, Bibli»
+  [lcrt]  contexte : «r de l'enseignement moyen (t. lcrt 2» série). — çaise actuelle, »
+
+--- BiographieNationale_Volume14 (16 résidus) ---
+  [BLDT]  contexte : «ES HEM GEDENCKT m u GHEBEDT : BLDT DAT HY MACH MET GODT HIER NA »
+  [XTVÌ]  contexte : «scola Augustiniana,die 11 Aug.XTVÌ. Louvain, Martin van Overbeke»
+  [Prgs]  contexte : «l'abbaye de Saint-Nicolas-des-Prgs et de deux autres prêtres séc»
+  [schr]  contexte : «es passes d'armes avec la Tyd-schr if t. Les audaces du Courrier»
+  [Fcrd]  contexte : «mania; ibid. n. DLIX, p. 648. Fcrd. Loise. C. Sommervogel, Bibli»
+  [MrTh]  contexte : «tres; hauteur 96 centimètres. MrTh. de Erimmel signale d'autres »
+  [XVHK]  contexte : «teurs à Gnud au XVIe, xvue et XVHK siècles. — A. Wautei's, Sur q»
+  [TTTF]  contexte : «un de ses membres, AftS MF.Rf.TTTF.lVf .134 Mr Guido Gezelle. Le»
+  [xxvn]  contexte : «ve siècle, folio 6 {Ibid., p. xxvn). Cette annexe des Brabantsch»
+  [cnrh]  contexte : «vallensis vita et opéra novis cnrh ad mss Codices recensita et i»
+  [höch]  contexte : «en und Jcriegsz hendelen, mit höch stem fleisz beschrieben, durc»
+  [KrtM]  contexte : «8i2, p. 28t. — H.-Q. Janspen.'KrtM Melcreu's Xi tint. Historien »
+  [Gcsrhkd]  contexte : «ijdragen, t. (htdluidkimde en Gcsrhkd.v. 7,. VI. 48.')9, p. 202; ib»
+  [dnns]  contexte : «Bois-Seigneur-Isauc, insérées dnns le Bulletin des commissions r»
+  [Fcrd]  contexte : «dition de Magdebourg de 1654, Fcrd LoiBe. G. Sommervogel, Biblio»
+  [tfst]  contexte : «. Itolilenbeek. Chan. Hellin, tfst généalogiques, vol. I, f> 233»
+
+--- BiographieNationale_Volume15 (21 résidus) ---
+  [Jhdt]  contexte : «ardisches Gedicht aus dem XII Jhdt von Reclus de Moliens, bearbe»
+  [dntx]  contexte : «Denne-Baron). I. Quatuor pour dntx violons, alto et basse, op. 1»
+  [dnns]  contexte : «ualifiait en 1615 de messire; dnns la suite, il obtint du roi Ph»
+  [Böhm]  contexte : « que Sandrart et Dobrowsky's, Böhm. Literatur, B. I, S. II, s. 2»
+  [tnnt]  contexte : «forcément encore incomplète : tnnt de dépôts bibliographiques so»
+  [xvnc]  contexte : «s gouverneurs des Pays-Bas au xvnc siècle (Lille, 1891), p. 17. »
+  [gcsch]  contexte : «SI. — Snellaert, Schets eener gcsch. der nederd. leiterkunde. — J»
+  [Fcrd]  contexte : «'osme, adressée à M. Mortier. Fcrd. Loise. C. Sommervoffel, Bibl»
+  [Jkcl]  contexte : «inde Tusculani episcopi & S 3 Jkcl. 11. cardinalis, sedisgue Apo»
+  [Fcrd]  contexte : «ularis Beatœ Virginia Mariée. Fcrd. Loise. Cassani, Glorias del »
+  [xxvn]  contexte : «ollardin, 1838; 2 vol. in-8", xxvn-227 et vi-306 p. — 3. Bibliog»
+  [dJtn]  contexte : «e n° 70, porte son monogramme dJtn.k partir de la fin de 1510, i»
+  [frcrc]  contexte : «de jone eage S'aprocha de son frcrc aisné Et lui requist qu'à mar»
+  [nnnd]  contexte : « Louvain; il était, en tout » nnnd Nicolay, l'ami des pauvres. 1»
+  [TlWKT]  contexte : «e son portrait gravé •719 NIF.TlWKT.ANrVT 74(1 mi les arbres que »
+  [Köln]  contexte : «, Kurfürst und Erzbischof von Köln. — Allgemeine deutsche Biogra»
+  [FrGd]  contexte : «Damhoudere, lui sont dédiées. FrGd. Alvin. Pinchart. Becherches »
+  [Götz]  contexte : «s wo verkünden Einer spricht, Götz Kirch is an diesem Ort Ein an»
+  [Smcdt]  contexte : «de vicaire à Seneffe. Cil. De Smcdt. Vita S. Norberli (A), auctor»
+  [Smcdt]  contexte : «r leur mécontentement. Ch. De Smcdt. Album noviliorum provtncice »
+  [flSS]  contexte : «sse). Voir Negker (Josse de). flSS TARi.F, ALPHARÈTÏOTIE DES NOT»
+
+--- BiographieNationale_Volume16 (31 résidus) ---
+  [MVDPT]  contexte : «ès savante bibliotrranhie 9 S MVDPT <?fi générale du droit crimin»
+  [NVPRT]  contexte : «es représ., 17 mars -1874. 29 NVPRT.S 30 1801. Il s'embarqua, en »
+  [NVST]  contexte : « éducation souffrit de ces A3 NVST AA Bruxelles, le 15 décembre »
+  [Plns]  contexte : «e bedryven. Gand, F.-L. Dullé-Plns, 1857; in-12, 64 p. — geschoo»
+  [Plns]  contexte : « Eemelsoet. Gand, F.-L. Dullé-Plns, 1861; in-18, 21 p. — 18. Keu»
+  [VrccM]  contexte : « (voir plus loin). Willem rie VrccM. Sommervogel, Bibliothèque de»
+  [Smcl]  contexte : « de 4477 4492 (publiée par De Smcl, Corpus chronicorum l'iandriœ»
+  [Chcslrct]  contexte : «depuis l'année 1839. Baron de Chcslrct de Naneffe. J. de Hemricourl,»
+  [nnTF]  contexte : «t (boussoles ou compas de an7 nnTF,T,TiTS an« • rouie) afin de p»
+  [NVNC]  contexte : «S QVOS VNICVM HIC SEPVLCIIRVM NVNC HAUET. QUID MIRI? ANIMVM QVAN»
+  [VNVM]  contexte : «MIRI? ANIMVM QVANDIV VIXERVNT VNVM IIABVERVNT : ALTER DESUT KAL.»
+  [Brnght]  contexte : «é, en 1660, par T. Jansz. van Brnght. Elle eut pour principaux aut»
+  [gmnns]  contexte : «comme Van Beneden et Pnul BiM'gmnns. S. Dirks, Histoire littérair»
+  [grnml]  contexte : «t son père. Il fut élevé avec grnml soin par sa mère et un grand-»
+  [trjm]  contexte : «erenlcyn. Moniteur belge, der trjm., 1874. p. 425 et §67. — Belg»
+  [tnrd]  contexte : «rain. A cette époque, et plus tnrd jusqu'en 1562, notre jeune co»
+  [Frnns]  contexte : «rs à Anvers en 1591. Elève de Frnns Floris, admis à la franchise »
+  [dnns]  contexte : «errements, cet artiste figure dnns ces termes : Après sa mort, o»
+  [lGdS]  contexte : «stern Episc. Uomiliœ (Anvers, lGdS), p. 105 et 267. — OÈuvres po»
+  [XLvn]  contexte : «ta SS. Marlii, 1.1,1668, p. i-XLvn). — D. Papebrochius, De vita »
+  [Flcmdr]  contexte : «dr., 1708, p. 81. — Sandenis, Flcmdr. ill, 1732, t. III, p. 81. — »
+  [Vlnsl]  contexte : «s, t. V, p. 21. — Bulletin de Vlnsl. arch. liégeois, l. XII, p. 6»
+  [MCGCGLXV]  contexte : «de cladibus Leodiensium, anno MCGCGLXV-LXFU. L'auteur dit avoir rédi»
+  [llncghcn]  contexte : «u xvme siècle. Victor Valider llncghcn. Archives de Gand. — Marc van»
+  [grnnd]  contexte : «ra-comique, remanié et devenu grnnd opéra en quatre actes, fut re»
+  [Tldjl]  contexte : « de presse. laere, 1863. — 4. Tldjl Uylenspiegel, comédie. Dédica»
+  [Gnnd]  contexte : « de la Société de médecine de Gnnd (1835, p. 78), une étude inti»
+  [pnrt]  contexte : «ns ce volume ont été tirées à pnrt. Vanden Peereboom, ministre d»
+  [scldp]  contexte : «t door einighe matrosen op 't scldp Batavia; in-4°, 4 ff. 1. Onge»
+  [Schrcvcl]  contexte : «six livres d e gros. A.-C. De Schrcvcl. (De îleyer), Esquisses biogr»
+  [WlìLS]  contexte : «FRANCONIS, ou (Rombaut). PA U WlìLS (Thierry), chroniqueur. Voir »
+
+--- BiographieNationale_Volume17 (25 résidus) ---
+  [BVRG]  contexte : «EG' · ARC · AVS- TRIE · DUC · BVRG' · BRABA · CO- MiT · FLAN · T»
+  [BVRG]  contexte : «Q · CICIL · ARCH · AV · DVX · BVRG. Sur le second, on voit le do»
+  [XXXK]  contexte : «ulaire de Bouvignes, préface, XXXK. — De Theux, Le chapitre de S»
+  [dnns]  contexte : «était heureux de les soulager dnns leurs misères. L'éducation ch»
+  [llSS]  contexte : «8), à Arras (1180), à Orchies(llSS) etàAudenarde (1190). Le comm»
+  [XVtt]  contexte : « anglaise. 8 BIOGB. NAT. — T. XVtt. 227 PHILIPPE DE BOURGOGNE 22»
+  [Blök]  contexte : «t (Nördlingen, 1869). — P.-J. Blök, Gcschiedenis van het Nederla»
+  [VQÌX]  contexte : « n» 31 : Magi ab Oriente, à 6 VQÌX ; livre ITI, n° 30 : Vulnera »
+  [dfcns]  contexte : « ses patients ; enfin jamais, dfcns un voyage à Rome, il n'a La p»
+  [xlnj]  contexte : « den doremtre te stofferen. • xlnj sch. par. ». De nouvelles rec»
+  [nrts]  contexte : «versité, une école centrale d'nrts et métiers (depuis école indu»
+  [wstó]  contexte : «utius, qui parut dans \aFama /wstó«ma( Anvers, Moretus, 1607; re»
+  [RSSF]  contexte : «82 v°). Puis, en mars 4SI PÏF.RSSF.NF, 182 1629, il devint conse»
+  [fflt]  contexte : «ns de sa jeunesse, sans qu'il fflt toutefois indifférent au cult»
+  [XTrtl]  contexte : « de quarante BIOCR. NAT. — T. XTrtl. 23 771 PLATEAU 772 ans, il a»
+  [Lxxn]  contexte : «, mort à Charenton tana, 1.1, Lxxn, col. 358. — P. Barthélémy de»
+  [xxvn]  contexte : «iculture pratique, t. III, p. xxvn). D'une nature passive et con»
+  [hwjs]  contexte : «n de Kercke van het professen-hwjs der Soc. Jesu, 1665. — Ghebed»
+  [fntd]  contexte : «6. Fils de Jacques-Martin, il fntd'abord, comme lui, membre du m»
+  [Smct]  contexte : «Eyckmnns; en 1765, Antoine de Smct; en 1766, François Coveliers;»
+  [PLÖN]  contexte : «Pierre).—T.XVII, col 818-815. PLÖN (Charles-Philippe-Joseph). — »
+  [PLÖN]  contexte : «re) ou PULMANNUS. — col. 817. PLÖN (Emmanuel-Henri-Joseph). — T.»
+  [PLÖN]  contexte : «ou JACOBUS PFUNDER. col. 817. PLÖN (Henri-Ghislain-Joseph). — T.»
+  [PLÖN]  contexte : «ph). — T. XVII, col. 817-818. PLÖN (Jacques-Joseph). — T. XVII, »
+  [PLÖN]  contexte : «OURG, MANUEL OU MALOUEL. 816. PLÖN (Pierre-Jean-Joseph).— T.XVII»
+
+--- BiographieNationale_Volume18 (27 résidus) ---
+  [dnns]  contexte : «s les provinces belges. Mais, dnns l'intervalle, de violents con»
+  [jjjLj]  contexte : «ier la carte topographique au jjjLj de chacune des provinces de l»
+  [dnns]  contexte : «ogie à Douai. • On a remarqué dnns ses « leçons », écrit de Feil»
+  [cxvn]  contexte : «t. V (Paris, 1840), p. Lxxxvi-cxvn (notice de Paulin Paris). — M»
+  [Köln]  contexte : « Die Matrikel der Universität Köln, 1389 bis, 13!>9. — Reusens, »
+  [Bcrçmnns]  contexte : «le Joryse van Puedersse. Paul Bcrçmnns. L. de Laborde, les Ducs de B»
+  [pnrt]  contexte : «ourtrai, 1875, aussi publié à pnrt; Antiquités d'Harlebeke, 1840»
+  [Crmjdt]  contexte : «pstade sex (Anvers, 4616), ou Crmjdt-boeck (Leyde, 4618). — Linnée»
+  [mRrs]  contexte : «5 juin 1870, et colonel le 25 mRrs 1874. Élevé au généralat le 2»
+  [XTffl]  contexte : «e 4 décembre BIOGR. [UT. — T. XTffl. 18 451 QUENTIN 45S ployé, av»
+  [LXXT]  contexte : «nden Jare ons Heeren M. CCCCC.LXXT, calculé par le maître d'écol»
+  [Köln]  contexte : « Die Matrikel der Universität Köln (Bonn, 1892), 1.1, p. 48 et 7»
+  [Swcrts]  contexte : «ca (Louvain, 1623), p. 098. — Swcrts, Athence belgicce (Anvers, 16»
+  [KKKK]  contexte : « porte sur le dos les lettres KKKK du classement de celle-ci. Au»
+  [xxxn]  contexte : «erbaix frères, 1771; in-4° de xxxn-592 pages, plus 4 feuillets d»
+  [XVDJ]  contexte : «ts ; mais le BIOGR. NAT. — T, XVDJ. 25 771 RATHBOD - RATH1ER 772»
+  [dnns]  contexte : « 1775 il succédait à son père dnns la lieutenanec du drossard du»
+  [Köln]  contexte : « Bianco, Die alte Universität Köln, t. 1, Anhang, p. 87. — Budin»
+  [Köln]  contexte : «ussen, Die Matrikel der Univ. Köln, 1.1, p. 7. — Quétif-Erhard, »
+  [pngrs]  contexte : «urg, 1806; in-8°, xxix et 184 pngrs. En vue de cette publication,»
+  [mnrt]  contexte : « remuant« publicises d'alors, mnrt a Neuilly, en 1847 (Messager »
+  [dnns]  contexte : « dans les dépôts publics et • dnns les collections particulières»
+  [SlcL]  contexte : « Gorze ou à Saint-Clément. J. SlcL-hcr. Bibliographie nationale,»
+  [Mnns]  contexte : «. Mathieu, F. de Reiffenberg (Mnns, s. d.). — Fr. Reland, Argus »
+  [Grrm]  contexte : «icti, t. V, p. 489S(M. — Mon. Grrm. Hist. Script., t. IV, p. 483»
+  [CHLSNK]  contexte : « 454. QUERCU (Jean de), ou DU CHLSNK. — T. XVIII, col. 454-457. QU»
+  [RhCQ]  contexte : «e). — T. XVIII, col. 819 820. RhCQ (François-Dominique). — T. XV»
+
+--- BiographieNationale_Volume19 (24 résidus) ---
+  [Fttld]  contexte : «, t. Ill, .; Annal. necroloff.Fttld.,ibid., t.XlJl, p. 186; Adam.»
+  [XlJl]  contexte : «al. necroloff.Fttld.,ibid., t.XlJl, p. 186; Adam. Brem., I, 46).»
+  [grnnd]  contexte : «dus élogieux parurent dans un grnnd nombre de revues (voir notamm»
+  [TtRNTRR]  contexte : «acteurs des faits histo- 445t TtRNTRR ? HTTV riques. Ignorant le no»
+  [HTTV]  contexte : «s faits histo- 445t TtRNTRR ? HTTV riques. Ignorant le nom de l'»
+  [Clcrcq]  contexte : « Jaspin, 1848; in-8°. René De Clcrcq. Bibliographie nationale, l. »
+  [Dcflcrncz]  contexte : «sdom van Slechelen. D' Edmond Dcflcrncz. Bibliographie nationale, l. »
+  [MBCCL]  contexte : « P. Joannis Reuter S. J. anno MBCCL in lucem editi, resohendi ab »
+  [Gcnt]  contexte : « Gand (18H3). — F. de Pottcr, Gcnt, t. IV, p. 86. — F. de Potier»
+  [pvQfj]  contexte : «v... 'AvÔoyi/wfxta dix ct^wv 'pvQfj.iY.ûv} id est Constaiilini Ro»
+  [ffrfj]  contexte : « l'abbaye du Val-desLys^e/iVw/ffrfj.aHombeeck.prcsdeMalines ; il »
+  [lmpr]  contexte : «ne d'Anderlecht lez-Bruxelles(lmpr. Hayez, 1845; in-4", 30 p. et»
+  [Gnnd]  contexte : «nt au couvent des Augustins à Gnnd) : Annales Cotvoentus Lovanie»
+  [Gnnd]  contexte : «nir les échevins leliaerts de Gnnd et scella la grande charte de»
+  [dnns]  contexte : «hon DE BOBIONOY est mentionné dnns un acte du 14 juillet 1538 (a»
+  [vrtj]  contexte : «et Gulden Cabinet van de edel vrtj schilder const, etc. (Anvers,»
+  [Ghcndt]  contexte : «ederlanden en voornamelick in Ghcndt (1806-1888), éd. Ferd. Vander»
+  [ntnrn]  contexte : «qui n'entre pas en fonctions. ntnrn MAT VIV 23 707 ROGIER 708 tin»
+  [TFTt]  contexte : «hez le maréchal Gérard on Ror.TFTt * « qu'au bout pour Nemours, »
+  [sttb]  contexte : «aci Typis Balthazaris Belleri sttb circino aureo (in- 8°, sans d»
+  [trvm]  contexte : «u'Adrien Romain, son «Thea- « trvm vrbivm. Warhafftige Contrafey»
+  [rsvs]  contexte : «m editus. Accessere plenioris rsvs ergo Tabu/a Sinvvm, Tangentiv»
+  [Smcdl]  contexte : « son ancienneté que de Ui. De Smcdl, S. J. Suncti liumoldi archie»
+  [RKMS]  contexte : «cavalerie.—T.XIX, col. 54-35. RKMS (Gaspard), peintre. Voir Rem »
+
+--- BiographieNationale_Volume2 (60 résidus) ---
+  [hctlcs]  contexte : «mp. et royale des sciences cl hctlcs-letlres de Bruxelles, t. l\ (»
+  [Smcl]  contexte : «saint Jean-Baptiste. J.-J. De Smcl. • Acta SS. Belg., t. II, p. »
+  [scqcj]  contexte : «a SS. Belg., t. II, p. 486 et scqcj. BAX (Nicaise) ou BAXIUS, rel»
+  [dnns]  contexte : «rt-Spontin ne figura plus que dnns quelques actes publics. Il mo»
+  [Gcdcnk]  contexte : «ttre qu'il a publiée dans ses Gcdcnk- slukken, I, p. 1 GO. Il m'es»
+  [Lcllrc]  contexte : «muyor a/nubaciou y conerpto. (Lcllrc île D. Francisco Bci'nartlo d»
+  [rcrcllc]  contexte : « la conlndorie ; Compte de lu rcrcllc gt'néraledes (iiiniu'c.sde 16»
+  [Slrct]  contexte : «taient dus à son pinceau. Ad. Slrct. BEECKMAN (Élie), naquit à Di»
+  [pjTnl]  contexte : « son tombeau : »KO. pnisciPi. pjTnl.t:. Alphonse I.c Roy. Chroniq»
+  [llcr]  contexte : «on AlcxanderWhcelock Tliayer. llcr band. Berlin, 1866. BEETS (Je»
+  [rlmps]  contexte : «Odysseaviikra. Odi/ss. Homer, rlmps. VI. notis etindicibusiustr. »
+  [xvnc]  contexte : « pendant une grande partie du xvnc; il y fut considéré comme un »
+  [cnsl]  contexte : «lts belges, Nnmiir, (8(H. — l>cnsl'i;:u('m<;iits ]iri\<js. BENAU»
+  [cvcn]  contexte : «incliarl), Gnnil, I8li(). — l.cvcn en werken van de hollandsche »
+  [pcns]  contexte : «nt., t. Il, p . 22. — F o p - pcns, BibÙolh. Btlg., t. I, p. 70.»
+  [Btlg]  contexte : « 22. — F o p - pcns, BibÙolh. Btlg., t. I, p. 70. 1706, in-12.Tw»
+  [Chcv]  contexte : «om de Bércnger mentionné pour Chcv. L. de Burburc. BERCKENS (Mat»
+  [BfTgh]  contexte : «ils de Guillaume IV, comte de BfTgh, et de Mario de Nassau, l'aîn»
+  [Lndg]  contexte : «. 51. Paris., 1624, t.X,p.G97.Lndg.,1677,t.XVIII, p. 56. On trou»
+  [Bcvcrcn]  contexte : «u de sa naissance au bourg de Bcvcrcn, au pays île Waes. 293 BERT 2»
+  [Blss]  contexte : «rvir à l'histoire de Matines, Blss. — A. Mirœus, Opera diplotnal»
+  [Jlss]  contexte : «. de llo|icnis), l. IV, p. 8, Jlss. n» 19122. — Vnii der Vyiiekl»
+  [Mccrsch]  contexte : « est donc éteint. Aug. Vünder Mccrsch. de son frère Guillaume le Eo»
+  [Fcltz]  contexte : «e faire connaître au baron de Fcltz, conseiller et secrétaire d'É»
+  [rlnns]  contexte : «iT, Wilhelms von Oranieii Ehe rlnns le liaumers hisl. Taschenbuch»
+  [nrch]  contexte : «. — Noies diverses prises aux nrch. du roy. à Bruxelles. BETTE (»
+  [MBLXX]  contexte : «i opmeriani auctarium ab anno MBLXX ad annum MDCXII. — Pierre van»
+  [MBCXX]  contexte : «sem designatum, die VII julii MBCXX, in canobio Affligemensi, ubi»
+  [rnjctd]  contexte : « 82, 81. — A. Dcsplaii(|uc, l'rnjctd'assassinat de Philippe le Bon»
+  [Slrct]  contexte : «ue celle de sa naissance. Ad. Slrct. BISET (Jean-Baptiste), peint»
+  [Bnrnnlc]  contexte : «. Mcycri, Ann. Flandriœ. — De Bnrnnlc, Histoire des ducs de Bourgog»
+  [MBXXX]  contexte : «vi, impensis Simonis Colinen, MBXXX. Ce dernier volume, de la plu»
+  [Kmmm]  contexte : «atique belge. — linmcrsccl cl Kmmm, Levens en toerken der hollan»
+  [Grrssr]  contexte : «llet l8U(nrl. de M. de Siiint-Grrssr). — Id., numéro du 27 novembr»
+  [Wnrzbnch]  contexte : « Vander SIcerscli. Consl. von Wnrzbnch, Biographisch Lexikon des Kni»
+  [rnnp]  contexte : «t la strophe que voici: En cc rnnp on pent mellre, avec Jacques »
+  [Gncscn]  contexte : «in le Polonais, archevêque de Gncscn. (3) Publié par J.-F. Willems»
+  [Dtckcrs]  contexte : « une lecture fautive pour Jan Dtckcrs. Il existe une édition de cet»
+  [Dclfl]  contexte : «tion de cet ouvrage, datée de Dclfl, l'an 1489. S93 BOENE - BOENE»
+  [Jlss]  contexte : «munaux de Gand du XV' siècle, Jlss — Chcv. Dicricx, Mémoire» sur»
+  [Chcv]  contexte : «de Gand du XV' siècle, Jlss — Chcv. Dicricx, Mémoire» sur la vil»
+  [Bnlth]  contexte : «ner, Minder - broeder. Antw., Bnlth. Moretus, 1635, in-4o. Ce liv»
+  [Blss]  contexte : «. — l'unuot, Fasti academici, Blss., l. I ; Manuscrit Je la Bibl»
+  [dnns]  contexte : «x séjours prolongés qu'il fit dnns divers pays, « voirde raccous»
+  [Fnpppns]  contexte : «tCgUStitl. E.-II.-J. Reusens. Fnpppns, Pibliolhera litlgiea, t. I, »
+  [Slss]  contexte : « linril, le= l vol.. passim ; Slss. 17011 el 9!l.'-7, p. 212 el »
+  [snnl]  contexte : «qnœ in Pentalcucho paucissimœ snnl, in mteris tibris frequi-ntio»
+  [Gnnd]  contexte : «Il n'administra le diocèse de Gnnd que quatre ans environ ; en e»
+  [Gnnd]  contexte : «il, lictalion des troubles de Gnnd sons Charles-Quint, p. 5611.—»
+  [Klnnc]  contexte : « de l'art, t. V. — Charles Le Klnnc, Manuel de l'amateur deslampe»
+  [Cnmp]  contexte : «er, Bibl. des écrivains de la Cnmp. de Jésus, 1. 1. — Paqiiot, M»
+  [schclmschc]  contexte : «notice, (1 )... maar een paar schclmschc jongens, dewelke ik om de moe»
+  [trcs]  contexte : «recevant la pension que son » trcs-re- » doubté Seigneur · lui a»
+  [Jlss]  contexte : «e 16 octobre 1848. — Fopprns, Jlss 9959. — Archives île l'ulibay»
+  [dnns]  contexte : « au mois de mars 1837. Ce fut dnns cette ville qu'il apprit les »
+  [Mccrsch]  contexte : «s celui du style. Aug. Vander Mccrsch. Félis, Biogr. universelle de»
+  [Schöff]  contexte : «naissance du Sauveur, chez M. Schöff-Brentano, à Francfort ; etc. »
+  [Blnnc]  contexte : «et des graveurs. — Charles Le Blnnc, Manuel de l'amateur d'estamp»
+  [Gnnd]  contexte : «en. — Archives communales lie Gnnd, Registres aux resolulions éc»
+  [Blnt]  contexte : «emühung auf der Insel Zaypan. Blnt-Zeugens Patris Ludovici Medin»
+
+--- BiographieNationale_Volume20 (29 résidus) ---
+  [flls]  contexte : «. Ryckewaert. — C. Ryckewaert flls. Ortroy (Fernand van), profes»
+  [lbrs]  contexte : «816, il devint notaire et dès lbrs il s'occupa beaucoup d'art et»
+  [RftDMR]  contexte : «représentant les Triomphes 33 RftDMR 34 dit leur dernier mot sur t»
+  [XXVJ]  contexte : «NI MIL - LESIMO QUINGENTESIMO XXVJ. IX. DECEMBRIS. 1. a. Dit boe»
+  [Frncsl]  contexte : «der et les autres contre lui. Frncsl Mallhicu. Journal de la provi»
+  [Smcdl]  contexte : « Souvenirs personnels. Ch. De Smcdl, S. J. God. Henschenius, De S»
+  [Snbbp]  contexte : «s parties de la stratégie. M. Snbbp. ROVERE (Richard?), peintre, »
+  [fflt]  contexte : « doute que sa lourde tâche ne fflt terminée à temps. Il fit les »
+  [Bnml]  contexte : «nt des portraits d'évêques de Bnml>erg et de Wurzbourg. Dans le »
+  [rVnn]  contexte : «n œuvre, ainsi que In. nnfînp rVnn nuiaaflnt. inf.ftrAl·.. sur 4»
+  [frnn]  contexte : «ifique que les jurisconsultes frnn- « çais n'ont pas dépassés » »
+  [Rnlz]  contexte : « gravés par le soin de Gaspar Rnlz de Malines (1581). — La Fuite»
+  [Rmjsbrnrk]  contexte : «sur le voyage de Guillaume de Rmjsbrnrk ou de Rubruquis (Bull. deVAca»
+  [Pcnmj]  contexte : «n (Paris, Delagrave, 1888). — Pcnmj Magazine, t. III, p. 266-3S0.»
+  [Lwów]  contexte : «najezyk polski X. W. P. z. z. Lwów Nakladem tlumacza 1874 (== Ru»
+  [Stöckl]  contexte : «, 66; 4e partie, p. 214. — A. Stöckl, Geschichte der Philosophie d»
+  [plvs]  contexte : «le déclarent le plus fort, le plvs beau et le plus somptueux de »
+  [rsch]  contexte : «d.Ms. 19, 583). A]| honsu RoL'rsch. Valère André, Belg. bclg., 2»
+  [bclg]  contexte : «RoL'rsch. Valère André, Belg. bclg., 2« éd., p. 311. — Sanderus,»
+  [Bclg]  contexte : «s, Athenae, p. 303 — Koppens, Bclg. bclg., p. 397. — J. Byrquius»
+  [bclg]  contexte : «enae, p. 303 — Koppens, Bclg. bclg., p. 397. — J. Byrquius, Cent»
+  [BcrgmnnB]  contexte : « p. 416; t. III, p. 140. Puni BcrgmnnB. F.-J. Félis, Dioqntphie univ»
+  [Dnns]  contexte : « princ·- piorum. Jn-12, 32 p. Dnns sa liilucidatio, Secunda pars»
+  [RTCX]  contexte : «présentant la Flagellation du RTCX, Paul, le Jeune, peintre, bou»
+  [chnnt]  contexte : «fatigue la lecture du premier chnnt. contre le rationalisme antic»
+  [GnncJ]  contexte : «ses assauts. Dès le 27 avril, GnncJ avait envoyé à Cassel un fort»
+  [dnns]  contexte : «ie de stabilité. Ce n'est que dnns le synode de 1577 qu'il arrêt»
+  [rHRNRn]  contexte : « HliMNC iM A MR ITITI HFI RIH rHRNRn Qlfi Coppée (Denis), poète tr»
+  [mnsì]  contexte : « T. IX, col. 508. * HiTNRi rr.mnsì — HVMANS HIRNRH 09? Jardon (H»
+
+--- BiographieNationale_Volume21 (33 résidus) ---
+  [xvnc]  contexte : « SaintLuc, luthiste alhois du xvnc siècle (Bruxelles, Scholt, 18»
+  [chpz]  contexte : «ons-nous, qu'il mourut. C'est chpz ce Bernimoulin que notre aute»
+  [Bclg]  contexte : «e (Ann. de l'Acad. d'arch. de Bclg., t. XVIII, Anvers, 1861). — »
+  [Gnnd]  contexte : «allot de Beaurnont, évêque de Gnnd (le Dictionnaire dit « Gallot»
+  [Snlm]  contexte : « de Le prince Frédéric III de Snlm-Kyr_ BIOGR.NAT. — T . XXI. 8 »
+  [Brmjdt]  contexte : «even aen sijne aiderlie f sie Brmjdt de H. M. Birgit la ran Sweden»
+  [Schn]  contexte : «nçais en tête du Spieghel der Schn/fkonsle, de Jean Van de Velde»
+  [Gnnd]  contexte : «conservé à la bibliothèque de Gnnd,ayant pour sujet : Les Parque»
+  [Knöpft]  contexte : «es menaient chez le substitut Knöpft'; ensuite la foule, s'excitan»
+  [dnns]  contexte : «es le mouvement et la vie et, dnns cette recherche, n'esquivant »
+  [Gnnd]  contexte : «e retira, lors des troubles à Gnnd sous Hembyze et Ryhove, avec »
+  [vnndcr]  contexte : «illaume Le Merchier et Victor vnndcr Hupghcn. F. vander Haeshen, R»
+  [mnnd]  contexte : «t le français comme le fla- • mnnd ». Mais il semble qu'il revin»
+  [mögt]  contexte : «r bevriest dat hy in als haer mögt verwinnen Benam hem 't leven »
+  [Mdns]  contexte : «sieurs châteaux, sans doute à Mdns, à Valenciennes, à Lille et a»
+  [dqnt]  contexte : «s les trésors de la Vaticane, dqnt le pape Clément XII lui avail»
+  [Gnnd]  contexte : « van den jaren 1446 tot 1515 (Gnnd, 1852, in-8°). Sous ce titre »
+  [Gnnd]  contexte : «le de la reine d'Angleterre à Gnnd. Comme il avouait lui-même da»
+  [cttm]  contexte : « volume, Orationes Terenlianœ,cttm germanica interprétation? (Bo»
+  [Brrgmnns]  contexte : «rovince de Saint-Joseph. Puul Brrgmnns. Etal civil de Gand et d'AIoM»
+  [ddnt]  contexte : «up, renard, hyène, six félins ddnt quatre espèces nouvelles : Fe»
+  [Schön]  contexte : «nvier : · Le général-major de Schön- « feldt.du eervicede Hesse, »
+  [cnmp]  contexte : «trichienne avait contourné le cnmp et prenait ainsi à dos sa poi»
+  [cvltv]  contexte : « Laça Brvxellense- svbvrbanvm cvltv ac prodigiis Deiparae, a Nurm»
+  [mnrs]  contexte : «lique », proposent au mois de mnrs d'envoyer aux élèves deVienne»
+  [Hnlst]  contexte : «ditait un coup de main contre Hnlst. Il courut au secours du capi»
+  [LXXXJ]  contexte : « décembre : Anno Domìni M CGC LXXXJ" obiit venerabilis pater domi»
+  [vóór]  contexte : «rkgeschiedenis van i\ederlnnd vóór de llervorminq (Utrecht, 1864»
+  [vljr]  contexte : «llie (Cent. 1905), blz. xxiii vljr. — 0. Veen, dans Realencyklop»
+  [LXXXJ]  contexte : «nlwerpen, 1K31), fus xi.J r», LXXXJ r° (â« col.), LXxxviU et eu r»
+  [chpz]  contexte : «primée à Strasbourg, en 1557, chpz les héritiers de Wendelin rìi»
+  [VJCTVS]  contexte : «ns pas cette manière de voir. VJCTVS IOANNES SCOII/EVS LVCE NOVEII»
+  [SCHM]  contexte : «ogue. — T. XXI, col. 728-734. SCHM IT (Jean-Pierre), mathématici»
+
+--- BiographieNationale_Volume22 (43 résidus) ---
+  [dnns]  contexte : «oir fait un voyage en Italie, dnns l'ordre de Prémontré et devin»
+  [xvtp]  contexte : « entrées de nos souverains au xvtp et au xvne siècles et de la P»
+  [LXVJJJ]  contexte : «s (inden Gulden Struys) M. D. LXVJJJ. Met Privilégie. Onderteecken»
+  [nllS]  contexte : «ion située rue de Notre Dame, nllS 61-63, est ornée de deux port»
+  [Vrnnw]  contexte : «van Sonien-Bossrhe naer 0. L. Vrnnw van Jesu/rena-eyck, ... en de»
+  [Fcrnnnd]  contexte : «ore quand la mort le surprit. Fcrnnnd Uonnet. Paquot, mémoires pour»
+  [snns]  contexte : «rieures. Rentré dans son pays snns avoir réussi à se faire un no»
+  [dnns]  contexte : «ction du peuple. Une preuve : dnns la discussion du budget pour »
+  [Gnnd]  contexte : «Van Maerlant en zijne werken (Gnnd, 1861, 2e éd. 1867). Le profe»
+  [Lnlltmmnd]  contexte : «que de science, écrite pour A Lnlltmmnd, S. J. Elogium P. Jacobi Sett»
+  [Köln]  contexte : «ung der Legende Severins l'on Köln dans Donner Jahrbücher^1909, »
+  [xxxn]  contexte : « Aubry, 1860; petit in-S", de xxxn-126p.). Des traduetions itali»
+  [dnns]  contexte : «icleer, fils de Jooris, admis dnns la corporation des peintres e»
+  [Snlm]  contexte : «ur. Elle donna à Herman II de Snlm au moins troisenfants : Henri»
+  [lllfl]  contexte : « àl'abbayedeSaint-Sauveur. En lllfl, iivec ses (ils Henri et Iler»
+  [frntrcs]  contexte : « être d'un naturel (1) Nos et frntrcs noslros personam vesiram supe»
+  [Snlm]  contexte : « diverses trêves; le comte de Snlm fut exclu d'une semblable sus»
+  [Snlm]  contexte : « de plus, leur forteresse de. Snlm et tous leurs autres châteaux»
+  [Snlm]  contexte : «de privilèges à leur bourg de Snlm. Peu après, Henri tenta d'app»
+  [ltnb]  contexte : «uxembourg (Luxembourg, 1001). ltnb. Parisol, Sigefro'y, le premi»
+  [Görz]  contexte : «— H. Keyer. L. Eltester et A. Görz, Urltundenbuch zur Geschichte»
+  [Plnn]  contexte : «es étrangères, I. III (Paris, Plnn. 187R), p. 21, avait dit auss»
+  [Gnnd]  contexte : «bablement le fils de Siger de Gnnd, dit de Bourgogne, neveu de H»
+  [Snrt]  contexte : «evant Pierre Heyvart, curé de Snrt efc délégué de l'autorité dio»
+  [Frfd]  contexte : «alais Royal, n° 29, MDCCCXII. Frfd. Alvin. Vander Chijs, Tydschr»
+  [dnns]  contexte : «nvers, le 11 avril 1783, mort dnns cette ville, le 10 février 18»
+  [pvnt]  contexte : «Gand, 1888, p. 447. — wat elc pvnt sonderlinye beteikent ende is»
+  [dnns]  contexte : «S 592 intervenir la politique dnns la justice. Il fit pnrtie du »
+  [dnns]  contexte : «trouée chez nous. Ch. Simons, dnns sa mercuriale, parla des Atta»
+  [Snnl]  contexte : «aars, t. V, p. iöi'i. — [Jean Snnl], Historische Levensbeschnjvi»
+  [Gnnd]  contexte : « maison appelée la Pucclle de Gnnd (de Maeyd van Gent), située r»
+  [Gnnd]  contexte : «ts A et de la bibliothèque de Gnnd et du poème de Yetzweirt. , L»
+  [Nnrd]  contexte : «, tandis qu'au SudOuest et au Nnrd-Esl de ret axe se maintenait »
+  [snns]  contexte : «xe siècles, ou composées, non snns agrément, par les auteurs du »
+  [pnrt]  contexte : «ie. En outre, Mr de Smet prit pnrt à deux discussions solennelle»
+  [xxvj]  contexte : «se Jan Aneseus, ghemaeckt den xxvj Mey 1376. — Page 17 : Amen (G»
+  [Lnng]  contexte : «s Merlyn (Leiden, 1882). — Le Lnng, Lodewijks van Velthem's Spie»
+  [dcmt]  contexte : «eintre Lue Franchoys le Jeune dcmt le talent l'influença favorab»
+  [phts]  contexte : «is successivement de -plus en phts eminentes, que J.-B. Smits re»
+  [vnxx]  contexte : «.l. VI (Bruxelles, 1853), |>. vnxx (avec porirait) — Is. de Siei»
+  [SJlbT]  contexte : « sculp T. XXII, col. 768-769. SJlbT (Corneille), écrivain ecclési»
+  [SMÌPT]  contexte : «an de), historien et écrivain SMÌPT CPaul-Alexandre), religieux. »
+  [SMLT]  contexte : «van der), abbé. col. 7H8-799. SMLT (Roger II de), sculpteur. — T»
+
+--- BiographieNationale_Volume23 (36 résidus) ---
+  [chcr]  contexte : «en de Snellaert ainsi que son chcr.ur Serenade. 1851, — 2e édit.»
+  [nnnt]  contexte : «de saint Augustin se prome- • nnnt au bord de la mer et rencon- »
+  [XFll]  contexte : «ndexi a Roma »ei secoli Xri t XFll. Pïreiize, 1880, et Oinnle, R»
+  [wnrdt]  contexte : «s-Christus, waer in verthnont wnrdt het leren... ran de H. Maria »
+  [HMPS]  contexte : «ue toutes les « femmeB et les HMPS de Turquie soient » honnêtes,»
+  [Bmkpns]  contexte : «s la Hitutmplue nationale.) — Bmkpns, Trophées (le llrabanl. Suppl»
+  [Brnnls]  contexte : «atam fulciet et restauret. V. Brnnls. Voir Jean de Croy, son fils »
+  [tpmps]  contexte : «Après avoir résidé un certain tpmps à Naples, il quitta l'Italie »
+  [Zwölf]  contexte : «t plutôt sous l'influence des Zwölf Bücher Niederlaendischer Gesc»
+  [dnns]  contexte : « la Compagnie et avaient vécu dnns son intimité. Alfred Poncdet,»
+  [chpz]  contexte : «rt de van Son que l'on trouve chpz Walpole (1700) et Van den Bra»
+  [MDLXS]  contexte : «lebrala vigesima secunda Maii MDLXS.FH, pr electa et publicata, i»
+  [dnns]  contexte : «collège de médecine se trouve dnns le premier volume des actes d»
+  [Xfll]  contexte : «tous les hommes, nés dans les Xfll Provinces behßques. Plus tard»
+  [HDJDS]  contexte : «I JOANNIS DESPATCH«!, QUONDAM HDJDS OPPIDI LUDIMAGISTI1I. H i c J»
+  [Hwrscb]  contexte : « Kirkwood, Th. Watt. Alphonse Hwrscb. Miraeus, Elogia illuitr. Bel»
+  [Hnns]  contexte : «eaucoup de ses contemporains, Hnns Speeckaert perdit, sous l'inf»
+  [Nnnmr]  contexte : «ique à Tronchiennes, Tournai, Nnnmr, puis l'histoire ecclésiastiq»
+  [HDJL]  contexte : «mineur! de JBANNES SPIERINCK, HDJL'S ECCLESI/E CANONICUS, PH1L1P»
+  [pnrts]  contexte : «t constater combien de toutes pnrts, après tant Louis XI. Un beau»
+  [Sprmjt]  contexte : «éface du Catalogne de Charles Sprmjt,iSVo.— Biographies gantoises »
+  [Cnts]  contexte : «le sont plus dans le genre de Cnts que de Vondel. lia réuni tout»
+  [Möhl]  contexte : «ération de ses œuvres : 1. G. Möhl et L. Van Stalle, Cours éléme»
+  [Möhl]  contexte : «. En 1866, il composa avec G. Möhl, professeur à l'Ecole militai»
+  [TWSF]  contexte : «ées de son nom ou des lettres TWSF. Elles représentent des intér»
+  [dnns]  contexte : « 1635, in-12", 339 p.). Enfin dnns sa vieillesse, en 1649, il do»
+  [Hnll]  contexte : «oble des Stapleton de Coelton-Hnll (Yorkshire), Thomas fit se3 é»
+  [mnrs]  contexte : « Glajon se mit en route le 27 mnrs et ne dans les terres qu'il p»
+  [tttr]  contexte : «. 4. — Villenîagne, Rechercha tttr l'histoire de la principauté »
+  [tlqr]  contexte : «Oraison funèbre de S. E. Jim« tlqr le Cardinal Enqelbtrt Sterckx»
+  [JmwM]  contexte : « ende dat totdenXlISeptembris.JmwM.D.LXIll. (Vignette ovale sur »
+  [Mgrl]  contexte : «t la déclaration demandée par Mgrl'archeoéquede Malines. Il comp»
+  [Knnst]  contexte : «ue De Olyftak et Foor Tael en Knnst, et fut élu membre effectif d»
+  [Frtd]  contexte : «en Kumtgeschichte. — C.Kramm, Frtd. Alvin />« lèvent en werken d»
+  [Gnnd]  contexte : «Jaer MDCLXVIII (Université de Gnnd). Henri semble avoir hérité d»
+  [dnns]  contexte : «onger à combler, cette lacune dnns un recueil comme celui-ci. Je»
+
+--- BiographieNationale_Volume24 (63 résidus) ---
+  [gnnsch]  contexte : «rier de la société De Taal is gnnsch het volk. J. Vercoullie. Piro»
+  [Gndts]  contexte : «: De heylige Mag et «n moeder Gndts Maria, in het helder daglicht»
+  [lnns]  contexte : « contractés lors de l'entrée <lnns le métier. 1468, à Bruges", a»
+  [Gnnd]  contexte : «OEVERE, franc-maîtrepeintre à Gnnd, qui travailla à la décoratio»
+  [xvrn]  contexte : «nnaît lui devoir une somme de xvrn s. gr. Cette dette résulte ap»
+  [Nnmnr]  contexte : «vec ses troupes, les Etats de Nnmnr se prononcèrent nettement pou»
+  [Knfl]  contexte : «tice nécrologique par Maurice Knfl'eralh). — A. Eaglelield-Hull,»
+  [XXTV]  contexte : «le chanoine BIOfiR. MAT. — T. XXTV. 8 131 STRALEN 132 A. Kempene»
+  [rtrdrtt]  contexte : «ignes destinées à maintenir l'rtrdrtt. En recevant les nouvelles de»
+  [Tnrfs]  contexte : «1, 218-219, 493. — Mertens en Tnrfs, Geschiedenis van Antwerpen, »
+  [dnns]  contexte : «'est plus fait mention de lui dnns la liquidation de la successi»
+  [dnns]  contexte : «d 15 52, dont un résumé parut dnns la Notitia abbaliarum ordinit»
+  [dnns]  contexte : «ndre une place très honorable dnns l'école belge naissante. Tout»
+  [xxrv]  contexte : «n accent, par le BiocR, . — . xxrv. 8 827 SUAV1US 2SR la rue act»
+  [Vlnst]  contexte : «Urusthem, 1S05-1538 {Bull, de Vlnst. archéol. liégeois, VIII, I8U»
+  [Vlnst]  contexte : «poète et architecte (Bull, de Vlnst. archéol. liégeois, XIII, 187»
+  [Cöln]  contexte : «r Ennen, Das Rathausportal zu Cöln [Zeitschrift ßr bildende Kuns»
+  [Bwgr]  contexte : «tif. — P.-G. Witsen-Geysbeek, Bwgr.,Anthol.en Crit. Woordenb. de»
+  [Ftdlmnm]  contexte : «Van Dnorninck, Sina in textum Ftdlmnm. Traduction latine du texte g»
+  [BtTgmnns]  contexte : «gique de lions, t. XLH). Paul BtTgmnns. Ed. Greffoir, Galerie biogra»
+  [Lnkprpn]  contexte : « p. 39U-395 (notice de A. van Lnkprpn), — La Noblesse belge, annuai»
+  [SDRT]  contexte : «. Son frère, Pier^e-Florimond SDRT, né à Mons, le 21 mai 1821, y»
+  [Gnnd]  contexte : «TEREN 292 der Noot, évêque de Gnnd (1694-1730) était un vieillar»
+  [xvnc]  contexte : «nts, religieux, diplomates du xvnc siècle, je penserais volontie»
+  [nrts]  contexte : «rement à l'Académie des beaux-nrts.. Il mourut en son pays flama»
+  [SWKF]  contexte : «t ouvrage est orné de son 363 SWKF.RTS 9fiA Vers 1597, il épousa»
+  [Swßrt]  contexte : «ire de Bruxelles, où Jules De Swßrt obtint le premier prix le ler»
+  [Strt]  contexte : «ße Weeft Nyt,, Jalousie geeft Strt/t. Issu de parents aisés, mai»
+  [dnns]  contexte : «roprement dite, avertissement dnns.lequel l'auteur insiste longu»
+  [Brnx]  contexte : «., de M. J. B. Th. De Jonqhe (Brnx., 1860), n° 2775, et Cacai, d»
+  [Psvs]  contexte : «ra plus (n° 4, ci-dessous). L'Psvs sphara materialis est Celui d»
+  [dnns]  contexte : «ées de 1839 à 1845, notamment dnns les classes de dessin d'après»
+  [dnns]  contexte : «ant tout en chercher la cause dnns le fait que ses œuvres ne fra»
+  [SBns]  contexte : «iographies de Luxembourgeois, SBns compter des articles intéress»
+  [ftstf]  contexte : « fadliori methodo concinnatus ftstf (68 p.); le second en 1860. à»
+  [dnns]  contexte : «uauté et d'injustice formulée dnns certains pamphlets contre Tap»
+  [Jnngh]  contexte : «n, 1854), p. 178-193. — H. De Jnngh, L'Ancienne Faculté de Théolo»
+  [hnll]  contexte : «ramm, De levens en werken der hnll. en vl. kunstschilders, VI* p»
+  [Dnns]  contexte : «nion des Artistes liégeois"). Dnns le même volume, il publia une»
+  [Gnnd]  contexte : «ns respectives de la ville de Gnnd et de l'abbaye du côté de la »
+  [Böhm]  contexte : «iolon, en partie publiés chez Böhm, à Hambourg, en partie manusc»
+  [grnnz]  contexte : «d'un an, à grans fraiz et à • grnnz dépens; et depuis le délivra »
+  [nvnnt]  contexte : «nées d'ailleurs, elles aussi, nvnnt tout aux écoles. Citons : De »
+  [XXfc]  contexte : «que sur le T. R. P. Roothaan, XXfc général de la Compagnie de Jé»
+  [Gnnd]  contexte : «ersée au vent des enchères, à Gnnd, par les soins du libraire C.»
+  [dnns]  contexte : «rdé aux croisades se réveilla dnns l'âme zélée de l'archidiacre »
+  [grnnd]  contexte : «892, par M. Delvaux. Il était grnnd-officier de l'Ordre de Léopol»
+  [trncn]  contexte : «ont nous n'avons pu suivre la trncn. Il distribua largement les d»
+  [Vnndcr]  contexte : «(afd. III, B. n° 66). Herinan Vnndcr Linden. Gachard, Correspondan»
+  [Bnnk]  contexte : «triche, ed. Bakhuizen van den Bnnk el J.-S. Teissen, p. 413, 414»
+  [CDJL]  contexte : «S SERVUM REDDIDIT ECCE SUUSI; CDJL'S AUORE ARDENS, DUM PASCO FID»
+  [dnns]  contexte : «ses ateliers. L'une est citée dnns un compte de l'église collégi»
+  [dnns]  contexte : «t-il question du même fondeur dnns un compte de la ville de Brux»
+  [nrts]  contexte : « à In charité et nu culte des nrts. Doué d'une voix sonore, il c»
+  [Gnnd]  contexte : «partie du conseil communal de Gnnd de 1826 à 1830. Très attaché »
+  [Jhrh]  contexte : «er. h'av. in Feldz. des XVIII Jhrh. (Wien, 1891). — Tiirkheim, G»
+  [Bvll]  contexte : « la résorption de la graisse (Bvll. Acad. roy. méd. Belg-, 1861)»
+  [Xllfr]  contexte : « comte de Flandre au début du Xllfr siècle (Gand, 4928). — J'ai a»
+  [Dnns]  contexte : « de Horn, chargé d'un lambel. Dnns une série de gentilshommes br»
+  [grnnd]  contexte : «Cologne en 1480 et jouit d'un grnnd succès. Il composa encore un »
+  [dnns]  contexte : «llerie, promu sous-lieutenant dnns l'orme le 1148 (Annal. Stabul»
+  [sttr]  contexte : «pidement : Etudes historiques sttr les légendes Scandinaves de l»
+  [Köln]  contexte : « Die Matrikel der Universität Köln, 4389-1S59, t. I, p. 149. — S»
+
+--- BiographieNationale_Volume25 (59 résidus) ---
+  [dnns]  contexte : «e chant comme enfant de chœur dnns les église» de SaintPancrace »
+  [MCCCCG]  contexte : «Scriflueren bi mi Simon Cock, MCCCCG ende XXXV11. A la fin du volu»
+  [Btlg]  contexte : «p. 30.— F. Foppens, Biblinth. Btlg., t. II, p. Uas. —L. Wadding,»
+  [Knng]  contexte : «de, il la fait « par ordre de Knng-hi « ; le religieux que l'on »
+  [dnns]  contexte : «otes de l'état de la Religion dnns la Chine, 7 in-42 (Paris, 173»
+  [grnnd]  contexte : «russienne de 6.000 hommes eut grnnd'peine à conserver au roi des »
+  [Grnnd]  contexte : «Gérard van Hallart, demeurant Grnnd'Rue en 1557, etc., etc. tumes»
+  [Rnch]  contexte : «s devant la chapelle de Saint-Rnch.Le 29 mai 1557, sa veuve reço»
+  [töfr]  contexte : «lles que recèlent 155 THULDEN töfr de saint Jean-Baptiste (fragm»
+  [tnnt]  contexte : «elui du fécond polygraphe. En tnnt que professeur, maigre tons s»
+  [Grntz]  contexte : «hilosophie aux universités de Grntz et de Leipzig. Le 8 mars 1848»
+  [CntV]  contexte : «té Je théologie de l'ancienne CntV versité de Louvain. Jo«. wn«.»
+  [Hnll]  contexte : «zeel, De lèvent en werken van Hnll. en VI. kunstschilders,l. III»
+  [Ghnd]  contexte : «ne historique, qui eut lieu à Ghnd en 1500). — Froissart, chargé»
+  [Köln]  contexte : « die Matrikel der Universität Köln, 1.1 Bonn, 1892), p. LXI1, LX»
+  [snns]  contexte : «mé, ce qui a fait donner, non snns raison, le titre de Messe de »
+  [Tngl]  contexte : «-Bas, vol. IV (Bruxelles, Van Tngl, 1876). préface et p. 1 el su»
+  [dnns]  contexte : « français de 18$ alexandrins, dnns les liminaires de l'ouvrage d»
+  [Cnrn]  contexte : «.. ^Cologne, 1546), p. 451. — Cnrn. Gessner, Hiblio- iheca Unive»
+  [SVMH]  contexte : «ANO TODESCRINO GANDAVO SEPTEM SVMH. PONTT. PRAEF. VIG1LVM SXRENV»
+  [ZLJN]  contexte : «hens. JAN, JACOBDS EN MATHIAS ZLJN GESKEDEN DOOR TODIAS Margueri»
+  [Gnnd]  contexte : «cit de son voyage qui parut à Gnnd chez J.-F. Vander 381 . TOEPU»
+  [Lsnz]  contexte : «otj. hist. XVI, 1850). — Karl Lsnz, Correspondeni des Kaisers Ka»
+  [Köln]  contexte : «Die Matrikel 'der Universität Köln (Bonn, 1919), t. Il, p. 203. »
+  [Köln]  contexte : « exécuteur testa- Universität Köln und die späteren Gelehrtensch»
+  [Köln]  contexte : «— Ennen, Geschichte der Stadt Köln (Cologne, 1875), t. IV, p. 28»
+  [fftt]  contexte : «rent d'empêcher que l'affaire fftt plaidée. Entretemps, quand le»
+  [dnns]  contexte : «ontairement par des chasseurs dnns les bois de son oncle, vers l»
+  [Mntth]  contexte : «sède une lettre autographe de Mntth. Lang à Transsylvanus, datée »
+  [dtlV]  contexte : «la »ovissima della Germania e dtlV Italia. — 4. Carte générale e»
+  [dnns]  contexte : «ésenté. En 13S5, il se trouve dnns l'armée de Hennuyers que le c»
+  [dnns]  contexte : «rduel judiciaire qui eut lieu dnns la capitale du Ifainaut. Le 3»
+  [dnns]  contexte : «egnies : ce dernier eut cité, dnns la bulle de 1172, parmi les b»
+  [dnns]  contexte : «narque lui demandait son nvis dnns toutes les affaires important»
+  [nrts]  contexte : « 1836. A l'académie des beaux-nrts de Gand, il fut élève de J. d»
+  [Gnnd]  contexte : «or Fris, dans son Histoire de Gnnd, affirme que Triest bâtit un »
+  [dnns]  contexte : «s avec d'autres missionnaires dnns diverses prisons si étroites »
+  [Bnpt]  contexte : «res et adresses : Leo et Joan Bnpt. tan Ereli inventor. Joan Tro»
+  [tpmps]  contexte : « de celles qui se créaient au tpmps de Rubens : les peintres n'in»
+  [htnc]  contexte : «Brabantiae ordinibus ordinerà htnc Brab. Nnbilitalis Insiynibus »
+  [Blök]  contexte : «e de Tseeraerts • gentilhomme Blök, De Watergeuzenin Engeland 15»
+  [SFRP]  contexte : «n ne pas avoir été sans 717 T'SFRP.l.AFS 7IR En septembre, M'"«·»
+  [Köln]  contexte : « Mark und der Erzbischöfe von Köln, éd. Meibom, dans Scriptores »
+  [Gnnd]  contexte : «mée d'observation au siège de Gnnd, se mit en marche sur Melle e»
+  [Höchst]  contexte : «ié de Mansfeld, une défaite à Höchst (à l'est de Wiesbaden), le 20»
+  [LXXVTJJ]  contexte : « somme a eux • deux ass" IJJC LXXVTJJ £ à Jaspar • jtiint à cause d»
+  [BKMR]  contexte : «n 1770, mort dans cette ville BKMR. NAI. — T. XXV. 28 867 TYNCKE»
+  [bnnc]  contexte : «yncke et d'Hamere, mis sur le bnnc, avouèrent tout le complot, l»
+  [Gnnd]  contexte : «en flamand; Bibl. de l'Univ., Gnnd, ms. 1749', Ben Spiegel der S»
+  [dtll]  contexte : «une vie de Charles V (La vita dtll invitissimo e sacratissimo im»
+  [Kmsch]  contexte : «ditamenlum Niuialensc, éd. B. Kmsch (MGH, SRM., IV. p. 423 WM). V»
+  [grnnd]  contexte : «tre de In maison de 1» reine, grnnd'croix de l'Ordre du lion Belg»
+  [Schstz]  contexte : «632. Cinquième fils de Gaspar Schstz et de Catherine d'Ursel, ce g»
+  [dnns]  contexte : «seph d'Ursel entra tout jeune dnns la diplomatie, en qualité d'a»
+  [dnns]  contexte : «amait de? réformes immédiates dnns le mode de recrutement et la »
+  [Wsrd]  contexte : «eft 4 (Krankfurl, 1900 . — C. Wsrd, The Dulch and Sivedes on ihe»
+  [ffrt]  contexte : «iée une traduction allemande. ffrt _ L'avènement d'Elisabeth qui»
+  [NVDK]  contexte : «gramme non identifié — NDK au NVDK ? —, ainsi que |a date 1574 i»
+  [sprct]  contexte : «obilùsima. \\ Joliannes Wtter sprct fecit || Bibliographie nation»
+
+--- BiographieNationale_Volume26 (46 résidus) ---
+  [LXVK]  contexte : «ue de l'Ecole des Chartes, t. LXVK, Paris, 1906, p. 100 el p. 47»
+  [dnns]  contexte : «de Douai et d'Arras, d'autres dnns le ressort du Parlement de Pa»
+  [kcnst]  contexte : «rthoont in eene Nieuwe Letter-kcnst-Tafel... L'Anatomie de la gra»
+  [Schrcml]  contexte : «on modeste mobilier. A. G. De Schrcml. Tanghe, Beschrijving der par»
+  [dnns]  contexte : «therine, quelque peu modifiée dnns l'exécution (le dessin origin»
+  [ftrc]  contexte : «é Leodij loan Waldor fecit et ftrc.) = copie en contre-partie de»
+  [dnns]  contexte : «issé un bref et amusant récit dnns une poésie de 1872 : Mijn Kin»
+  [Gnnd]  contexte : «es églises de Saint-Nicolas à Gnnd, Notre-Dame de Pamele à Auden»
+  [plsn]  contexte : « peu à peu, passé à l'arrière-plsn, et l'accent s'est trouvé mis»
+  [LXXt]  contexte : «LXXII; 1. LVI (1892), p. 438, LXXt, LXXVI. — Université catholiq»
+  [flls]  contexte : «enseignements fournis par son flls Jules-Jean. 1900 (Louvain, 19»
+  [snns]  contexte : «turellement vers la peinture, snns rencontrer la moindre résista»
+  [Gnnd]  contexte : «ut recteur de l'Université de Gnnd pour la période 1894-1897. Il»
+  [dnns]  contexte : «evue beige de Numismatique et dnns la Gazette numiimatique. Il f»
+  [XVTH]  contexte : «0, in-8o, reproduit dans le t.XVTH, p. 110 et suiv., de la colle»
+  [wnch]  contexte : «, t. IV, P- 1-77). Alphonie R<wnch. 381 VAN DER HEYDEN 352 -sous»
+  [snns]  contexte : «e tranquille, subissant DER). snns doute l'influence du régime t»
+  [Vnndcr]  contexte : « — Dictionnaire universel. H. Vnndcr Linden. Gaillard, Le Conseil »
+  [XXXtl]  contexte : «t. XXVII (1921), p. 169 et l. XXXtl (1926), p. 16U 161. ordres sa»
+  [DTCK]  contexte : « DYCK (Daniel), peintre. Voir DTCK (Daniel VAN). VAN DYCKE (Mart»
+  [Gnnd]  contexte : «ULLEN (Pérégrin VAN). fixer à Gnnd. Les registres de la populati»
+  [Gnnd]  contexte : « du Gouvernement provincial à Gnnd, le Salon royal de l'expositi»
+  [dnns]  contexte : «elieu, informé de ses talents dnns l'art de la gravure, de la pe»
+  [svnt]  contexte : «ulgentiarum qualiter scilicet svnt roncedenâm et quibus et quibu»
+  [xvns]  contexte : «ateliers de fausse monnaie au xvns siècle. 1848 (Revue belge de »
+  [http]  contexte : « p.7V3. — Nie. Antonio, Bibl. http, noua, Madrid, 1783, t. II, p»
+  [vvlt]  contexte : «ra militia crueigerorum. Deus vvlt. Leodii, apud Gr. H. Streel. »
+  [chft]  contexte : « bien garnie aussi bien à son chft- S27 VELBRUCK 528 tout le pay»
+  [Köln]  contexte : « Bianco (Die alte Universität Köln, t. I, Cologne, 1855, Appendi»
+  [Jhts]  contexte : «zu den Reformkomilien des XV. Jhts, dans Annnlen d. hist. rerein»
+  [Jhts]  contexte : «derlanden in d3. Bàlfle d. U. Jhts, dans Abh. d. Bayr. Acad., 18»
+  [MBCGLXXXV]  contexte : «elis et Gudulee die XJX Julii MBCGLXXXV (Louvain, 1785, in-4°), quelq»
+  [Blök]  contexte : «-108, 113-114. — Molhuysen en Blök, Nieuw Nederlandsch Biografis»
+  [Vnnnn]  contexte : «cordes, des romances, etc. R. Vnnnn. Félis, Biogr. Univ., 1. VIII»
+  [Pmtth]  contexte : «n, t. II, p. 616. — Grégoire, Pmtth., t. V, p. 88. — Vander Strae»
+  [XVlh]  contexte : «, La Typographie anvenoiie au XVlh et auXVIIIe sièrle' (in Histo»
+  [Vjtrt]  contexte : « parmi ceux des fondateurs de Vjtrt Libre dans le groupe d'Ed. La»
+  [Gnnd]  contexte : «s des armoiries des Vilain de Gnnd, le chiffre XIIII (et jamais »
+  [Gnnd]  contexte : «rtrai. Vers 1863, la Ville de Gnnd achète à l'artiste une Une éd»
+  [grnnds]  contexte : « 1804, et qui fait partie des grnnds travaux de ce genre imposés p»
+  [Böök]  contexte : «cus Vives? (Paris, 1887). — E.Böök, Joannes Ludovicus Vives, en »
+  [pnrt]  contexte : « • l'Arbre d'Or • et, d'autre pnrt, celle- de • la Main d'Or • h»
+  [Htbl]  contexte : «éd., 46i3, p. 663. — Foppens. Htbl. belg., 1739, p. 880. — C. R.»
+  [dnns]  contexte : «jet de restaurer son autorité dnns les Provinces-Unies et de joi»
+  [NflTTr]  contexte : «1 TARIF. AI.PHARF.TinilR ilFS NflTTr.FS 8fif> BEK E (Guillaume van»
+  [Nfmr]  contexte : « «CR TARI if Al DHARtfTinTltf Nfmr.K.S Rfifi GINDERACHTER (Jean »
+
+--- BiographieNationale_Volume27 (13 résidus) ---
+  [Bclg]  contexte : «ns Revue de l'Instr. publ. en Bclg., nouv. sér.,t. V, 1862, p. 3»
+  [Köln]  contexte : «. Ennen, Geschichte der Stadt Köln, t. Ior (Cologne, 1865).—Aver»
+  [Köln]  contexte : «— Ennen, Geschichte der Stadt Köln, t. II (Cologne, 1866). — Th.»
+  [xxvrr]  contexte : «ay, de Liège. Bioa. NAT. — T. xxvrr. 3 67 WALLEiNRODE 68 princier»
+  [XXVlt]  contexte : «rogrès et le B1CGR. »AT. — T. XXVlt. 163 WEIRT - WELLENS 16* inst»
+  [xxvn]  contexte : «jubilaient. La Bioa. NAT. — . xxvn. 7 495 WERBROUCK \% commissio»
+  [fCfr]  contexte : «ales du Royaume, à Bruxelles. fCfr. Inventaire des Archives de l»
+  [WKKTH]  contexte : «Magistri musicus. 203 WliRT — WKKTH 204 Ph. de Monte, suivie du m»
+  [jfmwv]  contexte : «as malheureux. a\.-iMV xai <7>jfmwv oçÉwv y.ai ypovitov 7ra9wv. C»
+  [CTVXTTT]  contexte : «2, c, cm, cxm, c m , ccxvi et CTVXTTT). — A. Matthieu, Histoire du »
+  [xxxrs]  contexte : « t. Ier (Bruxelles, 1837), p. xxxrs-ux. — F. vande Putte, Cronieg»
+  [xxvn]  contexte : «e se rendre en Bioa. NAT. — . xxvn. 11 323 WILLAERT 324 Flandre »
+  [lfll]  contexte : «610 : La Description De La p. lfll, 193,196,198-200, 277, 280. —»
+
+--- BiographieNationale_Volume29 (18 résidus) ---
+  [xxvr]  contexte : «x-Arts de Belgique (1022), p. xxvr et n° 1. — Idem, Laurent Delv»
+  [XLvn]  contexte : «I (avec bibliographie pp. XLn-XLvn). — Sencie, J., P.-P.-M. Albe»
+  [HJJH]  contexte : « vie politique en Belgique de HJJH à 1040 (Actualités sociales p»
+  [Frnns]  contexte : « en Hollande et en Allemagne. Frnns vuii Kalkuu. En 1883, il est »
+  [lfllT]  contexte : « ; 1013, Garni, ' La visite ; lfllT, (ranci. Jeune garçon au pani»
+  [ftls]  contexte : «rtraits, Mone (H. Thiemann et ftls), s. d., 18 pp. — Courrier de»
+  [Vnndcr]  contexte : «aire — (1873), dans la Albert Vnndcr Limlnr . Bibliographie Nation»
+  [Bctz]  contexte : «t. II, p. 11. — do Ryckman de Bctz, Armoriai général de la noble»
+  [Böhm]  contexte : «oubart-Wilkin. Ignace-Auguste Böhm (1819-1891), peintre de paysa»
+  [Bclg]  contexte : «de Burnot [Ann. soc. géol. de Bclg.), Liège 1888-89, t. XVI (mém»
+  [Lxvn]  contexte : «e 1MJ2-03, t. XX (bull.), pp. Lxvn-Lxvm. 1894. Contribution a l'»
+  [Bclg]  contexte : «ippeville (Ann. soc. giol. de Bclg.), Liège 1893-04, t. XXI (mém»
+  [Bclg]  contexte : «lr° note) (Ann. soc. géol. de Bclg.), Liège, 1894-95, t. XXII (m»
+  [Bclg]  contexte : «ouflioulx (Ann. soc. géol. de Bclg.), Liège 1891-95, t. XXII (bu»
+  [bclg]  contexte : «tre-Sambie-et-Meuse(Bull.soc. bclg. de géol.), Bruxelles 1895, t»
+  [KtMr]  contexte : «liani depuis le milieu du XV' KtMr jusqu'en 1704 (1871), travail»
+  [Ztschr]  contexte : «s Beaux-Arts (1880), p. 29. — Ztschr. f. bild. Kst., t. XII (1877)»
+  [HKTTR]  contexte : « princier, il assiste à la AM HKTTR.R G7R (1755). Il n'en fut pas»
+
+--- BiographieNationale_Volume3 (32 résidus) ---
+  [ftclt]  contexte : « sont signés, l'un L . Broers ftclt. , l'autre L. Broers f., YL e»
+  [Gnchnrd]  contexte : «ivait comme la sienne propre. Gnchnrd. Arrhivrs Rcucniles du roviui»
+  [Krnmtn]  contexte : «r. Edm. De Busschcr. Chrétien Krnmtn. De levcns en werken der holl»
+  [Klnl]  contexte : «77 (diins le-. Archives 'lu l'Klnl il llruxi jlc*). — JlnniiM-ri»
+  [Mccrsch]  contexte : «es de Westmael. Arn:. Vnn.ler Mccrsch. KiT-ti il, Journal historiqu»
+  [grst]  contexte : «yving van den boeren cvijgh ; grst'hiedl omirent de Capelle van »
+  [hcdfn]  contexte : «ven Wie zal m\jn jonge pen op hcdfn kamrn dnjvcn Oin V leven van »
+  [dnjvcn]  contexte : «m\jn jonge pen op hcdfn kamrn dnjvcn Oin V leven van den mrnseh g'»
+  [Schclt]  contexte : «rkunde, II, 172 — Sni'llnerl, Schclt rener gesrhiedenis der l\eder»
+  [llcrg]  contexte : « orbe, etc., Cologne, )oG9. — llcrg'x Ilcfoimations Geschickte vu»
+  [Kxmpc]  contexte : « de Campenîcus en celui de De Kxmpc- CAMPENE (Corneille VAN), chr»
+  [Mclnrt]  contexte : «onclue (1484), et le San- (I) Mclnrt donne h ce personnage le nom »
+  [rrrl]  contexte : « d'Aubusson. Fisen, H i t l . rrrl. I.cod., p . Il, I. XIII, n "»
+  [bwffj]  contexte : «ciibock. — VnnilprAn, JYipttw bwffj'afiliù'icli^avtuloiji.fdi vn »
+  [llrrc]  contexte : «eiiinus, Pancgyric. Maximiuno llrrc. dictai., cnp|>. 11. 12.—Gene»
+  [Tntlschcn]  contexte : «, aussi Luden, Geschichte des Tntlschcn Volkes, t. IV, p. 241. 321 CA»
+  [Dnns]  contexte : «r eux d'aller exprimer au (I) Dnns l'état de la maison de Cbnrle»
+  [gnrdc]  contexte : « Caron figure comme • aide de gnrdc-robe >. En 1550 on le Irouve »
+  [Dmgcs]  contexte : «achard. Archives tic l'Élal à Dmgcs. - Archives ilu royaume, a la»
+  [vmdtr]  contexte : «onum, série alphabetica. Aug. vmdtr Metrsch. Vander Aa, Biographi»
+  [Bclg]  contexte : «71. — Vulcre André, Biblioth. Bclg. CAUKERCKEN (Corneille VAN), »
+  [Gtnt]  contexte : «ilRfKm'n <lour J.-K. Willems. Gtnt, »848. (2) Kilinni , fiiet., »
+  [CRLG]  contexte : « les lois sont appliquées 473 CRLG 4 7 4 avec justice, qu'aucune»
+  [xxxn]  contexte : «hard. Vit. Karol. cap. xxx et xxxn ; Ejusd. Annal, ad anu. 814 ;»
+  [Hnssclt]  contexte : « fit ou- lui-même ? André van Hnssclt. CHARLES MARTEL. Maire du pal»
+  [xxxn]  contexte : «; Chron. Novalic. lib.III,cap.xxxn.)Un siècleet demi plus tard, »
+  [Smct]  contexte : «ion son panégyrique. J.-J. De Smct. veau cours à ses idées : il »
+  [snns]  contexte : «mpte que tout sei uil le sien snns y pou- » voir résister, el me»
+  [clhc]  contexte : «on voglio restar di replicare clhc, p e opinion di tulli, se nem»
+  [lnstr]  contexte : «apiere, p. 422. (5) Ibid. (6) lnstr. du 28 a o û t 1547, Staatspa»
+  [clhc]  contexte : «agio alcuno, in questa corlc, clhc » non confessa di non saperne»
+  [Lnnz]  contexte : «ttres des 22 et 28 juin, dans Lnnz, t. III, pp. 286 et 305. (2) »
+
+--- BiographieNationale_Volume30 (4 résidus) ---
+  [GBBFS]  contexte : «t à Sylvain Van de Weyer. 401 GBBFS 402 temporains y sont encore »
+  [MllB]  contexte : «Tournai, où en 1816 il épousa MllB Philippine Rutteau, mariage d»
+  [PTRP]  contexte : «sa l'année académique 1883- 9 PTRP.IMMF. A-Ti 1884 en Allemagne.»
+  [Jhdt]  contexte : «urkunden des X., XI. und XII. Jhdt., Innsbruck, 1865-1883 (analy»
+
+--- BiographieNationale_Volume31 (10 résidus) ---
+  [Tòpsl]  contexte : «ent trois Un certain François Tòpsl, né à Munich, le 17 novembre »
+  [Töpsl]  contexte : «re) l'unique correspondant de Töpsl qui écrive de Rolduc. Il lui »
+  [Töpsl]  contexte : «btenir les renseignements que Töpsl lui demande ; il met Josse Le»
+  [Töpsl]  contexte : «x correspondants : minutes de Töpsl et originaux de Le Plat se tr»
+  [Töpsl]  contexte : «h. Mais en 1786 Ernst écrit à Töpsl qu'il a rompu avec Le Plat pa»
+  [Töpsl]  contexte : «t cette période : a) François Töpsl. — La Bibliothèque d'État à M»
+  [Töpsl]  contexte : «anuscrits concernant François Töpsl que nous avons mentionné ci-d»
+  [Töpsl]  contexte : « 26442 on trouve 5 lettres de Töpsl à Ernst allant du 31 mars 177»
+  [Töpsl]  contexte : « 1793. Les lettres reçues par Töpsl vont donc chronologiquement p»
+  [Töpsl]  contexte : «lusieurs lettres en une fois. Töpsl et Ernst s'écrivent en latin »
+
+--- BiographieNationale_Volume32 (4 résidus) ---
+  [trldnn]  contexte : «rts, Anvers, 1891 ; XXXV exp. trldnn., Gand, S. HoubarUVUkin. Fier»
+  [Jnst]  contexte : «'origine des Wallons », Bull. Jnst. archéol. liég., 1, 1852, p. »
+  [Köln]  contexte : « Begestcn der Erzbischöfe von Köln im Mittelalter, t. III, Bonn,»
+  [PVLCHRVM]  contexte : «nderole portant l'inscription PVLCHRVM CLARESCERE VTROQVE ; au rever»
+
+--- BiographieNationale_Volume33 (4 résidus) ---
+  [flst]  contexte : «i, cil m'aleva et norri Et me flst mon mestier aprendre. Il se n»
+  [xxvn]  contexte : «rique (réédition des pp. vu à xxvn du catalogue), Bruxelles, 192»
+  [XLVn]  contexte : «uaire 1934-1936, Louvain, pp. XLVn-L. J. Forget assuma, en 1913,»
+  [flgg]  contexte : «r Franck, Paris, 1931 (port., flgg.). — L. Vallas, La véritable »
+
+--- BiographieNationale_Volume34 (8 résidus) ---
+  [Bcckx]  contexte : «, 1889. — K. Schoeters, P.-J. Bcckx S. J. (1795-1887) en de 'jezu»
+  [trVnCVs]  contexte : «aillés sur un fauteuil : oLIM trVnCVs nVnC CalheDra (Jadis tronc d'»
+  [nVnC]  contexte : «ur un fauteuil : oLIM trVnCVs nVnC CalheDra (Jadis tronc d'arbre»
+  [flls]  contexte : «et révélateurs. Arrière-petit-flls de Jean-Remi de Chestret qui »
+  [Köln]  contexte : «r Kampf um Kurstaat und Stadt Köln in den Jahren 1688-1689 », da»
+  [cxxrv]  contexte : «39, t. LXXXIV, vol. II, p. cn-cxxrv (portrait photographique). — »
+  [KBTS]  contexte : «cent à Heidelberg (semes- 489 KBTS 49a fesseur à l'Université de»
+  [xxvn]  contexte : «, Léon Dequesne, 1913, in-8°, xxvn, 272 pages, n° 35 des publica»
+
+--- BiographieNationale_Volume35 (3 résidus) ---
+  [RTTVSSF]  contexte : « en marbre de Gèo Verbanck qs RTTVSSF. o/. au Musée des Beaux-Arts »
+  [Köln]  contexte : « Regesten der Erzbischöfe von Köln im Mittelalter, Cologne, 1911»
+  [Köln]  contexte : «mmlers Mayer van den Bergh zu Köln », dans Wallraf-Richartz-Jahr»
+
+--- BiographieNationale_Volume37 (7 résidus) ---
+  [cxxn]  contexte : « Kaiserhauses, t. I, 18S3, p. cxxn, n° 135. —• C!h. Piot, Rappor»
+  [vóór]  contexte : «w. De Vlaamsche Schilderkunst vóór, tijdens en na Rubens, Bruxel»
+  [vöör]  contexte : «eper, een vlaams condottiere (vöör 1104-1164) », dans De Leiegou»
+  [RRKr]  contexte : «s de la Société royale 21 q r>RRKr.HF,Tr> wn zoologique de Belgi»
+  [PTRK]  contexte : «emies qui avaient réussi RS·? PTRK fifi« Après l'arrestation des»
+  [xxvn]  contexte : «t-Christophe et CIe, 1882, 8° xxvn-453 p . ; Le certificat d'ins»
+  [xvnc]  contexte : « verriers flamands à Rome aux xvnc et XVIII0 siècles «, dans Bul»
+
+--- BiographieNationale_Volume38 (14 résidus) ---
+  [Plön]  contexte : «d (Danemark), A. Thienemann à Plön (Allemagne), F. Ruttner à Lin»
+  [Björn]  contexte : « les études d'hydrographie de Björn Heiland-Hansen, des articles »
+  [Björn]  contexte : «e Bergen sous la direction de Björn Heiland-Hansen. La vie aventu»
+  [HTTSTTN]  contexte : «e étude nécessita la con- 357 HTTSTTN 99« ception et l'exécution d'»
+  [ccxn]  contexte : «ue de Louvain, 1920- 1922, p. ccxn-ccxv. — G. Gilson, « Éloge fu»
+  [FNRS]  contexte : «de la Recherche scientifique (FNRS), la Belgique prit une part a»
+  [FNRS]  contexte : «esté attaché. Des subsides du FNRS ont permis à Jaumotte de pour»
+  [CLXSV]  contexte : «auses, t. V, Vienne, 1887, p. CLXSV, n° 4576. — J. Denucé, De Ant»
+  [Lwów]  contexte : «Université de Bruxelles, né à Lwów le 11 novembre 1882, décédé à»
+  [Lwów]  contexte : «rvention à un colloque tenu à Lwów sur la figure et l'œuvre d'Ig»
+  [Wslcp]  contexte : «es sur l'œuvre littéraire » ( Wslcp do badan nad dzietem literacl»
+  [XLjg]  contexte : «i », dans Leuvense Bijdragen, XLjg, 1950, p. 34-40, surtout p. 3»
+  [XXVH]  contexte : «ië. Klasse der Wetenschappen, XXVH s t c jaargang, nr 82, 166 p.»
+  [XXXVTTT]  contexte : «res (1927), Iiioon. NAT. — t. XXXVTTT. 25 771 VELDE 772 membre de l»
+
+--- BiographieNationale_Volume39 (6 résidus) ---
+  [Köln]  contexte : « Regesten der Erzbischöfe von Köln im Mittelalter, t. II, Bonn, »
+  [Böckl]  contexte : «graphie grecque qu'est August Böckl. En théologie, il se met à l'»
+  [RRnnnmnRw]  contexte : «te », qu'il soutient seul 1SS RRnnnmnRw.NH « xelles. Afin de supporte»
+  [dnns]  contexte : «Edmond Glesener (18741951) », dnns Annuaire de l'Académie royale»
+  [zwölf]  contexte : «uillet 1925, p. 552-558 ; Die zwölf Phasen des Bolchevismus, dans»
+  [flts]  contexte : «(Edin.) ? « An agony in light flts », dans New Edinburgh Review,»
+
+--- BiographieNationale_Volume4 (47 résidus) ---
+  [cttm]  contexte : « inusilatis in regno Franciœ, cttm additionibus L.-F. Christyn. »
+  [Bclg]  contexte : «vec le sul- Foppens, Bibliol. Bclg., t. II, p. 903-90*. — F. Nèv»
+  [XXVj]  contexte : «atherine Rams, âgé de plus de XXVj ans, » comme il déclare, doit»
+  [trrrns]  contexte : «n. J.-J. Thonî«sen. Km mm. De trrrns en verken der huUandsrhe cil »
+  [Prcz]  contexte : « illustree par les Josquin de Prcz, les Gonibert etlus AdrienWil»
+  [rvrnx]  contexte : « Xcitrrlitutlrn — Immcrziu1, 'rvrnx m wrrkrn drr hnllmnl*rlir m i»
+  [wrrkrn]  contexte : «itutlrn — Immcrziu1, 'rvrnx m wrrkrn drr hnllmnl*rlir m ii/»»u/»/i»
+  [hnllmnl]  contexte : «mmcrziu1, 'rvrnx m wrrkrn drr hnllmnl*rlir m ii/»»u/»/ir kmixtxiUtl»
+  [dnngpr]  contexte : «tes et qu'il n'était pas sans dnngpr d'accepter et de remplir, à u»
+  [plns]  contexte : «ous le titre de : Recueil des plns beaux tableaux du cabinet de »
+  [nrmc]  contexte : «in&lil publié pur le Héraut d'nrmc», t. I, p. 215. — llrilz, L'a»
+  [nccn]  contexte : «uivante : Collin de HT. i.icr nccn.'DE:* HEU F.RNULST unn Krss: »
+  [Krss]  contexte : «r nccn.'DE:* HEU F.RNULST unn Krss: ni.icu -.I.EXIMIKR COM« VO\ »
+  [bcschnjf]  contexte : «. H, p. (ri. — Vivait,l.cvins bcschnjf, elc. Ham, colonel, chevalier»
+  [chrz]  contexte : «verselle, imprimée Bruxelles, chrz Ode. — Chrislyn, Tombeaux des»
+  [llns]  contexte : «eur des arts, école des l'nys-llns. 1801. —Notices sur les grave»
+  [Blnnc]  contexte : «tcsaiiçon, 18U7. — Charles Le Blnnc, Manuel de l'amateur d'estamp»
+  [blffls]  contexte : «mme : Mane De CarCere eXCFrrl blffls, qui donué, en conservant l'o»
+  [CQSS]  contexte : «ar. de Hello Gallieo. — Dion. CQSS. Histor. roman. —• Orosii. Hi»
+  [zwtgt]  contexte : «n. Monarch, voor toten Europa zwtgt, Zoo gy bywylen niet kunt sla»
+  [Rlnnc]  contexte : «toire de Bruxelles. — Cli. Le Rlnnc. Manuel de l'amateur d'estamp»
+  [Vnnclc]  contexte : «o f.orio, Sloria di Hilano. — Vnnclc Cn-teele et- Viiinlei'slniete»
+  [llXr]  contexte : «téraire ; 395 CORKT ~ COltNI'.llXr. 30li niais, en definitive, i»
+  [BSSPZ]  contexte : «musait lui-même d'une manière BSSPZ mordante, car le vieillard ét»
+  [VlTBBB]  contexte : «APUD OMHES AELfCTO D!SIDEBUO* VlTBBB DEBUT ARRO »I.DC.XXXVI. SEFTE»
+  [BBHB]  contexte : «VI. SEFTEMBEIS XXII. ATURCOLO BBHB MRBRHTI, P.OFT.R BARC ARA« SR»
+  [clmcs]  contexte : «Conseil d'Étal, rcg.lii. — Al'clmcs delà Cliambiu dus Comptes. 45»
+  [knnst]  contexte : «rég. de flloyer, Naemlyst der knnst-schitders, etc., van M echt l»
+  [Dclg]  contexte : «reproduit |>;ir H'oppens, DM. Dclg., t I, pp. 290-91. — Fasli Ae»
+  [chnp]  contexte : «lunus, limim Lovan., liv. IX, chnp. 19, l. I, p. 513. — [)e Hcif»
+  [dnns]  contexte : «u'il publiée (Vu U. Capitaine dnns le Bulletin de l'Institut arc»
+  [Lndg]  contexte : «ilivâ. Audomari, 1618, in-12. Lndg. de sa profession, mais, à l'»
+  [Mccrsch]  contexte : « Jean de Kulaild. Aug. Vandcr Mccrsch. siècle. Voir D E CORTE (Jean»
+  [Krnmm]  contexte : «nlate. Bruges, 1845. — Chrét. Krnmm, Levens der hollandschc en vl»
+  [gnzt]  contexte : «oo lang mon viysheid cert. En gnzt pmningkundt op reglm pryi wae»
+  [mögt]  contexte : « qy moogt Htm d'uwen nomen/ O mögt ont Vaderland op mccr Van Dam»
+  [mccr]  contexte : «omen/ O mögt ont Vaderland op mccr Van Damme'i roemtn ! Aug. Van»
+  [Gtnl]  contexte : «Historie der htrvormde Kerkte Gtnl. Utrecht, 173C, pp. 179-331. »
+  [Gnthcr]  contexte : «, ilans VEncyct. il'RrscIi cl Gnthcr (art. David de Dinant). (3) S»
+  [rmjt]  contexte : «lts by eenenonbeschaemden Jem-rmjt (pfte syns ghesinde) met den »
+  [dllCS]  contexte : «te science, pendant plusieurs dllCS du Brunswick. Aug. Vmiler Mee»
+  [Vnmlcr]  contexte : «e l'espagnol en flamand. Aug. Vnmlcr Hecrsch. Biographie de la Fla»
+  [HlftC]  contexte : «OHE BRAYE SBPULTOS, ABSTOLIT, HlftC VtRUK kST trigit tlTt jubaf. »
+  [tlTt]  contexte : «TOLIT, HlftC VtRUK kST trigit tlTt jubaf. OBiir 27 OCTOI. 163i. »
+  [Gnnd]  contexte : «scher. Archives communales de Gnnd, Comptes et livres échevinaux»
+  [MDCCCXXXF]  contexte : « prononcé le premier décembre MDCCCXXXF, dans l'église.paroissale de »
+  [Fcrd]  contexte : «cidentale, l. III, p . Ii7. - Fcrd. Vander llneRlicn, Bibliograp»
+
+--- BiographieNationale_Volume40 (9 résidus) ---
+  [XVlh]  contexte : «logue of books printed in the XVlh century now in the British Mu»
+  [Brnst]  contexte : «62, 472-473, 680-586), K. von Brnst (1895, p. 260-274, 428-443), »
+  [XVth]  contexte : «logue of books printed in the XVth century now in the British Mu»
+  [cccxn]  contexte : «Bruxelles, Heussner, 1862, p. cccxn-cccxv. — Idem, dans Archives »
+  [Wnlc]  contexte : «iveaux marins de Gros Pierre (Wnlc) et de Quaregnon (Wn2a) dans »
+  [PLÖN]  contexte : «lles, 1903, col. 815-816. 719 PLÖN 720 de Quaregnon, de Framerie»
+  [XXXVHP]  contexte : «S CONTENUES DANS LES XXXVII«, XXXVHP», XXXIX<> ET XL« VOLUMES DE L»
+  [XXXTX]  contexte : «n?m;ì^\ ,^™„ ~;*; «OR 1 Ritti XXXTX I97fi 40 48 ALiSAUX (Emile), »
+  [PLÖN]  contexte : «IX, 1976, 719-725, M. Poil. 0 PLÖN (Jacques-Joseph), géomètrearp»
+
+--- BiographieNationale_Volume41 (32 résidus) ---
+  [xvrn]  contexte : «ège dans la seconde moitié du xvrn e siècle », dans Leodium, t. »
+  [trlstls]  contexte : «on de Spa. VerVIensis CIVItas trlstls ConsULI DaVID Dire sUbLato. E»
+  [Vóór]  contexte : «g, Van 't schoone wiedsterke, Vóór 't kantkussen, Koninginnelied»
+  [FNRS]  contexte : «de plongée sans » équipage du FNRS II eut lieu au » large de Dak»
+  [FNRS]  contexte : «card, ils construisirent » le FNRS III qui fut, lui, une très » »
+  [FNRS]  contexte : «athyscaphe est construit : le FNRS II. « Le premier homme à avoi»
+  [FNRS]  contexte : «e officiellement la cabine du FNRS I comme la première cabine sp»
+  [FNRS]  contexte : «près la première ascension du FNRS, exprimant sa reconnaissance »
+  [SHSN]  contexte : «rande sensibilité, dans Actes SHSN, 1912, partie 2, p. 152-153. »
+  [SHSN]  contexte : «ue calorimétrique, dans Actes SHSN, 1913, partie 2, p. 141-142. »
+  [SHSN]  contexte : «. A.P. Auguste Piccard. Actes SHSN Actes de la Sociéh helvétique»
+  [SHSN]  contexte : «e doctorat. niums, dans Actes SHSN, 1917, partie 2, p. 143-144. »
+  [SHSN]  contexte : « et E. Cherbuliez, dans Actes SHSN, 1915, partie 2, p. 131-133. »
+  [SHSN]  contexte : «der Radioelemente, dans Actes SHSN, 1919, partie 2, p. 86. A pro»
+  [SHSN]  contexte : «ische Deformation, dans Actes SHSN, 1919, partie 2, p. 86-87. Ei»
+  [SHSN]  contexte : « und K. Backhauss, dans Actes SHSN, 1919, partie 2, p. 87. 1920.»
+  [SHSN]  contexte : « grain du glacier, dans Actes SHSN, 1920, partie 2, p. 181. 1916»
+  [SHSN]  contexte : «und E. Cherbuliez, dans Actes SHSN, 1916, partie 2, p. 116-118. »
+  [SHSN]  contexte : «. und J. Brentano, dans Actes SHSN, 1916, partie 2, p. 122-123. »
+  [SHSN]  contexte : « Quervain et A.P., dans Actes SHSN, 1916, partie 2, p. 129-130. »
+  [SHSN]  contexte : « Quervain et A.P., dans Actes SHSN, 1921, partie 2, p. 110. Le s»
+  [SHSN]  contexte : «A.P. et E. Stahel, dans Actes SHSN, 1927, partie 2, p. 95. Const»
+  [SHSN]  contexte : «drogène en hélium, dans Actes SHSN, 1927, partie 2, p. 95. Invar»
+  [SHSN]  contexte : «ntinuelle des gaz, dans Actes SHSN, 1922, partie 2, p. 180-181. »
+  [SHSN]  contexte : «Quervain und A.P., dans Actes SHSN, 1922, partie 2, p. 186187. M»
+  [SHSN]  contexte : «.P. und W. Johner, dans Actes SHSN, 1930, partie 2, p. 272. 1936»
+  [FNRS]  contexte : «g, p. 87S-89S. L'ascension du FNRS et son programme scientifique»
+  [SHSN]  contexte : «sous-marine belge, dans Actes SHSN, 1940, A, p. 33-45. 1941.. Re»
+  [SHSN]  contexte : «nt des continents, dans Actes SHSN, 1946, A, p. 83-84. 1949. Der»
+  [Wttrtt]  contexte : «Léon Spilliaert », Stuttgart, Wttrtt. Kunstverein, octobre/novembr»
+  [chst]  contexte : «comme sculpteur-modeleur à Hb'chst de 1771 — au moins — à 1781 s»
+  [PLÖN]  contexte : «SSART. Voir BRAUN (Thomas). 0 PLÖN (Jacques-Joseph), géomètrearp»
+
+--- BiographieNationale_Volume42 (13 résidus) ---
+  [XVth]  contexte : «logue of books printed in the XVth century now in the British Mu»
+  [XVth]  contexte : «logue of books printed in the XVth century now in the Briiish Mu»
+  [Rösch]  contexte : «1745) sont cette fois signées Rösch, Haid, Lespilliez et Cuvillié»
+  [Köln]  contexte : «lemens und Clemens August von Köln, Bonn, 1897 (Bonner Jahrbüche»
+  [Götz]  contexte : «eipzig, 1913, p. 222224. — O. Götz, F. de Cuvilliés, Frankfort, »
+  [nPlT]  contexte : «aité signé le 9 mai 1963. 21S nPlT.lUTCR 91 fi A juste titre, de»
+  [CXVT]  contexte : « di Scienze, Lettere ed Arti, CXVT, 1958, p. 395-463. Du directe»
+  [XlXth]  contexte : «f ground water by F. H. King (XlXth Annual Report of the U.S. Geo»
+  [XXXTV]  contexte : «nis ('s-Gravenhage), n.s., d. XXXTV, 19441945, p. 206-210. — J. A»
+  [XLTV]  contexte : «914 », dans De Gulden Passer, XLTV, 196B, p. 195. SOEST (Joannes»
+  [Köln]  contexte : « Regesten der Erzbischöfe von Köln im Mittelalter, Bonn, 1854-19»
+  [XXXVr]  contexte : «3 », dans La Vie Wallonne, t. XXXVr, nouvelle série n° 299, 1962,»
+  [PLÖN]  contexte : «1976, 743-753, M. Lamberty. 0 PLÖN (Jacques-Joseph), géomètrearp»
+
+--- BiographieNationale_Volume43 (5 résidus) ---
+  [xcrs]  contexte : « Bruxelles, 1884, Annexes, p. xcrs et en. — L. Frank, Les Belges»
+  [XXXVnr]  contexte : «Preussischen Kunstsammlungen, XXXVnr, 1917, p. 177-195. — L. von B»
+  [LXXXTV]  contexte : « de Cultura, nova serie, vol. LXXXTV, 1973, p. 329-357. — J. Mosma»
+  [RTBF]  contexte : «tographique fut projetée à la RTBF le samedi 22 juillet 1978. FO»
+  [PLÖN]  contexte : «-1972, 667-668, L. Godeaux. 0 PLÖN (Jacques-Joseph), géomètrearp»
+
+--- BiographieNationale_Volume44 (12 résidus) ---
+  [XLTV]  contexte : «ierremont en BIOGR. NAT. — t. XLTV. Léon Dubois. Les archives de»
+  [Köln]  contexte : «eunde und Künstler, vol. III, Köln, 1855, p. 364-367. — Ol. Meye»
+  [XLTV]  contexte : «devons de ne BIOGR. NAT. — t. XLTV. 13 387 DECOSTER 388 point no»
+  [xxxvn]  contexte : « de Belgique, t. 21, 1886, p. xxxvn). Par contre, l'originalité d»
+  [cxxxvn]  contexte : «tésiens, ibidem, Bulletin, p. cxxxvn-cxxxix ; Ligne médiane de la »
+  [cxxxvn]  contexte : «s, ibidem, Bulletin, p. cxxxv-cxxxvn ; Des dépôts quaternaires de »
+  [xxvn]  contexte : «. XXXV, 1900, Bulletin, p. xx-xxvn ; Quelques mots sur les sable»
+  [xxxn]  contexte : «anlieue, ibidem, Bulletin, p. xxxn-xxxiv; Puits artésiens de Sai»
+  [xnvXLV]  contexte : «De Wael, ibidem, Bulletin, p. xnvXLV ; Les levés géologiques théor»
+  [xxxvn]  contexte : «XI ; Le général Hennequin, t. xxxvn, 1902, Notice biographique, p»
+  [XLTV]  contexte : «aint-Mauris. BlOGR. NAT. — t. XLTV. 24 V VANDENBERGHE (Martin), »
+  [PLÖN]  contexte : «-1972, 667-668, L. Godeaux. 0 PLÖN (Jacques-Joseph), géomètrearp»
+
+--- BiographieNationale_Volume5 (14 résidus) ---
+  [frnnc]  contexte : «e; Jean Fan ou Be Cleef, reçu frnnc-maître à Gand en 1668, doyen »
+  [dnns]  contexte : «ain a Padoue, il avait obtenu dnns cette dernière ville, en 1350»
+  [sbcrk]  contexte : « An, De clmlmol el Witzen Gey.sbcrk. — Gmllnrd, Mtm. couronné. — »
+  [Gmllnrd]  contexte : «lmlmol el Witzen Gey.sbcrk. — Gmllnrd, Mtm. couronné. — Jrrcmias De»
+  [MVNDVS]  contexte : «tit monument. Emm. Keeffs. 6° MVNDVS COEYSCANS (chronogramme de 17»
+  [rnrn]  contexte : «strum Jaspa- J.-J. Thonissen. rnrn Laet de Borchloen astrologum.»
+  [MCCCCG]  contexte : «Laet van BorcMoen vä den jare MCCCCG en VII. Ten love ëngloriedes »
+  [zxjn]  contexte : «e- ces fragments porte : hier zxjn volmaect prenosticaten Joanni»
+  [lTll]  contexte : «isprovincialibus.... 27 april(lTll). Bruxellis, typisFrancisciFo»
+  [Bclg]  contexte : «ulez. Ferreoli Locrii, Chron. Bclg., 694 et suiv. — Sweertius, p»
+  [xvnc]  contexte : «ire de la marine française au xvnc siècle, Paris, 18tJ6. — Ernes»
+  [dqnt]  contexte : «ne longue notice à ce voyage, dqnt il donne des extraits, dans s»
+  [TJlm]  contexte : «ar les campagnes mémorables d'TJlm et d'Austerlitz. Après avoir »
+  [dvcs]  contexte : «lié : Traité de l'origine des dvcs et dvché de Brabant et de ses»
+
+--- BiographieNationale_Volume6 (14 résidus) ---
+  [Gcnt]  contexte : «e produc- Even, Eendracht van Gcnt, 1857 et 4870.—Henne et Waute»
+  [clcr]  contexte : «oogeschool; Toeren liijl.—Van clcr Aa, Jliogr. Woordenboek der N»
+  [rsch]  contexte : «du même mois. Aug. Vander Met-rsch. Biographie universelle, publ»
+  [trcs]  contexte : « élève de David, faveur alors trcs-disputée, qui ne s'accordait »
+  [Mccrscl]  contexte : «e : A. Du M. Dua- Aug. Yander Mccrscl). Foppens, Bibliolheca belqic»
+  [cxxxj]  contexte : «imorum artificium dexteritale cxxxj tabulis æneis incisée, nunc d»
+  [PLDS]  contexte : «DURANDUS JACET HIC, QUI PAULO PLDS TRIBUS ANN1S TUNGRENSEM REXIT»
+  [Dvck]  contexte : «its gravés par et d'après Van Dvck, Bonn. 1852. (3) Eaux-f rtes »
+  [spnt]  contexte : «tribués à saint Eleuthère. Ce spnt 1» une Profession de foi sur »
+  [rcnhcrgh]  contexte : «elgarum. de Gruterus. Émiio v.rcnhcrgh. Nous ignorons quelles furent»
+  [Dcscr]  contexte : «'histoire de l'art en Fiance. Dcscr. Fland. — Moreri, Dict. Hist.»
+  [pönr]  contexte : «unale de Molenbeek-Saint-Jean pönr donner ses soins aux cholériq»
+  [trçs]  contexte : «contenant plusieurs sentence^ trçs-utile$ pour l'instruction de »
+  [gcntc]  contexte : «um. Galcsloot. Scriverius, De gcntc Nicolaia. — Foppens, Dibl. be»
+
+--- BiographieNationale_Volume7 (12 résidus) ---
+  [Lwjtcs]  contexte : «te Lipse, et notamment Bur le Lwjtcs. Clauiii C&sarùj —-. 5° Labyr»
+  [fprt]  contexte : «e. froissée, rompue. Il était fprt répandu au moyen âge, aussi b»
+  [mscr]  contexte : «re que trois chansons notées (mscr. B. N., 7222, ancien fonds). »
+  [lnst]  contexte : «, 1857 et dans les Bull, de l'lnst. arch, liégeois, t. Ill, p. 9»
+  [rBch]  contexte : «es en Russie. Aug. Vauder Mci'rBch. Vander Aa, Biographisch woor»
+  [Stöckl]  contexte : « de Gilbert de la Porée (Alb. Stöckl Gesch. der Philos, des Mittel»
+  [Chnrlcs]  contexte : «a cloué sur sa Chaise longue. Chnrlcs Rnhlenbeek. Theatrum europœur»
+  [Köln]  contexte : «llen zur Geschichte der Stadt Köln, t." III, p. 372 et 502; on m»
+  [Stör]  contexte : «ugustse Vindelicorum, Michael Stör, 1632, 2 vol. in-12». 2° Nunc»
+  [GlLLlS]  contexte : «torica medii œvi, p. 104. 775 GlLLlS 776 de Cîteaux. Vers 16 5 0, »
+  [Blccrsch]  contexte : «ille; en placard. Aug. Vander Blccrsch. Foppens, Bibliotheca belgica»
+  [dçnt]  contexte : «rt fit oesser la tranquillité dçnt la Busse-Lotharingie jouissai»
+
+--- BiographieNationale_Volume8 (20 résidus) ---
+  [mtnc]  contexte : «tta vulgo nominantur. Additis mtnc ejusdem quoque ipsius Gombert»
+  [Htsl]  contexte : «res belges (nouvelle série).— Htsl. Un. de la France, XX11I. — A»
+  [JKBM]  contexte : «istes dans les Jeta Sanctorum JKBM, t. V,p. 608-631. On la trouv»
+  [Bntz]  contexte : «quot, III, p. 519, éd. fol. - Bntz, Code de fane. dr. belg., p. »
+  [Fcrd]  contexte : «te avec une telle intrépidité Fcrd. Loise. BecdeUèvr», Biogr. li»
+  [MBCZXXX]  contexte : «ignibus cruciata, xenium anni MBCZXXX, 8°, p. 31). GRUITRODE (Jacqu»
+  [ClrCls]  contexte : «Longa neC eXtrUet neC lUlt In ClrCls, roMa sUperba, tUIs.(ætas A l»
+  [Fcrd]  contexte : «es de crainte et d'espérance. Fcrd. Loi«. Soucieux du brillant a»
+  [plns]  contexte : «déclara que, pour empêcher de plns grands maux, il fallait obten»
+  [mscr]  contexte : «ar Jacques de Guise lui-même (mscr. n° 5995, Bibliothèque nation»
+  [Clfrncnl]  contexte : «s, eliam post tua fata, frui. Clfrncnl Lyon. GUYOT (Henri-Daniel), p»
+  [Hnls]  contexte : «point l'origine étrangère des Hnls. Il appuie ses motifs d'extra»
+  [Jdvs]  contexte : « solemniter ingredienti sexto Jdvs Januarias 1680. Gandavi, apud»
+  [MDÇLV]  contexte : «ppens, sub signo S. Spiritus. MDÇLV, in-16, p. 100. Même titre, C»
+  [snnt]  contexte : «icium Pharmacorum, quœ in usu snnt, nomenclaturam, facilitâtes e»
+  [btlg]  contexte : «ictor Jacques. Sweertius./KA. btlg., p.493 —Foppcns, Dibl. betg.»
+  [scnpt]  contexte : «ulia, Nie. de Alegambe, Bibl. scnpt. soc. Jesu, p. 203. — Foppens»
+  [Fcrd]  contexte : «ur de l'âge, dans la Zélande. Fcrd.Loise. d'Hauzeur, on alluma, »
+  [bwgr]  contexte : «. - Del Vaux de Kouron, bict. bwgr. de la prov. de Liège, p. o9.»
+  [brlg]  contexte : «VIII. p. 288. - Foppens, Bibl.brlg., t. I", p. 96. — Sweerlius, »
+
+--- BiographieNationale_Volume9 (20 résidus) ---
+  [Jnhr]  contexte : «uiuiatischer CatenUer auf dus Jnhr 1804. — Biographie générale d»
+  [FcrJ]  contexte : «t à Liège le 10 octobre 1821. FcrJ. Luise. les Récollets, et apr»
+  [Cnmm]  contexte : «Jean de Home (Publicat. de la Cnmm. roy d'hisl.l, p. x, 137. — D»
+  [xxvj]  contexte : «Heeren M. CCCCC II (1502) den xxvj dach van Maerte; vol. in-8o, »
+  [Nbvc]  contexte : «aptitudes remarquables. Filii Nbvc. Documents inédits et papieis»
+  [dóór]  contexte : «yzende het mit en profyt daer dóór toegebragt aen den Staet doôr»
+  [Fcrd]  contexte : « connaissances très étendues. Fcrd. Loise. Bouillet, Dict. univ.»
+  [HlRN]  contexte : « autour : FRANUS JOSE- « PHUS HlRN EPISCOPÜS ToRNACENSIS ; » et »
+  [Köln]  contexte : «—Werlo, Kunst und künsller in Köln, 188. — Pincharl, Arch. des a»
+  [Fcrd]  contexte : «i les poètes de circonstance. Fcrd. LOIBO. B. et D., recueil cit»
+  [BlbCK]  contexte : «hroniques et des pamphlets du BlbCK. NAT. - T. IX. •IS 435 HOLOGN»
+  [BVRG]  contexte : « SICIL : AECHID • ATS . DVC • BVRG • PEO • DVCA • IOTHA • BBAB :»
+  [Fcrd]  contexte : « n'était pas un grand esprit. Fcrd.i.oise. Hofman-Peerlkamp, Lib»
+  [Fcrd]  contexte : «t à la librairie en Belgique. Fcrd. Loise. Mémoires de la Sociét»
+  [Httg]  contexte : «nts particuliers, — Organe de Httg, du -25 féTrier 4886. HUBOLD,»
+  [Stöckl]  contexte : «ue du fond et de la forme, M. Stöckl se plaît à le signaler parmi »
+  [Stöckl]  contexte : «osophie : Tennemann, Erdmaun, Stöckl, Fabre. etc. — Bouchitté, Dic»
+  [ltçt]  contexte : «ns le Spéculum ordinis rarmeb'ltçt, paru à Venise en 1507. — 4. »
+  [nvnc]  contexte : « atque ita in lucerà editus : nvnc autem diligenter recognitus, »
+  [NCBM]  contexte : «unt //«jus discipuli p. s. p. NCBM. sacra theologiæe studiosi. m»
+
+
+##########################################################################################
+# SECTION 2 : OCR Mistral (ocr_mistral/) — 228 résidus
+# Source du bruit : erreurs de reconnaissance optique sur scans anciens
+##########################################################################################
+
+
+--- BiographieNationale_Volume1 (6 résidus) ---
+  [Chvr]  contexte : «versi d'Opmeer et Beyerlinck. Chvr. L. de Burbare. AKEN (Joseph »
+  [MSCCC]  contexte : « NIC... MENSIO... ARRO DOMINI MSCCC... F. Hennebert. *ALBE (Fern.»
+  [tsch]  contexte : «ann's Hist. Nachw. bis ponuit tsch. Kirche in Autorff. — Schols »
+  [tsch]  contexte : «ogen tot de gesch. der sonng. tsch. Kerk in Nederl. — Documents »
+  [Cntr]  contexte : « rapportée par Suétone. (Vit. Cntr., c. 67.) et de lui fournir d»
+  [Bøll]  contexte : «i du violoniste norvégien Ole-Bøll, et s'embarquèrent, le 2 janv»
+
+--- BiographieNationale_Volume10 (9 résidus) ---
+  [Schöts]  contexte : « 1839, 1842. — 2. Der heilige Schöts en-gel Wegweiser zum Himmel. »
+  [FVLCVR]  contexte : «S, VT DELGIO OVENDUMENTVR. VT FVLCVR LVSIT, ET MOS EXTINCTVS EST. »
+  [SVNT]  contexte : «RNIA, ETIAM BREVIA. CVM LONGA SVNT. FVNERI TABEN SVO SYPERSTES, »
+  [Köln]  contexte : «ne deutsche Reitergeschichte. Köln, 1828, 4 v. in-19. — A. Perri»
+  [STCRF]  contexte : «ONST-CHILDER BIRSEN ANIWERPEN STCRF BEN 48 OCTOBUR A° 1678 EXBE D»
+  [STCRF]  contexte : «INA VAN NOORT SIJN MINJAAROUW STCRF BEN 47 APRIL A° 1659 ENBE JOU»
+  [STCRF]  contexte : «ABETH JORDAENS HAENL. BOERTER STCRF BEN 48 OCTOBUR 1678 CHRIVRES »
+  [Rstr]  contexte : «d et de l'Escorial — Le même, Rstr. et mort de Charles Quint au »
+  [chrv]  contexte : «par Kessels, major d'artill., chrv. de la Légion d'honneur, etc.»
+
+--- BiographieNationale_Volume11 (8 résidus) ---
+  [Rmgr]  contexte : «II, p. 93. — Witsen-Geysbeck, Rmgr. anth. en crit. woordenbe, t.»
+  [xxjc]  contexte : « trespassa, l'an xiiii xv, le xxjc d'octobre. Les statues en pie»
+  [MCGCC]  contexte : « jour du mois de juillet l'an MCGCC et LIII. Prir: pour son don*.»
+  [böck]  contexte : «rages. Max Rouse. *Gedächtnis-böck van het gheblachte van Jan La»
+  [böck]  contexte : «C. Carton-filé du *Gedächtnis-böck*. — Ferd. Vander Baeghen, Th.»
+  [xvrz]  contexte : «ine gantoise et florissait au xvrz siècle. Il ne nous est connu »
+  [xvth]  contexte : «auteur, eurent de la vogue au xvth siècle. C'est ainsi que l'imp»
+  [gnth]  contexte : « chiffres, ni réclames ; car. gnth. La souscription est répétée »
+
+--- BiographieNationale_Volume12 (3 résidus) ---
+  [Dmrt]  contexte : «es sous les noms de Libertia (Dmrt.) et Libertella (Desm.). On p»
+  [GmbH]  contexte : «sche Bischertillustration der GmbH und Frühseminarie* (cap. IX).»
+  [Sgll]  contexte : «lettres écrites en ce moment (Sgll. Barmauni, I, 476, 66) ne lai»
+
+--- BiographieNationale_Volume13 (7 résidus) ---
+  [hggb]  contexte : «eschickt ward* (Ayrer, *Dram. hggb.* v. v. Keller, IV, n° 40). 3»
+  [Schön]  contexte : «zwedel, et peut-être par Chr. Schön. La pièce fut jouée en 1566 p»
+  [hgdb]  contexte : «ichtsum Geapheus, Acalastus*, hgdb. von J. Bolte. Berlin, 1891. »
+  [Fcrd]  contexte : «David...*, 3 septembre 1714. *Fcrd. Loise.* C. Sommervogel, *Bib»
+  [xvrs]  contexte : «e chansons de divers auteurs (xvrs. siècle). • Da pacem, Domine,»
+  [xvjr]  contexte : «ay, pour une année escheue le xvjr de Jullet xve xlvij ». Une no»
+  [DXLF]  contexte : «imprimeur de musicque. Lan M. DXLF. Au mois de Julet. Voici les »
+
+--- BiographieNationale_Volume14 (4 résidus) ---
+  [ghvstt]  contexte : «n Patriarch S. Joseph... over-ghvstt nyt den fransoysen in onse ne»
+  [höch]  contexte : «hten und kriegs kendelem, mit höch stem fleiss beszkrieben, durc»
+  [sqrt]  contexte : «rale $\int_{x}^{x} \frac{dx}{\sqrt{1 - x^2}}$; l'autre s'occupe »
+  [sqrt]  contexte : «rale $\int_{x}^{x} \frac{dx}{\sqrt{1 + x^2}}$. L'auteur ramène e»
+
+--- BiographieNationale_Volume15 (5 résidus) ---
+  [Jhdt]  contexte : «rdisches Gedicht aus dem XII. Jhdt von Reclus de Mollens, bearbe»
+  [Böhm]  contexte : « que Sandrart et Dobrowsky's, Böhm. Literatur, B. I, S. II, s. 2»
+  [Sörm]  contexte : «morial. Cassie Th. de Limburg Sörm. Renseignements fournis par M»
+  [Frånç]  contexte : «uwerpsche Sint-Lucas gilde. — Frånç. Swecrtius, Atheum belgicae.*»
+  [Köln]  contexte : «, Kurfürst und Erzbischof von Köln. — Allgemeine deutsche Biogra»
+
+--- BiographieNationale_Volume16 (2 résidus) ---
+  [NVSC]  contexte : «NIS QVOS VREVM HIE HEPVLCHIVM NVSC HASET. QUIDMIRJ? ANINVM QVARD»
+  [VRVM]  contexte : «DMIRJ? ANINVM QVARDIV VEERVNT VRVM HADVERVNT; ALTER BEHIT KAL. I»
+
+--- BiographieNationale_Volume17 (3 résidus) ---
+  [BVRG]  contexte : «· REG · ARC · AVSTRIE · DUC · BVRG · BRABÂ · COMT · FLÂN · THIR.»
+  [BVRG]  contexte : «Q · CICIL · ARCH · AV · DVX · BVRG. Sur le second, on voit le do»
+  [Bnls]  contexte : «i, ordinis S. Crucis, 3 vol. (Bnls-le Duc, P. Stokvis, 1830). Le»
+
+--- BiographieNationale_Volume18 (5 résidus) ---
+  [Köln]  contexte : «*Die Matrikel der Universität Köln, 1289 bis 1550*. — Reusens, *»
+  [Köln]  contexte : «*Die Matrikel der Universität Köln* (Bonn, 1892), t. I, p. 48 et»
+  [KKKK]  contexte : « porte sur le dos les lettres KKKK du classement de celle-ci. Au»
+  [Köln]  contexte : «Bianco, *Die alte Universitae Köln*, t. I, Anhang, p. 57. — Budi»
+  [Köln]  contexte : «ssen, *Die Matrikel der Univ. Köln*, t. I, p. 7. — Quéill-Erhard»
+
+--- BiographieNationale_Volume19 (2 résidus) ---
+  [CCLF]  contexte : «x dépens de la Compagnie. M.D.CCLF*. Sur le faux titre, on a ajo»
+  [MMrs]  contexte : «aide de deux envoyés spéciaux MMrs Kindt et Partoes. Le prince d»
+
+--- BiographieNationale_Volume2 (3 résidus) ---
+  [scqq]  contexte : « SS. Belg.*, t. II, p. 486 et scqq. **BAX** (*Nicoise*) ou **BAX»
+  [Chvr]  contexte : «rrière musicale de Bonhomius. Chvr. Léon de Barbare. BONHOMME (H»
+  [Schöff]  contexte : «naissance du Sauveur, chez M. Schöff-Brentano, à Francfort; etc. U»
+
+--- BiographieNationale_Volume20 (4 résidus) ---
+  [XXVJ]  contexte : «O DNI MILLESIMO QUINGENTESIMO XXVJ. IX. DECEMBERIS. Il y avait d»
+  [vóór]  contexte : «ese in Nederland gedurende de vóór-reformatorische eeuw (Groning»
+  [Böckh]  contexte : «t y entendit Creuzer, Dissen, Böckh, K.-O. Müller. Il y arrivait »
+  [Lwów]  contexte : «a język polski X. W. P. z. z. Lwów Nakładem tłumacza 1874* (= *R»
+
+--- BiographieNationale_Volume21 (4 résidus) ---
+  [Mölk]  contexte : «rsdorf entre Saint-Poelten et Mölk. L'entretien fut tout amical;»
+  [XVth]  contexte : «ormde kerken in België van de XVth eeuw aan hare geloofsheldiger»
+  [LXXXJ]  contexte : «2 décembre : Anno Domini MCCC LXXXJ obiit venerabilis pater domin»
+  [vóór]  contexte : «erkgeschiedenis van Nederland vóór de Herverning* (Utrecht, 1864»
+
+--- BiographieNationale_Volume22 (8 résidus) ---
+  [LXVJJJ]  contexte : «s (inden Gulden Strugs) M. D. LXVJJJ. Met Privilegio. Onderteekent»
+  [Köln]  contexte : «lung der Legende Severins von Köln* dans Bonner Jahrbücher, 1909»
+  [Görz]  contexte : «— R. Beyer, L. Elsterer et A. Görz, *Urkundenbuch zur Geschichte»
+  [Cölln]  contexte : «relberani Flandri, Bürgers zu Cölln, Psalmodia Davidica, Davids d»
+  [Cölln]  contexte : « und weniger 5tim. zugericht. Cölln 1590, 4°. Si le mot Flandre n»
+  [Gvtd]  contexte : «te de Lomas, abbé d'Eversham, Gvtd. 1835, passim (voir table). —»
+  [NRCLXXXV]  contexte : «S V DIES XXIV ORIIT A. ACT C. NRCLXXXV(11) NONIS JULII FRATRI AMANTI»
+  [xxvj]  contexte : «se Jan Aneseus, ghemaeckt den xxvj Mey 1376*. — Page 17 : *Amen*»
+
+--- BiographieNationale_Volume23 (3 résidus) ---
+  [XCVR]  contexte : «3, p. XXI, XXXVI, LXX, LXXIX, XCVR, CX. — Sandya, A history of c»
+  [Möhl]  contexte : «. En 1866, il composa avec G. Möhl, professeur à l'École militai»
+  [Möhl]  contexte : «ération de ses œuvres : 1. G. Möhl et L. Van Stalle, *Cours élém»
+
+--- BiographieNationale_Volume24 (10 résidus) ---
+  [Cöln]  contexte : «r Ennen, Das Rothausportal zu Cöln (Zeitschrift für bildende Kun»
+  [MDCCXXF]  contexte : «nobilissimi Collegii 19 Junii MDCCXXF in pium applausum Jubilæo nob»
+  [möcht]  contexte : « Bertram). — *Nur einmal noch möcht ich dich sehen*, voix et pian»
+  [Schö]  contexte : «bus Heredum Joannis Godefridi Schö nwetter... Ezcudehat Jobus He»
+  [xvth]  contexte : «ite des troubles religieux du xvth siècle, l'auteur fait l'histo»
+  [LVCK]  contexte : «59. AD SYPEROS ARIENS MAVORTE LVCK SECYNDA VLTHO PAVPERISVE SVA »
+  [Böhm]  contexte : «iolon, en partie publiés chez Böhm, à Hambourg, en partie manusc»
+  [Fölts]  contexte : «iverselle des Musiciens*, par Fölts (Paris, 1880). — *XIIIe*, *Wo»
+  [Jhrh]  contexte : «ter. Kav. in Faldz. des XVIII Jhrh. (Wien, 1891). — Turkheim, Ge»
+  [Köln]  contexte : «*Die Mawikel der Universiteit Köln, 1589-1559*, t. I, p. 149. — »
+
+--- BiographieNationale_Volume25 (11 résidus) ---
+  [xvth]  contexte : «lus guère de raison d'être au xvth siècle : l'ancien empire colo»
+  [Schröd]  contexte : «as dans la collection. THOMAS Schröd, à Vienne. Les deux tableaux »
+  [Köln]  contexte : «*die Matrikel der Universität Köln*, t. I Bonn, 1892, p. LXII, L»
+  [Köln]  contexte : «*Die Matrikel der Universität Köln* (Bonn, 1919), t. II, p. 259.»
+  [Köln]  contexte : «Bianco, *Die alte Universität Köln und die späteren Gelehrten- s»
+  [Köln]  contexte : « Ennen, *Geschichte der Stadt Köln* (Cologne, 1875), t. IV, p. 2»
+  [Schn]  contexte : «an. Nicolas Visscher excudit, Schn. p. 228, n° 5. *Un Portrait d»
+  [Köln]  contexte : «er Mark und der Erbschaft von Köln*, éd. Molbom, dans *Scriptore»
+  [Höchst]  contexte : «ié de Mansfeld, une défaite à Höchst (à l'est de Wiesbaden), le 20»
+  [Smrt]  contexte : «an van Bixmude (dans J.-J. de Smrt, Corpus Chronicorum Flandrin,»
+  [NVDK]  contexte : «gramme non identifié — NDK ou NVDK ? —, ainsi que la date 1574 i»
+
+--- BiographieNationale_Volume26 (7 résidus) ---
+  [sprl]  contexte : «(1669), *De | Pleyters, | bly-sprl. | Vertaelt uyt Mr. de Racine»
+  [chcs]  contexte : «Cologne 1679, à Louvain 1778 (chcs J.-P.-G. Michel, 12 vol. in-8»
+  [Köln]  contexte : « : Jesuiten-Akten Universität Köln. — Hartzheim, Bibliotheca col»
+  [Köln]  contexte : «Bianco (*Die alte Universität Köln*, t. I, Cologne, 1855, Append»
+  [Jhts]  contexte : «erlanden in d2. Hälfte d. 14. Jhts.*, dans *Abh. d. Bayr. Acad.*»
+  [Köln]  contexte : «*Die Matrikel der Universität Köln*, t. I, Bonn, 1928, pp. 62°, »
+  [Köln]  contexte : « 124; *Die Stellung der Univ. Köln im grossen Schisma u. zu den »
+
+--- BiographieNationale_Volume27 (5 résidus) ---
+  [Wörth]  contexte : «urisconsulte, col. 405-406. — Wörth (Jean-François-Xavier), avoca»
+  [Köln]  contexte : « Ennen, *Geschichte der Stadt Köln*, t. I² (Cologne, 1865). — Av»
+  [Köln]  contexte : « Eunan, *Geschichte der Stadt Köln*, t. II (Cologne, 1865). — Th»
+  [Köln]  contexte : « Ennen, *Geschichte der Stadt Köln*, t. II, et *Mittheilungen au»
+  [Köln]  contexte : «ungen aus dem Stadtarchiv von Köln*, t. III (Cologne, 1883); *Ue»
+
+--- BiographieNationale_Volume29 (4 résidus) ---
+  [bslp]  contexte : «650, p. 282. — Foppens, Bibl. bslp., 1739, p. 9. — F. Nève, Mémo»
+  [Böhm]  contexte : «citer François-Ignace-Auguste Böhm (1819-1891), peintre de paysa»
+  [Ztschr]  contexte : «s Beaux-Arts (1880), p. 29. — Ztschr. f. bild. Kst., t. XII (1877)»
+  [Körös]  contexte : «e statue au Hongrois Cosma de Körös qui était, croyait-on, le pre»
+
+--- BiographieNationale_Volume3 (5 résidus) ---
+  [xvrs]  contexte : «es religieux et politiques du xvrs siècle, en se rangeant, dès l»
+  [xvst]  contexte : «y, Nederlandsch schrijver der xvst eeuw. **CALEWAERT** (Liévin),»
+  [scqq]  contexte : «ta Ludov. Pii, lib. II, v. 70 scqq.; Chron. Moiss., ad ann. 813.»
+  [Lánz]  contexte : « 1559. (4) On peut voir, dans Lánz, *Sinotepapiere*, p. 477, l'i»
+  [Thönd]  contexte : «re de l'Empire, t. I et VI. — Thönd, Juvie, Charles-Quint et Marg»
+
+--- BiographieNationale_Volume30 (3 résidus) ---
+  [Rnns]  contexte : « Moreau S. J. E.-L. Strubbe, *Rnns belge de philologie et d'hist»
+  [vóór]  contexte : «en, 1889, 141 p.) : 1° Plicht vóór al ; 2° Hoop en berouw ; 3° J»
+  [Jhdt]  contexte : «urkunden des X., XI. und XII. Jhdt., Innsbruck, 1905-1989 (analy»
+
+--- BiographieNationale_Volume31 (12 résidus) ---
+  [vóór]  contexte : «n het arrondissement Turnhout vóór 1900*, Turnhout-Tilburg, 1950»
+  [Töpsl]  contexte : «p. 71-75. Un certain François Töpsl, né à Munich, le 17 novembre »
+  [Töpsl]  contexte : «t cette période : a) François Töpsl. — La Bibliothèque d'État à M»
+  [Töpsl]  contexte : «anuscrits concernant François Töpsl que nous avons mentionné ci-d»
+  [Töpsl]  contexte : « 26442 on trouve 5 lettres de Töpsl à Ernst allant du 31 mars 177»
+  [Töpsl]  contexte : « 1793. Les lettres reçues par Töpsl vont donc chronologiquement p»
+  [Töpsl]  contexte : «lusieurs lettres en une fois. Töpsl et Ernst s'écrivent en latin »
+  [Töpsl]  contexte : «re) l'unique correspondant de Töpsl qui écrive de Rolduc. Il lui »
+  [Töpsl]  contexte : «btenir les renseignements que Töpsl lui demande ; il met Josse Le»
+  [Töpsl]  contexte : «x correspondants : minutes de Töpsl et originaux de Le Plat se tr»
+  [Töpsl]  contexte : «h. Mais en 1786 Ernst écrit à Töpsl qu'il a rompu avec Le Plat pa»
+  [Schörg]  contexte : «ruxelles, il fonde avec Franz Schörg, Hans Daucher et Paul Miry, l»
+
+--- BiographieNationale_Volume32 (1 résidus) ---
+  [Köln]  contexte : « Regesten der Erbbischöfe von Köln im Mittelalter, t. III, Bonn,»
+
+--- BiographieNationale_Volume34 (4 résidus) ---
+  [trVnCVz]  contexte : «aillés sur un fauteuil : oLIM trVnCVz nVnC CatheDra (Jadis tronc d'»
+  [nVnC]  contexte : «ur un fauteuil : oLIM trVnCVz nVnC CatheDra (Jadis tronc d'arbre»
+  [vóór]  contexte : «t de Hollandse secularen vlak vóór het uitbreken van het jansení»
+  [Köln]  contexte : «r Kampf um Kurstaat und Stadt Köln in den Jahren 1688-1689 », da»
+
+--- BiographieNationale_Volume35 (2 résidus) ---
+  [Köln]  contexte : « Registen der Erzbischöfe von Köln im Mittelalter, Cologne, 1911»
+  [Köln]  contexte : «celers Mayer van den Bergh zu Köln », dans *Wallraf-Richarts-Jah»
+
+--- BiographieNationale_Volume37 (2 résidus) ---
+  [vóór]  contexte : «w. De Vlaamsche Schilderkunst vóór, tijdens en na Rubens, Bruxel»
+  [vóór]  contexte : «eper, een vlaams condottiere (vóór 1104-1164) », dans De Leiegou»
+
+--- BiographieNationale_Volume38 (8 résidus) ---
+  [Pfön]  contexte : «d (Danemark), A. Thienemann à Pfön (Allemagne), F. Ruttner à Lin»
+  [Björn]  contexte : « les études d'hydrographie de Björn Helland-Hansen, des articles »
+  [Björn]  contexte : «e Bergen sous la direction de Björn Helland-Hansen. Ayant épousé,»
+  [FNRS]  contexte : «de la Recherche scientifique (FNRS), la Belgique prit une part a»
+  [FNRS]  contexte : «nde altitude. Des subsides du FNRS ont permis à Jaumotte de pour»
+  [Lwów]  contexte : «Université de Bruxelles, né à Lwów le 11 novembre 1882, décédé à»
+  [Lwów]  contexte : «cience. C'est naturellement à Lwów qu'il alla défendre sa thèse »
+  [Lwów]  contexte : «rvention à un colloque tenu à Lwów sur la figure et l'œuvre d'Ig»
+
+--- BiographieNationale_Volume39 (3 résidus) ---
+  [Köln]  contexte : « Regesten der Erzbischöfe von Köln im Mittelalter, t. II, Bonn, »
+  [Böckl]  contexte : «graphie grecque qu'est August Böckl. En théologie, il se met à l'»
+  [zwölf]  contexte : «juillet 1925, p. 552-558; Die zwölf Phasen des Bolchevismus, dans»
+
+--- BiographieNationale_Volume4 (2 résidus) ---
+  [zóts]  contexte : «e domme waensucht des werelds zóts Cap, vol sedige moraliteiten »
+  [MDCCCXXXF]  contexte : « prononcé le premier décembre MDCCCXXXF, dans l'église paroissiale de»
+
+--- BiographieNationale_Volume40 (3 résidus) ---
+  [XVth]  contexte : «logue of books printed in the XVth century now in the British Mu»
+  [XVth]  contexte : «logue of books printed in the XVth century now in the British Mu»
+  [Xlth]  contexte : «North Italian Services of the Xlth Century, Londres, 1931, Colle»
+
+--- BiographieNationale_Volume41 (30 résidus) ---
+  [Vóór]  contexte : «*Van 't schoone wiedsterke*, *Vóór 't kantkussen*, *Koninginneli»
+  [FNRS]  contexte : «athyscaphe est construit : le FNRS II. « Le premier homme à avoi»
+  [FNRS]  contexte : «i de plongée sans équipage du FNRS II eut lieu au large de Dakar»
+  [FNRS]  contexte : «iccard, ils construisirent le FNRS III qui fut, lui, une très gr»
+  [FNRS]  contexte : «e officiellement la cabine du FNRS I comme la première cabine sp»
+  [FNRS]  contexte : «près la première ascension du FNRS, exprimant sa reconnaissance »
+  [SHSN]  contexte : «card. | | --- | --- | | Actes SHSN | Actes de la Société helvéti»
+  [SHSN]  contexte : «rande sensibilité, dans Actes SHSN, 1912, partie 2, p. 152-153. »
+  [SHSN]  contexte : «ue calorimétrique, dans Actes SHSN, 1913, partie 2, p. 141-142. »
+  [SHSN]  contexte : « et E. Cherbuliez, dans Actes SHSN, 1915, partie 2, p. 131-133. »
+  [SHSN]  contexte : «und E. Cherbuliez, dans Actes SHSN, 1916, partie 2, p. 116-118. »
+  [SHSN]  contexte : «. und J. Brentano, dans Actes SHSN, 1916, partie 2, p. 122-123. »
+  [SHSN]  contexte : « Quervain et A.P., dans Actes SHSN, 1916, partie 2, p. 129-130. »
+  [SHSN]  contexte : «ng des Acti niums, dans Actes SHSN, 1917, partie 2, p. 143-144. »
+  [SHSN]  contexte : «der Radioelemente, dans Actes SHSN, 1919, partie 2, p. 86. Elast»
+  [SHSN]  contexte : «ische Deformation, dans Actes SHSN, 1919, partie 2, p. 86-87. Ei»
+  [SHSN]  contexte : « und K. Backhauss, dans Actes SHSN, 1919, partie 2, p. 87. 1920.»
+  [SHSN]  contexte : « grain du glacier, dans Actes SHSN, 1920, partie 2, p. 181. Une »
+  [SHSN]  contexte : « Quervain et A.P., dans Actes SHSN, 1921, partie 2, p. 110. Hypo»
+  [SHSN]  contexte : «ntinuelle des gaz, dans Actes SHSN, 1922, partie 2, p. 180-181. »
+  [SHSN]  contexte : «Quervain und A.P., dans Actes SHSN, 1922, partie 2, p. 186-187. »
+  [SHSN]  contexte : «A.P. et E. Stahel, dans Actes SHSN, 1927, partie 2, p. 95. Un ré»
+  [SHSN]  contexte : «drogène en hélium, dans Actes SHSN, 1927, partie 2, p. 95. L'abs»
+  [SHSN]  contexte : «.P. und W. Johner, dans Actes SHSN, 1930, partie 2, p. 272. Die »
+  [FNRS]  contexte : «1, p. 526-527. L'ascension du FNRS et son programme scientifique»
+  [SHSN]  contexte : «sous-marine belge, dans Actes SHSN, 1940, A, p. 33-45. 1941. Reg»
+  [SHSN]  contexte : «nt des continents, dans Actes SHSN, 1946, A, p. 83-84. 1949. Der»
+  [Tdtl]  contexte : «, qui est son chef-d'œuvre : *Tdtl l'périqui* [Le coiffeur Gauti»
+  [Höchst]  contexte : «lé comme sculpteur-modeleur à Höchst de 1771 — au moins — à 1781 s»
+  [Höchst]  contexte : « manufacture de porcelaine de Höchst vers 1770 et s'il existe des »
+
+--- BiographieNationale_Volume42 (7 résidus) ---
+  [XVth]  contexte : «logue of books printed in the XVth century now in the British Mu»
+  [XVth]  contexte : «logue of books printed in the XVth century now in the British Mu»
+  [Köln]  contexte : «76. — S. Corsten, « Caxton in Köln », dans *Börsenblatt für den »
+  [Rösch]  contexte : «1745) sont cette fois signées Rösch, Haid, Lespilliez et Cuvillié»
+  [Köln]  contexte : «lemens und Clemens August von Köln, Bonn, 1897 (Bonner Jahrbüche»
+  [Götz]  contexte : «ipzig, 1913, p. 222-224. — O. Götz, F. de Cuvilliés, Frankfort, »
+  [Köln]  contexte : « Regesten der Erzbischöfe von Köln im Mittelalter, Bonn, 1854-19»
+
+--- BiographieNationale_Volume43 (1 résidus) ---
+  [RTBF]  contexte : «tographique fut projetée à la RTBF le samedi 22 juillet 1978. Fa»
+
+--- BiographieNationale_Volume44 (2 résidus) ---
+  [Böss]  contexte : «nseil de son confrère Prosper Böss, il s'essaie à la peinture à »
+  [Köln]  contexte : «unde und Künstler*, vol. III, Köln, 1855, p. 364-367. — Cl. Meye»
+
+--- BiographieNationale_Volume5 (6 résidus) ---
+  [xvth]  contexte : «en célèbre du commencement du xvth siècle, appelé le plus souven»
+  [Cncn]  contexte : «m in Sancti Martini Jussenesi Cncn, et obtenta dispensatione han»
+  [MVNDVs]  contexte : «Fallis exaltata*, 1705; — 6° *MVNDVs CoevsCans (chronogramme de 17»
+  [Gbvst]  contexte : «ht der nederlandsche antheil. Gbvst 1574. — Willems, Belgisch mus»
+  [xvth]  contexte : «qui florissait à Amsterdam au xvth siècle, n'a gravé que des car»
+  [xvth]  contexte : «que, né à Gand vers la fin du xvth siècle, et décédé à Alost le »
+
+--- BiographieNationale_Volume6 (2 résidus) ---
+  [Chrv]  contexte : «son mari déjà décédé en 1521. Chrv. L. de Barbure. Archives d'Au»
+  [Rxzn]  contexte : «etc., Dendermonde, 1878. — De Rxzn, Synodicum Antierpiense. — Va»
+
+--- BiographieNationale_Volume7 (8 résidus) ---
+  [Gmtz]  contexte : «é traduite en allemand par J. Gmtz. Brunswick, 1776, in-8°. — 2°»
+  [stödt]  contexte : «e Flandre. — Homerie boek der stödt Gent, I. — Rymet, éd. holl., »
+  [mscr]  contexte : «re que trois chansons notées (mscr. B. N., 7222, ancien fonds). »
+  [Stöckl]  contexte : « de Gilbert de la Porée (Alb. Stöckl Gesch. der Philos. des Mittel»
+  [Köln]  contexte : «llen zur Geschichte der Stadt Köln*, t. III, p. 372 et 502) on m»
+  [Stör]  contexte : «Auguste Vindelicorum, Michael Stör, 1632, 2 vol. in-120. E. H.-J»
+  [xvrs]  contexte : «x de l’abbaye d’Echternach au xvrs siècle. Il écrivit l’ouvrage »
+  [xvth]  contexte : « siècle et au commencement du xvth. Le musée de Malines possède »
+
+--- BiographieNationale_Volume8 (5 résidus) ---
+  [Stöckl]  contexte : «s à l'exposé très clair de M. Stöckl (Lehrb. der Gesch. der Philos»
+  [Bmgr]  contexte : « t. XX, p. 144-203). — Weiss, Bmgr. univ. — Schwartz, Les dernie»
+  [Zsch]  contexte : « et varias lectiones. Witeb., Zsch. Lehman, 1591, in-80. 5. L. A»
+  [mscr]  contexte : «ar Jacques de Guise lui-même (mscr. n° 5995, Bibliothèque nation»
+  [XXXF]  contexte : «xuit « sub anno Christi M. D. XXXF. » La bibliothèque de l'Unive»
+
+--- BiographieNationale_Volume9 (9 résidus) ---
+  [xxvj]  contexte : «Heeren M. CCCCC II (1502) den xxvj dach van Maerte; vol. in-8°, »
+  [Börfls]  contexte : «, esc., t. II, p. 709. — Emm. Börfls, *Hist. de la Peinture et de »
+  [Köln]  contexte : «Morin, *Kunst und künstler in Köln*, 188. — Pinchari, *Arch. des»
+  [Bmgr]  contexte : «(1810), p. 88. — Berdelievre, Bmgr. liép., t. IV. — Messager (18»
+  [Bwgr]  contexte : «, t. II, p. 750. — Vander An, Bwgr. woordenboek, t. VIII, p. 428»
+  [BVBG]  contexte : « SICIL : ARCHID · AVS · DVC · BVBG · PRO · DVCA · LOTHA · BRAB :»
+  [Stöckl]  contexte : «ue du fond et de la forme, M. Stöckl se plaît à le signaler parmi »
+  [Stöckl]  contexte : «osophie ; Teunemann, Erdmann, Stöckl, Fabre, etc. — Bouchitté, Dic»
+  [NCRM]  contexte : «bunt hujus diaripuli P. S. P. NCRM. sacrae theologiae studiosi. »

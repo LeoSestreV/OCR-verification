@@ -1,0 +1,6 @@
+__pycache__/
+output_txt/
+ocr_mistral/
+erreurs/
+*.pyc
+.env
